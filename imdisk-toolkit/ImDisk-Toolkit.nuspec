@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>ImDisk-Toolkit</id>
+        <version>{{PackageVersion}}</version>
+        <title>ImDisk-Toolkit</title>
+        <authors>LTR Data,Olof Lagerkvist,v77</authors>
+        <owners>sippi</owners>
+        <licenseUrl>http://www.ltr-data.se/files/license.txt</licenseUrl>
+        <projectUrl>http://reboot.pro/files/file/284-imdisk-toolkit/</projectUrl>
+        <iconUrl>http://fs5.directupload.net/images/151219/t3zybgoj.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Here is the ImDisk Toolkit. This tool will let you mount image files of hard drive, cd-rom or floppy, and create one or several RamDisks with various parameters.</description>
+        <summary>Requirements:
+Windows XP, Vista, 7, 8, 8.1 or 10 (32 or 64 bits).
+Some image file formats also require .NET Framework 4 (included in Windows 8 and later) to be mounted with the DiscUtils library.</summary>
+        <releaseNotes>http://reboot.pro/index.php?app=downloads&amp;module=display&amp;section=changelog&amp;file=284</releaseNotes>
+        <copyright />
+        <language>en-US</language>
+        <tags>ram disk tool utility driver admin</tags>
+    </metadata>
+</package>
+

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>gamesavemanager</id>
+        <version>{{PackageVersion}}</version>
+        <title>GameSave Manager</title>
+        <authors>InsaneMatt</authors>
+        <owners>sippi</owners>
+        <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
+        <projectUrl>http://www.gamesave-manager.com/</projectUrl>
+        <iconUrl>http://fs5.directupload.net/images/160127/ztlzc8sb.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Perhaps you have been victim of file corruption which also victimised your gamesaves?
+Maybe you just wish to transfer your gamesave(s) to your new machine, or to take with you to a friend's?</description>
+        <summary>With GameSave Manager, you can easily backup, restore and transfer your gamesave(s).
+No longer do you need to manually track through all of the those different directories to backup/restore/transfer</summary>
+        <releaseNotes />
+        <copyright />
+        <tags>tool savegames gaming save game backup admin</tags>
+    </metadata>
+</package>

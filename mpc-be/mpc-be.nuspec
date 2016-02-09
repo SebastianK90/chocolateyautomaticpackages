@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>mpc-be</id>
+        <version>1.4.5.787</version>
+        <title>MPC-BE</title>
+        <authors>MPC-BE Team</authors>
+        <owners>MPC-BE Team</owners>
+        <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
+        <projectUrl>https://sourceforge.net/projects/mpcbe</projectUrl>
+        <iconUrl>http://fs2.directupload.net/images/150517/du5i6wrb.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Media Player Classic - BE is based on the original "Media Player Classic" project (Gabest) and "Media Player Classic Home Cinema" project (Casimir666), contains additional features and bug fixes.</description>
+        <summary>Media Player Classic - BE is a free and open source audio and video player for Windows.</summary>
+        <releaseNotes />
+        <copyright>MPC-BE Team</copyright>
+        <tags>media player audio video</tags>
+    </metadata>
+</package>
