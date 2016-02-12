@@ -8,7 +8,8 @@
         <owners>sippi</owners>
 		<docsUrl>http://www.mirinsoft.com/downloads/ca_docs/manual.pdf</docsUrl>
 		<mailingListUrl>http://mirinsoft.com/index.php/forum/cloneapp-community</mailingListUrl>
-        <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/cloneapp</packageSourceUrl>
+        <licenseUrl>http://www.mirinsoft.com/downloads/ca_legal/license.txt</licenseUrl>
         <projectUrl>http://www.mirinsoft.com/index.php/download/viewdownload/39-cloneapp-portable/180-cloneapp</projectUrl>
         <iconUrl>http://fs5.directupload.net/images/160211/am6kitqn.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>

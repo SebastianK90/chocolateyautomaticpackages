@@ -8,6 +8,8 @@
         <owners>sippi</owners>
         <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
         <projectUrl>http://www.gamesave-manager.com/</projectUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/gamesavemanager</packageSourceUrl>
+
         <iconUrl>http://fs5.directupload.net/images/160127/ztlzc8sb.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Perhaps you have been victim of file corruption which also victimised your gamesaves?
