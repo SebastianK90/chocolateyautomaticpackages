@@ -7,6 +7,8 @@
         <authors>LTR Data,Olof Lagerkvist,v77</authors>
         <owners>sippi</owners>
         <licenseUrl>http://www.ltr-data.se/files/license.txt</licenseUrl>
+		<mailingListUrl>http://reboot.pro/topic/18324-imdisk-toolkit/</mailingListUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/imdisk-toolkit/</packageSourceUrl>
         <projectUrl>http://reboot.pro/files/file/284-imdisk-toolkit/</projectUrl>
         <iconUrl>http://fs5.directupload.net/images/151219/t3zybgoj.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
