@@ -1,6 +1,6 @@
 ﻿  $packageName= 'gamesavemanager'
   $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-  $url        =  "http://www.gamesave-manager.com/?s=download&a=dl"
+  $url        =  '{{DownloadUrl}}'
 
   Install-ChocolateyZipPackage 'gamesavemanager' $url $toolsDir
   
