@@ -8,3 +8,4 @@
   
   Install-ChocolateyShortcut -shortcutFilePath "$env:USERPROFILE\Desktop\CloneApp.lnk" $FileFullPath
  
+  Install-ChocolateyPath $toolsDir

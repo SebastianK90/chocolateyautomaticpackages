@@ -21,6 +21,6 @@ The Idea behind CloneApp is a bit different from the "classic" Backup tool. The 
         <summary>CloneApp enables easy backup of all your app settings from Windows directories and Registry.</summary>
         <releaseNotes>http://www.mirinsoft.com/downloads/ca_update/changelog.txt</releaseNotes>
         <copyright />
-        <tags>backup software windows registry admin</tags>
+        <tags>backup software windows registry settings admin</tags>
     </metadata>
 </package>
