@@ -7,6 +7,9 @@
         <authors>Wicked &amp; Wild Inc.</authors>
         <owners>sippi</owners>
         <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
+		<mailingListUrl>http://www.emdb.eu/contact.html</mailingListUrl>
+		<docsUrl>http://www.emdb.eu/online-help.html</docsUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/EMDB</packageSourceUrl>
         <projectUrl>http://www.emdb.eu/index.html</projectUrl>
         <iconUrl>http://fs5.directupload.net/images/160202/ctl24q7u.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>

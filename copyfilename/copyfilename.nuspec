@@ -7,7 +7,9 @@
         <authors>Bullzip.com</authors>
         <owners>sippi</owners>
         <licenseUrl>http://en.wikipedia.org/wiki/End-user_license_agreement</licenseUrl>
-        <projectUrl>http://www.bullzip.com/products/cfn/info.php</projectUrl>
+        <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/copyfilename</packageSourceUrl>
+		<mailingListUrl>https://bullzip.jitbit.com/helpdesk/Tickets/New</mailingListUrl>
+		<projectUrl>http://www.bullzip.com/products/cfn/info.php</projectUrl>
         <iconUrl>http://fs1.directupload.net/images/150515/noduuf43.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>This will copy the name of the selected file to the clipboard. Before the name is copied you will see a list of different representations of the file name.
