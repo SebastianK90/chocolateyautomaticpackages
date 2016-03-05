@@ -7,7 +7,10 @@
         <authors>Samuel Attard</authors>
         <owners>sippi</owners>
         <licenseUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/blob/master/README.md#license</licenseUrl>
-        <projectUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/</projectUrl>
+        <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/gpmdp</packageSourceUrl>
+		<bugTrackerUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/issues</bugTrackerUrl>
+		<docsUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/blob/master/README.md</docsUrl>
+		<projectUrl>http://www.googleplaymusicdesktopplayer.com/</projectUrl>
         <iconUrl>http://fs5.directupload.net/images/160202/rqzjr5xr.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Features:
