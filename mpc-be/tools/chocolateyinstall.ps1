@@ -10,20 +10,20 @@
 
 if ((Get-WmiObject win32_operatingsystem).version -like "6.3.*")
     {
-      Install-ChocolateyInstallPackage "$packageName" "$installerType" '/VERYSILENT'  "$FileFullPath"
+    Install-ChocolateyInstallPackage "$packageName" "$installerType" '/VERYSILENT'  "$FileFullPath"
+    cd $toolsdir
      
-     cd $toolsdir
-     
-     if (Get-ProcessorBits -eq '64')
-    
+        if (Get-ProcessorBits -eq '64')
         {
         cmd /c "FOR /F "tokens=* delims=" %G IN (ftypes_x64.txt) DO FTYPE %G"
         cmd /c "FOR /F "tokens=* delims=" %G IN (assoc_x64.txt) DO ASSOC %G"
+	    Install-ChocolateyPath "C:\Program Files\MPC-BE x64\"
         }
-    else 
+        else 
         {
         cmd /c "FOR /F "tokens=* delims=" %G IN (ftypes_x86.txt) DO FTYPE %G"
         cmd /c "FOR /F "tokens=* delims=" %G IN (assoc_x86.txt) DO ASSOC %G"
+	    Install-ChocolateyPath "C:\Program Files (x86)\MPC-BE\"
         }
     }
     else

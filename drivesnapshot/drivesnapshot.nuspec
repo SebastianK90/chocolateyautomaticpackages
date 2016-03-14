@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>drivesnapshot</id>
+        <version>{{PackageVersion}}</version>
+        <title>Drive Snapshot</title>
+        <authors>Tom Ehlert Software</authors>
+        <owners>sippi</owners>
+		<docsUrl>http://www.drivesnapshot.de/en/backup.htm</docsUrl>
+        <licenseUrl>http://www.drivesnapshot.de/en/down.htm</licenseUrl>
+		<packageSourceUrl></packageSourceUrl>
+		<mailingListUrl>http://www.drivesnapshot.de/en/about.htm</mailingListUrl>
+        <projectUrl>http://www.drivesnapshot.de/en/index.htm</projectUrl>
+        <iconUrl>http://fs5.directupload.net/images/160314/sqoepifj.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Create Disk Image Backups, While Running Windows
+The Backup process will back up all your data into a single file, containing all data, including system data and registry, for total security, should your computer ever crash.
+There is no restart (to DOS) necessary.
+Ever.</description>
+        <summary>Continue your work, while the Backup is in progress
+The new Snapshot technology ensures that all data are consistent, and reflect the PC's data at the start of backup.
+There are no difficulties with opened files.
+Ever.
+This enables a very fast and easy way to back up servers and other computers, that must run 24 hours a day.</summary>
+        <releaseNotes>http://www.drivesnapshot.de/en/news.htm</releaseNotes>
+        <copyright />
+        <tags>backup restore windows image demo trial admin</tags>
+    </metadata>
+</package>
