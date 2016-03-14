@@ -8,7 +8,7 @@
         <owners>sippi</owners>
 		<docsUrl>http://www.drivesnapshot.de/en/backup.htm</docsUrl>
         <licenseUrl>http://www.drivesnapshot.de/en/down.htm</licenseUrl>
-		<packageSourceUrl></packageSourceUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/drivesnapshot</packageSourceUrl>
 		<mailingListUrl>http://www.drivesnapshot.de/en/about.htm</mailingListUrl>
         <projectUrl>http://www.drivesnapshot.de/en/index.htm</projectUrl>
         <iconUrl>http://fs5.directupload.net/images/160314/sqoepifj.png</iconUrl>
