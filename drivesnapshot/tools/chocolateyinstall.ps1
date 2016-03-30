@@ -1,9 +1,16 @@
 ﻿$packageName= 'drivesnapshot'
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$url        =  '{{DownloadUrl}}'
-$url64      =  '{{DownloadUrlx64}}'
+$url        =  'http://www.drivesnapshot.de/download/snapshot.exe'
+$url64      =  'http://www.drivesnapshot.de/download/snapshot64.exe'
 
-Install-ChocolateyZipPackage "$packageName" "$url" "$toolsDir" "$url64"
- 
-$FileFullPath = get-childitem $toolsDir -recurse -include *.exe | select -First 1
+if (Get-ProcessorBits -eq '64')
+{
+$fullpath = Join-Path $toolsDir 'snapshot64.exe'
+}
+else
+{
+$fullpath = Join-Path $toolsDir 'snapshot.exe'
+}
+
+Get-ChocolateyWebFile $packageName $fullpath $url $url64
 Install-ChocolateyPath $toolsDir

@@ -14,15 +14,19 @@
         <iconUrl>http://fs5.directupload.net/images/160202/rqzjr5xr.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Features:
-- Supports media keys (play, pause, next, previous)
-- last.fm scrobbling and now playing support!
+- Media Keys support (Play, Pause, Stop, Previous, Next)
+- Last.FM Scrobbling and Now Playing support!
 - Desktop notifications on track change
-- A simplistic mini player
-- Dark theme
-- Task bar media controls (media controls embedded into the taskbar)
-- Smooth scrolling and overlay scrollbars for a nicer User Experience
-- Interface for external applications
-- More coming soon....</description>
+- Simplistic mini player
+- Customizable dark theme
+- Taskbar media controls (media controls embedded into the taskbar) Windows only
+- HTML5 audio support - No more Adobe Flash Player
+- Built-in audio equalizer - Make it sound how you like it
+- Background music playing, minimize to the task bar
+- Customizable hotkeys. No worries if you don't have media keys - Choose your own shortcuts!
+- Choose your audio output device from within the player
+- Interface for external applications such as Rainmeter
+- And a whole lot more coming soon!!</description>
         <summary>Google Play Music as a stand alone Desktop app. Never again will you have to hunt through your tabs to pause your music, or stop listening to your favourite song because Chrome is guzzling up all RAM.</summary>
         <releaseNotes>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases</releaseNotes>
         <copyright />
