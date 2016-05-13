@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>WhatsApp</id>
+        <version>{{PackageVersion}}</version>
+        <title>WhatsApp</title>
+        <authors>WhatsApp Inc.</authors>
+        <owners>sippi</owners>
+		<docsUrl>https://www.whatsapp.com/faq/de/web</docsUrl>
+		<mailingListUrl>https://www.whatsapp.com/contact/</mailingListUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/WhatsApp</packageSourceUrl>
+        <licenseUrl>https://www.whatsapp.com/legal/</licenseUrl>
+        <projectUrl>http://www.whatsapp.com</projectUrl>
+        <iconUrl>http://fs5.directupload.net/images/160513/tbirjhcd.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>WhatsApp Messenger is available for iPhone, BlackBerry, Android, Windows Phone and Nokia and yes, those phones can all message each other! Because WhatsApp Messenger uses the same internet data plan that you use for email and web browsing, there is no cost to message and stay in touch with your friends. In addition to basic messaging WhatsApp users can create groups, send each other unlimited images, video and audio media messages.</description>
+        <summary>WhatsApp Messenger is a cross-platform mobile messaging app which allows you to exchange messages without having to pay for SMS</summary>
+        <copyright>© 2016 WhatsApp Inc.</copyright>
+        <tags>messenger windows client</tags>
+    </metadata>
+</package>
