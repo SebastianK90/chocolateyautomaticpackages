@@ -1,0 +1,1 @@
+﻿Start-Process "$env:LOCALAPPDATA\WhatsApp\Update.exe" -ArgumentList '--uninstall'
