@@ -1,5 +1,4 @@
 ﻿  $packageName= 'WhatsApp'
-  $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
   $fileType = 'EXE'
   $silentArgs = '--silent'
   $url        =  'https://web.whatsapp.com/desktop/windows/release/ia32/WhatsAppSetup.exe'
