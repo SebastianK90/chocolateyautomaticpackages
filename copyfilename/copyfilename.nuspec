@@ -8,7 +8,7 @@
         <owners>sippi</owners>
         <licenseUrl>http://en.wikipedia.org/wiki/End-user_license_agreement</licenseUrl>
         <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/copyfilename</packageSourceUrl>
-		<mailingListUrl>https://bullzip.jitbit.com/helpdesk/Tickets/New</mailingListUrl>
+		<bugTrackerUrl>https://bullzip.jitbit.com/helpdesk/Tickets/New</bugTrackerUrl>
 		<projectUrl>http://www.bullzip.com/products/cfn/info.php</projectUrl>
         <iconUrl>http://fs1.directupload.net/images/150515/noduuf43.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
