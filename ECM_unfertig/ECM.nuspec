@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>ECM</id>
+        <version>{{PackageVersion}}</version>
+        <title>Easy Context Menu</title>
+        <authors>SORDUM.ORG</authors>
+        <owners>sippi</owners>
+		<docsUrl>http://www.sordum.org/7615/easy-context-menu-v1-6/</docsUrl>
+		<mailingListUrl>http://www.sordum.org/contact-us/</mailingListUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/ecm</packageSourceUrl>
+        <licenseUrl>http://www.sordum.org/eula/</licenseUrl>
+        <projectUrl>http://www.sordum.org/7615/easy-context-menu-v1-6/</projectUrl>
+        <iconUrl>http://fs5.directupload.net/images/160211/am6kitqn.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Easy Context Menu (ECM) lets you add a variety of useful commands and tweaks to the Desktop, My Computer, Drives, File and Folder right-click context menus. This enables you to access the most used Windows components quickly and easily. Simply check the box next to the items you wish to add. Once added, just right click and the select the component shortcut to launch it. Easy Context Menu is both portable and freeware.</description>
+        <summary>Easy Context Menu (ECM) lets you add a variety of useful commands and tweaks to the Desktop, My Computer, Drives, File and Folder right-click context menus.</summary>
+        <releaseNotes>http://www.mirinsoft.com/downloads/ca_update/changelog.txt</releaseNotes>
+        <copyright />
+        <tags>windows context menu settings config admin</tags>
+    </metadata>
+</package>
