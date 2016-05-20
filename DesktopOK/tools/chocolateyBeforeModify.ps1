@@ -1,1 +1,1 @@
-Get-Process DesktopOK* | Stop-Process –Force -ErrorAction SilentlyContinue
+ï»¿Get-Process DesktopOK* | Stop-Process -Force -ErrorAction SilentlyContinue
