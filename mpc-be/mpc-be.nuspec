@@ -8,6 +8,8 @@
         <owners>sippi</owners>
         <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
         <projectUrl>https://sourceforge.net/projects/mpcbe</projectUrl>
+		<bugTrackerUrl>https://sourceforge.net/p/mpcbe/tickets/</bugTrackerUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/mpc-be</packageSourceUrl>
         <iconUrl>http://fs2.directupload.net/images/150517/du5i6wrb.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Media Player Classic - BE is based on the original "Media Player Classic" project (Gabest) and "Media Player Classic Home Cinema" project (Casimir666), contains additional features and bug fixes.</description>
