@@ -10,12 +10,18 @@ $FileFullPath = get-childitem $toolsDir -recurse -include *.exe | select -First 
 
 Install-ChocolateyInstallPackage  $packageName $installerType $silentArgs "$FileFullPath"
  
-
-if (Get-ProcessorBits -eq '64')
+$uninstall = Get-ChildItem -ErrorAction SilentlyContinue -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall |
+    Get-ItemProperty |
+        Where-Object {$_.DisplayName -match "mpc-be" } |
+            Select-Object -Property DisplayName, UninstallString
+ 
+$installpath = ($uninstall.UninstallString).Replace('unins000.exe','')
+$bits = Get-ProcessorBits
+if ($bits -eq 64)
 {
-Install-ChocolateyPath 'C:\Program Files\MPC-BE x64'
+Install-ChocolateyPath $installpath
 }
 else
 {
-Install-ChocolateyPath 'C:\Program Files (x86)\MPC-BE'
+Install-ChocolateyPath $installpath
 }

@@ -1,14 +1,7 @@
-﻿$uninstall = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall  |
-    Get-ItemProperty |
-        Where-Object {$_.DisplayName -match "mpc-be" } |
-            Select-Object -Property DisplayName, UninstallString
+﻿$PackageName = 'mpc-be'
+$installerType= 'EXE'
+$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /unregall'
 
-ForEach ($ver in $uninstall) {
-
-    If ($ver.UninstallString) {
-
-        $uninst = $ver.UninstallString
-        & cmd /c $uninst /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /unregall
-    }
-
-}
+Uninstall-ChocolateyPackage -PackageName $PackageName `
+                                -FileType $installerType `
+                                -SilentArgs "$silentArgs" `
