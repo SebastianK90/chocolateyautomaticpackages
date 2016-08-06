@@ -5,6 +5,5 @@
   Install-ChocolateyZipPackage 'gamesavemanager' $url $toolsDir
   
   $FileFullPath = get-childitem $toolsDir -Recurse -Filter "gs_mngr*" -include *.exe | select -First 1
-    
-
-  Install-ChocolateyShortcut -shortcutFilePath "$env:USERPROFILE\Desktop\GameSave Manager 3.lnk" $FileFullPath
+        
+  Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\GameSave Manager 3.lnk" $FileFullPath
