@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>coretemp</id>
+        <version>{{PackageVersion}}</version>
+        <title>CoreTemp</title>
+        <authors>Arthur Liberman</authors>
+        <owners>sippi</owners>
+        <licenseUrl>http://www.alcpu.com/CoreTemp/terms.html</licenseUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/CoreTemp</packageSourceUrl>
+		<mailingListUrl>http://www.alcpu.com/CoreTemp/contact.html</mailingListUrl>
+        <projectUrl>http://www.alcpu.com/CoreTemp/</projectUrl>
+        <iconUrl>http://fs5.directupload.net/images/160806/hp4nhcjs.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Core Temp is a compact, no fuss, small footprint, yet powerful program to monitor processor temperature and other vital information.</description>
+        <summary>What makes Core Temp unique is the way it works. It is capable of displaying a temperature of each individual core of every processor in your system!
+You can see temperature fluctuations in real time with varying workloads. Core Temp is also motherboard agnostic.</summary>
+        <releaseNotes>http://www.alcpu.com/CoreTemp/history.html</releaseNotes>
+        <copyright />
+        <tags>tool temperature temp core cpu admin</tags>
+    </metadata>
+</package>
