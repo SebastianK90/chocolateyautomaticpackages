@@ -5,6 +5,7 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 update_all.ps1
+*.nupkg
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
