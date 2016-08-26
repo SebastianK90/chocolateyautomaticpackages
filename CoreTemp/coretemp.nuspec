@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>coretemp</id>
-        <version>{{PackageVersion}}</version>
+        <version>1.2.0.20160825</version>
         <title>CoreTemp</title>
         <authors>Arthur Liberman</authors>
         <owners>sippi</owners>

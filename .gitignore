@@ -4,7 +4,7 @@ ehthumbs.db
 
 # Folder config file
 Desktop.ini
-_output/
+update_all.ps1
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/

@@ -1,24 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-    <metadata>
-        <id>copyfilename</id>
-        <version>{{PackageVersion}}</version>
-        <title>Copy File Name</title>
-        <authors>Bullzip.com</authors>
-        <owners>sippi</owners>
-        <licenseUrl>http://en.wikipedia.org/wiki/End-user_license_agreement</licenseUrl>
-        <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/copyfilename</packageSourceUrl>
-		<bugTrackerUrl>https://bullzip.jitbit.com/helpdesk/Tickets/New</bugTrackerUrl>
-		<projectUrl>http://www.bullzip.com/products/cfn/info.php</projectUrl>
-        <iconUrl>http://fs1.directupload.net/images/150515/noduuf43.png</iconUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>This will copy the name of the selected file to the clipboard. Before the name is copied you will see a list of different representations of the file name.
+  <metadata>
+    <id>copyfilename</id>
+    <version>2.2.022.20160824</version>
+    <title>Copy File Name</title>
+    <authors>Bullzip.com</authors>
+    <owners>sippi</owners>
+    <licenseUrl>http://en.wikipedia.org/wiki/End-user_license_agreement</licenseUrl>
+    <projectUrl>http://www.bullzip.com/products/cfn/info.php</projectUrl>
+    <iconUrl>http://fs1.directupload.net/images/150515/noduuf43.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This will copy the name of the selected file to the clipboard. Before the name is copied you will see a list of different representations of the file name.
 
 When you right click the file and chooses Copy File Name the program will display a list of file names. All entries in the list are different representations of the selected file name. Depending on where you plan to use the file name you can select either type and place it on the clipboard.</description>
-        <summary>Copy File Name is a small program that will enable you to right click any file and select "Copy File Name" from the context menu.</summary>
-        <releaseNotes>http://www.bullzip.com/products/cfn/info.php</releaseNotes>
-        <copyright />
-        <language>en-US</language>
-        <tags>tool copy file name admin</tags>
-    </metadata>
+    <summary>Copy File Name is a small program that will enable you to right click any file and select "Copy File Name" from the context menu.</summary>
+    <releaseNotes>http://www.bullzip.com/products/cfn/info.php</releaseNotes>
+    <copyright />
+    <language>en-US</language>
+    <tags>tool copy file name admin</tags>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/copyfilename</packageSourceUrl>
+    <bugTrackerUrl>https://bullzip.jitbit.com/helpdesk/Tickets/New</bugTrackerUrl>
+  </metadata>
 </package>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>drivesnapshot</id>
-        <version>{{PackageVersion}}</version>
+        <version>1.44.0.20160826</version>
         <title>Drive Snapshot</title>
         <authors>Tom Ehlert Software</authors>
         <owners>sippi</owners>
@@ -13,7 +13,10 @@
         <projectUrl>http://www.drivesnapshot.de/en/index.htm</projectUrl>
         <iconUrl>http://fs5.directupload.net/images/160314/sqoepifj.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Create Disk Image Backups, While Running Windows
+        <description>This is a 30 days DEMO Version!
+		If you like this program, please buy at http://www.drivesnapshot.de/en/order.htm
+		
+		Create Disk Image Backups, While Running Windows
 The Backup process will back up all your data into a single file, containing all data, including system data and registry, for total security, should your computer ever crash.
 There is no restart (to DOS) necessary.
 Ever.</description>

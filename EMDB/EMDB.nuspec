@@ -1,22 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-    <metadata>
-        <id>EMDB</id>
-        <version>{{PackageVersion}}</version>
-        <title>EMDB - Eric's Movie Database</title>
-        <authors>Wicked &amp; Wild Inc.</authors>
-        <owners>sippi</owners>
-        <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
-		<mailingListUrl>http://www.emdb.eu/contact.html</mailingListUrl>
-		<docsUrl>http://www.emdb.eu/online-help.html</docsUrl>
-		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/EMDB</packageSourceUrl>
-        <projectUrl>http://www.emdb.eu/index.html</projectUrl>
-        <iconUrl>http://fs5.directupload.net/images/160202/ctl24q7u.png</iconUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>With an automatic import from the database of IMDB, export to csv, text or HTML, thumbnail cover preview, a loan tracker, advances search and filter functions and multi-language user interface. EMDB doesn't need a .NET framework or any other external libraries and is therefore fully portable. And best of all... it's free!</description>
-        <summary>EMDB is an application to keep track of your movie and TV Series collection. Both physical discs and media files are fully supported.</summary>
-        <releaseNotes>http://www.emdb.eu/history.html</releaseNotes>
-        <copyright />
-        <tags>movie collection video manager admin</tags>
-    </metadata>
+  <metadata>
+    <id>emdb</id>
+    <version>2.56.0.20160825</version>
+    <title>EMDB - Eric's Movie Database</title>
+    <authors>Wicked &amp; Wild Inc.</authors>
+    <owners>sippi</owners>
+    <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
+    <projectUrl>http://www.emdb.eu/index.html</projectUrl>
+    <iconUrl>http://fs5.directupload.net/images/160202/ctl24q7u.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>With an automatic import from the database of IMDB, export to csv, text or HTML, thumbnail cover preview, a loan tracker, advances search and filter functions and multi-language user interface. EMDB doesn't need a .NET framework or any other external libraries and is therefore fully portable. And best of all... it's free!</description>
+    <summary>EMDB is an application to keep track of your movie and TV Series collection. Both physical discs and media files are fully supported.</summary>
+    <releaseNotes>http://www.emdb.eu/history.html</releaseNotes>
+    <copyright />
+    <tags>movie collection video manager admin</tags>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/EMDB</packageSourceUrl>
+    <docsUrl>http://www.emdb.eu/online-help.html</docsUrl>
+    <mailingListUrl>http://www.emdb.eu/contact.html</mailingListUrl>
+  </metadata>
 </package>
