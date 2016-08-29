@@ -17,7 +17,7 @@ When you right click the file and chooses Copy File Name the program will displa
     <releaseNotes>http://www.bullzip.com/products/cfn/info.php</releaseNotes>
     <copyright />
     <language>en-US</language>
-    <tags>tool copy file name admin</tags>
+    <tags>tool copy file name full short unc url path admin</tags>
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/copyfilename</packageSourceUrl>
     <bugTrackerUrl>https://bullzip.jitbit.com/helpdesk/Tickets/New</bugTrackerUrl>
   </metadata>

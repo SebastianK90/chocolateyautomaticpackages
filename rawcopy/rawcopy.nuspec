@@ -7,6 +7,7 @@
         <authors>Olof Lagerkvist</authors>
         <licenseUrl>http://ltr-data.se/files/license.txt</licenseUrl>
         <projectUrl>http://ltr-data.se/opencode.html/</projectUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/rawcopy</packageSourceUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Reads and writes files and devices. (Cannot read/write disk devices in Windows 95/98/ME or Win32s.) For example useful to write a floppy image file on a hard disk to a physical floppy in Windows NT.</description>
         <summary>Examples for Windows NT:

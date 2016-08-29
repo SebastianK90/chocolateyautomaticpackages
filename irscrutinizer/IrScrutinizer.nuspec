@@ -8,6 +8,7 @@
         <owners>Bengt Mårtensson</owners>
         <licenseUrl>http://www.harctoolbox.org/IrScrutinizer.html#Copyright+and+License</licenseUrl>
         <projectUrl>http://www.harctoolbox.org/IrScrutinizer.html</projectUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/irscrutinizer</packageSourceUrl>
         <iconUrl>http://fs5.directupload.net/images/160118/9f7czbkk.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>For capturing and sending IR signals several different hardware sensors and senders are supported. IR Signals can be imported not only by capturing from one of the supported hardware sensors (among others: IrWidget, Global Caché, Command Fusion, and Arduino), but also from a number of different file formats (among others: LIRC, Wave, CML, Pronto Classic and professional, RMDU (partially), and different text based formats; not only from files, but also from the clipboard, from URLs, and from file hierarchies), as well as the Internet IR Databases by Global Caché and by IRDB. Imported signals can be decoded, analyzed, edited, and plotted. A collection of IR signal can thus be assembled and edited, and finally exported in one of the many supported formats. In addition, the program contains the powerful IrpMaster IR-renderer, which means that almost all IR protocols known to the Internet community can be generated.</description>
