@@ -2,7 +2,7 @@
 
 cd .\gamesavemanager
 
-$releases = 'http://www.majorgeeks.com/files/details/gamesave_manager.html'
+$releases = 'http://www.gamesave-manager.com/'
 
 function global:au_SearchReplace {
     @{
@@ -17,7 +17,8 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
     
     $url32   = 'http://www.gamesave-manager.com/?s=download&a=dl'
-    $version = ($download_page.links.innerHtml | Where-Object {$_ -like 'GameSave Manager *'}).substring(17)[0]
+    [string]$version = (($download_page.ParsedHtml.getElementsByTagName("b") | Where {$_.sourceindex -eq '51'}).firstchild.textcontent).substring(1).replace('(Build ','').trimend(')').replace(' ','.')
+    #$version = ($download_page.links.innerHtml | Where-Object {$_ -like 'GameSave Manager *'}).substring(17)[0]
     return @{ URL32 = $url32; Version = $version }
 }
 

@@ -2,7 +2,7 @@
 
 cd .\coretemp
 
-$releases = 'http://www.majorgeeks.com/files/details/core_temp.html'
+$releases = 'http://www.alcpu.com/CoreTemp/'
 
 function global:au_SearchReplace {
     @{
@@ -22,7 +22,8 @@ function global:au_GetLatest {
     #$url     = $download_page.links | ? href -match $re | select -First 2 -expand href
     $url64   = 'http://www.alcpu.com/CoreTemp/php/download.php?id=3'
     $url32   = 'http://www.alcpu.com/CoreTemp/php/download.php?id=2'
-    $version =  ($download_page.links.innerHtml | Where-Object {$_ -like 'Core Temp *'}).substring(10)[0]
+    $version = [regex]::match((($download_page.ParsedHtml.getElementsByTagName("b") | Where {$_.sourceindex -eq '204'}).firstchild.textcontent),'[0-9]+(\.[0-9]+)*').value
+    #$version =  ($download_page.links.innerHtml | Where-Object {$_ -like 'Core Temp *'}).substring(10)[0]
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
 

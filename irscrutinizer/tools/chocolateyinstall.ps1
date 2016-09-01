@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'irscrutinizer'
-$url32       = 'http://www.harctoolbox.org/downloads/IrScrutinizer.exe'
-$checksum32  = 'bacc7005b725a34483cbdbdf8ae16c095e2657a920d74e736b688fcfe5f97943'
+$url32       = 'https://github.com/bengtmartensson/harctoolboxbundle/releases/download/Version-1.3/IrScrutinizer-1.3.exe'
+$checksum32  = '0e14c48d1e2fb87d539dd7fd566f28baff5b3dcdd048249fdc48712c846a686f'
 
 $packageArgs = @{
   packageName            = $packageName
