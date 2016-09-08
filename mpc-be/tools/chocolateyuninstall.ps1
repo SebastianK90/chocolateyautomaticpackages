@@ -8,7 +8,7 @@ ForEach ($ver in $uninstall) {
     If ($ver.UninstallString) {
 
         $uninst = $ver.UninstallString
-        & cmd /c $uninst /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /unregall
+        Start-Process $uninst -ArgumentList '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /unregall'
     }
 
 }
