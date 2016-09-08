@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>imdisk-toolkit</id>
-    <version>16.7.29.20160824</version>
+    <version>16.09.08</version>
     <title>ImDisk-Toolkit</title>
     <authors>LTR Data,Olof Lagerkvist,v77</authors>
     <owners>sippi</owners>
