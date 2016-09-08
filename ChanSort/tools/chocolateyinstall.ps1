@@ -2,7 +2,7 @@
 
 $packageName = 'ChanSort'
 $url32       = 'https://github.com/PredatH0r/ChanSort/releases/download/v2016-08-10/ChanSort_2016-08-10.zip'
-$checksum32  = '58b442778a8c981117e6d8fa579d90f29ec4e5c2302122ac126e44202248ceaf'
+$checksum32  = ''
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
