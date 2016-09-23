@@ -1,8 +1,8 @@
 ﻿import-module au
 
-cd .\desktopok
+cd .\franz-app
 
-$releases = 'http://www.softwareok.de/?seite=Freeware/DesktopOK'
+$releases = 'https://github.com/meetfranz/franz-app/releases'
 
 function global:au_SearchReplace {
     @{
@@ -18,12 +18,13 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
-    $url64   = 'http://www.softwareok.com/Download/DesktopOK_x64.zip'
-    $url32   = 'http://www.softwareok.com/Download/DesktopOK.zip'
-    [string]$version =  [regex]::match(($download_page.ParsedHtml.getElementsByTagName("h3") | Where {$_.sourceindex -eq '121'}).innertext,'[0-9]+(\.[0-9]+)*').value
-    
+    $re      = 'Franz-win32*.*.zip'
+    $url     = $download_page.links | ? href -match $re | select -First 2 -expand href
+    $url64   = 'https://github.com' + $url[1]
+    $url32   = 'https://github.com' + $url[0]
+    $version = ($url[0] -split '\/' | select -Index 5)
+
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
 
-
-update -NoCheckUrl
+update

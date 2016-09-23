@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'whatsapp'
-$url32       = 'https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe'
-$url64       = 'https://web.whatsapp.com/desktop/windows/release/ia32/WhatsAppSetup.exe'
-$checksum32  = '11ad4cb8f09d07c7eb62405d319af233a7b8415dac4eec86867de271b2ad79f9'
-$checksum64  = '3760c00474b974e4b14784d1ab0eeefc0b321f2e1297fe3851880a0ddbb89c9e'
+$url32       = 'https://web.whatsapp.com/desktop/windows/release/ia32/WhatsAppSetup.exe'
+$url64       = 'https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe'
+$checksum32  = '7349a5f2d155cfbbf8e585faaa8d9e6740bd26a1c5601351d9b6cc5b862ef828'
+$checksum64  = 'd0c341dda9ab7819ea2fe613cbbd8ee7ded4208db5fd0b13ce66c289607dc12b'
 
 $packageArgs = @{
   packageName            = $packageName

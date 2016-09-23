@@ -1,0 +1,1 @@
+﻿Start-Process "$env:LOCALAPPDATA\Franz\Update.exe" -ArgumentList '--uninstall'

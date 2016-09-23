@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>franz-app</id>
+    <version>4.0.4</version>
+    <title>Franz – a free messaging app for Slack, Facebook Messenger, Whatsapp, Telegram and more</title>
+    <authors>Stefan Malzner</authors>
+    <owners>sippi</owners>
+    <licenseUrl>http://meetfranz.com/acknowledgements.html</licenseUrl>
+    <projectUrl>http://meetfranz.com/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/franz.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<description>###One service, unlimited accounts:
+	Franz allows you to add each service many times. This makes Franz the perfect tool to manage multiple business and private accounts all at the same time. You could even use five different Facebook Messenger accounts at once, if some inexplicable reason urges you to do so.</description>
+    <summary>Franz is a free messaging app / former Emperor of Austria and combines chat and messaging services into one application. Franz currently supports Slack, WhatsApp, WeChat, HipChat, Facebook Messenger, Telegram, Google Hangouts, GroupMe, Skype and many more. You can download Franz for Mac, Windows and Linux.</summary>
+	<tags>multi messenger chat windows client admin</tags>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/franz-app</packageSourceUrl>
+	<releaseNotes>https://github.com/meetfranz/franz-app/releases</releaseNotes>
+	<bugTrackerUrl>https://franz.zendesk.com/hc/en-us/requests/new</bugTrackerUrl>
+  </metadata>
+</package>
