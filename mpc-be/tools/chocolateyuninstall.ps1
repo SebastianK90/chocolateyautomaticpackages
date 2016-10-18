@@ -8,7 +8,7 @@ ForEach ($ver in $uninstall) {
     If ($ver.UninstallString) {
 
         $uninst = $ver.UninstallString
-        Start-Process $uninst -ArgumentList '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /unregall'
+		Uninstall-ChocolateyPackage -PackageName 'mpc-be' -FileType 'EXE' -SilentArgs '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /unregall' -File $uninst
     }
 
 }

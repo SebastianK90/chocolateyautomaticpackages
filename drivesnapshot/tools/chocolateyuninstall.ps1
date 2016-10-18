@@ -8,7 +8,7 @@ ForEach ($ver in $uninstall) {
     If ($ver.UninstallString) {
  
         $uninst = $ver.UninstallString
-        Start-Process $uninst -ArgumentList '/S'
+        Uninstall-ChocolateyPackage -PackageName 'drivesnapshot' -FileType 'EXE' -SilentArgs '/S' -File $uninst
     }
  
 }
