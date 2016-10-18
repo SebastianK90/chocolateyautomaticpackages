@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>oldcalc</id>
-    <version>1.1.0.20161018</version>
+    <version>1.1</version>
     <title>Old Calculator for Windows 10</title>
     <authors>winaero.com</authors>
     <owners>sippi</owners>
