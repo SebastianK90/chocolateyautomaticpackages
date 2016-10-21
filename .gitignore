@@ -10,7 +10,7 @@ update_vars.ps1
 Update-AUPackages.md
 update_info.xml
 api_key
-update.ps1
+
 
 
 # Recycle Bin used on file shares
