@@ -19,7 +19,7 @@ function global:au_GetLatest {
     $re      = '*ChanSort*.zip'
     $url     = $download_page.links | ? href -like $re | select -First 1 -expand href
     $url32   = 'https://github.com' + $url
-    $version = (($url -split '\/' | select -Index 5).Substring(1)).replace('-',".")
+    [string]$version = (($url -split '\/' | select -Index 5).Substring(1)).replace('-',".")
     return @{ URL32 = $url32; Version = $version }
 }
 
