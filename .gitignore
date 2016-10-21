@@ -6,6 +6,12 @@ ehthumbs.db
 Desktop.ini
 update_all.ps1
 *.nupkg
+update_vars.ps1
+Update-AUPackages.md
+update_info.xml
+api_key
+update.ps1
+
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/

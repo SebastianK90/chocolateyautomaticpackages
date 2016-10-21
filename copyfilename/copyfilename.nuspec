@@ -21,4 +21,7 @@ When you right click the file and chooses Copy File Name the program will displa
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/copyfilename</packageSourceUrl>
     <bugTrackerUrl>https://bullzip.jitbit.com/helpdesk/Tickets/New</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

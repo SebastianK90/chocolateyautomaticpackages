@@ -23,4 +23,7 @@ DesktopOK is a small but effective solution for user that have to change the scr
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/DesktopOK</packageSourceUrl>
     <mailingListUrl>http://www.softwareok.com/?seite=Kontakt</mailingListUrl>
   </metadata>
+   <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

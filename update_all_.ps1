@@ -1,1 +1,0 @@
-﻿Update-AUPackages <# -Options $options #> | Export-CliXML update_info.xml

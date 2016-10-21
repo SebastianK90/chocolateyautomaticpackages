@@ -18,4 +18,7 @@
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/mpc-be</packageSourceUrl>
     <bugTrackerUrl>https://sourceforge.net/p/mpcbe/tickets/</bugTrackerUrl>
   </metadata>
+   <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

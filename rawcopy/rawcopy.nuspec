@@ -19,4 +19,7 @@ rawcopy -m diskimage.img \\.\A:
         <language>en-US</language>
         <tags>tool copy file raw</tags>
     </metadata>
+	 <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -23,4 +23,7 @@ The Idea behind CloneApp is a bit different from the "classic" Backup tool. The 
         <copyright />
         <tags>backup software windows registry settings admin</tags>
     </metadata>
+	<files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

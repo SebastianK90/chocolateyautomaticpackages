@@ -17,4 +17,7 @@
         <copyright>© 2006-2016 SORDUM.ORG. ALL RIGHTS RESERVED.</copyright>
         <tags>easy context menu config utility admin</tags>
     </metadata>
+	 <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

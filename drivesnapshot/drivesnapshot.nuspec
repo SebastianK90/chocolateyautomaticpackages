@@ -29,4 +29,7 @@ This enables a very fast and easy way to back up servers and other computers, th
         <copyright />
         <tags>backup restore windows image demo trial admin</tags>
     </metadata>
+	 <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

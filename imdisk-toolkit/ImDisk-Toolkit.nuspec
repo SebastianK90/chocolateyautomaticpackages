@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>imdisk-toolkit</id>
-    <version>16.10.17</version>
+    <version>16.10.21</version>
     <title>ImDisk-Toolkit</title>
     <authors>LTR Data,Olof Lagerkvist,v77</authors>
     <owners>sippi</owners>
@@ -23,4 +23,7 @@ Some image file formats also require .NET Framework 4 (included in Windows 8 and
     <mailingListUrl>https://sourceforge.net/p/imdisk-toolkit/discussion/</mailingListUrl>
     <bugTrackerUrl>https://sourceforge.net/p/imdisk-toolkit/tickets/</bugTrackerUrl>
   </metadata>
+   <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -33,4 +33,7 @@
     <docsUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/issues</bugTrackerUrl>
   </metadata>
+   <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

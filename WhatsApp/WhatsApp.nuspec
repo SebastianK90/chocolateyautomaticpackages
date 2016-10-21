@@ -18,4 +18,7 @@
     <docsUrl>https://www.whatsapp.com/faq/en/web</docsUrl>
     <mailingListUrl>https://www.whatsapp.com/contact/</mailingListUrl>
   </metadata>
+   <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

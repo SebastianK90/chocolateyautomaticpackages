@@ -28,4 +28,8 @@ Make a donation if you like the program.</description>
         <copyright />
         <tags>reorder channel list tv </tags>
     </metadata>
+	<files>
+    <file src="tools\**" target="tools" />
+  </files>
+
 </package>

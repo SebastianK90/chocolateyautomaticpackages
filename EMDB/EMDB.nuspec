@@ -19,4 +19,7 @@
     <docsUrl>http://www.emdb.eu/online-help.html</docsUrl>
     <mailingListUrl>http://www.emdb.eu/contact.html</mailingListUrl>
   </metadata>
+   <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
