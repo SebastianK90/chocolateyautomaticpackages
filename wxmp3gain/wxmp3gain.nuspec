@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>wxmp3gain</id>
+        <version>3.7</version>
+        <title>wxMP3Gain</title>
+        <authors>cfgnunes</authors>
+        <owners>sippi</owners>
+        <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+        <projectUrl>https://sourceforge.net/projects/wxmp3gain/</projectUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/wxmp3gain</packageSourceUrl>
+        <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/wxmp3gain.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>wxMP3gain is a free front-end for the MP3gain.</description>
+		<summary>wxMP3gain is a free front-end for the MP3gain.</summary>
+		<releaseNotes>https://sourceforge.net/p/wxmp3gain/activity?source=project_activity</releaseNotes>
+		<bugTrackerUrl>https://github.com/cfgnunes/wxmp3gain/issues</bugTrackerUrl>
+		<projectSourceUrl>https://github.com/cfgnunes/wxmp3gain/tree/master/wxmp3gain</projectSourceUrl>
+        <tags>audio mp3 normalize volume admin</tags>
+        <dependencies>
+        </dependencies>
+    </metadata>
+	 <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
