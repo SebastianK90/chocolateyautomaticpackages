@@ -4,7 +4,6 @@ ehthumbs.db
 
 # Folder config file
 Desktop.ini
-update_all.ps1
 *.nupkg
 update_vars.ps1
 Update-AUPackages.md
