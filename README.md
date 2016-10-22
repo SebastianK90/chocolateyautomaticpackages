@@ -4,7 +4,7 @@
 [![](https://ci.appveyor.com/api/projects/status/github/sippi90/chocolateyautomaticpackages?svg=true)](https://ci.appveyor.com/project/sippi90/chocolateyautomaticpackages)
 [Update status](https://gist.github.com/sippi90/c5b26971e2dab9e3d56c4c274d101eda)
 [![](http://transparent-favicon.info/favicon.ico)](#)
-[(https://chocolatey.org/profiles/sippi)
+(https://chocolatey.org/profiles/sippi)
 
 <!-- EDIT ME-->
 <!-- REMOVE THE squiggles "~" surrounding this (this should not be a code block) -->
