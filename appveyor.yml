@@ -73,11 +73,9 @@ build_script:
          ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and
          ($Env:APPVEYOR_FORCED_BUILD -ne 'true')
     ) { $forced = $Matches[1] }
-	Set-ItemProperty 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3'-Name 1A10 -Value 0 -Force
 
     ./update_all.ps1 -ForcedPackages $forced
 
-	Set-ItemProperty 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3'-Name 1A10 -Value 1 -Force
 	
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
