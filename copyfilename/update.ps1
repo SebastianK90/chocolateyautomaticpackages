@@ -14,12 +14,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $re      = 'copyfilename.*.exe'
     $url     = $download_page.links | ? href -match $re | select -First 1 -expand href
     $url32   = 'http://www.bullzip.com/' + $url
-    [string]$version = (($url.Substring(26)).replace('.exe','') -replace '_','.')
+    $version = (($url.Substring(26)).replace('.exe','') -replace '_','.')
 
     return @{ URL32 = $url32; Version = $version }
 }
