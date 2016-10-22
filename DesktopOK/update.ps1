@@ -16,11 +16,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $url64   = 'http://www.softwareok.com/Download/DesktopOK_x64.zip'
     $url32   = 'http://www.softwareok.com/Download/DesktopOK.zip'
-    $version =  [regex]::match(($download_page.ParsedHtml.getElementsByTagName("h3") | Where {$_.sourceindex -eq '121'}).innertext,'[0-9]+(\.[0-9]+)*').value
+    $version =  [regex]::match($download_page.Content, '[0-9]+(\.[0-9]+)*').value
     
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }

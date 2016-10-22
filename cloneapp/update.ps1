@@ -2,7 +2,7 @@
 
 #cd .\cloneapp
 
-$releases = 'http://mirinsoft.com/index.php/component/jdownloads/viewcategory/39-cloneapp-portable?Itemid=235'
+$releases = 'http://www.majorgeeks.com/files/details/cloneapp.html'
 
 function global:au_SearchReplace {
     @{
@@ -14,10 +14,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $url32 = 'http://mirinsoft.com/index.php/component/jdownloads/finish/39-cloneapp-portable/180-cloneapp?Itemid=235'
-    $version = [regex]::match((($download_page.ParsedHtml.getElementsByTagName("td") | Where {$_.sourceindex -eq '424'})).innertext,'[0-9]+(\.[0-9]+)*').value
-        
+    $version =     [regex]::match(($download_page.Links | Where-Object {$_ -like '*<a href="files/details/cloneapp.html">CloneApp *'}).outerHTML,'[0-9]+(\.[0-9]+)*').value
+
     return @{ URL32 = $url32; Version = $version }
 }
 
