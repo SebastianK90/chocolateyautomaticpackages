@@ -2,7 +2,7 @@
 <!-- EDIT ME-->
 
 [![](https://ci.appveyor.com/api/projects/status/github/sippi90/chocolateyautomaticpackages?svg=true)](https://ci.appveyor.com/project/sippi90/chocolateyautomaticpackages)
-[Update status](https://gist.github.com/sippi90/c5b26971e2dab9e3d56c4c274d101eda)
+[Update status](https://gist.github.com/sippi90/a80d008be848e4754c459284f24be9fa)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 (https://chocolatey.org/profiles/sippi)
 
@@ -43,3 +43,5 @@ To use this system with your own packages do the following steps:
 Add your own packages now, with this in mind:
 * You can keep both manual and automatic packages together. To get only AU packages any time use `Get-AUPackages` function (alias `lsau` or `gau`)
 * Keep all package additional files in the package directory (icons, screenshots etc.). This keeps everything related to one package in its own directory so it is easy to move it around or remove it.
+
+Big Thanks to Miodrag!
