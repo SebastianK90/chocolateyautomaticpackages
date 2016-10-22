@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>GPMDP</id>
+    <version>4.0.1</version>
+    <title>Google Play Music Desktop Player UNOFFICIAL</title>
+    <authors>Samuel Attard</authors>
+    <owners>sippi</owners>
+    <licenseUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/blob/master/README.md#license</licenseUrl>
+    <projectUrl>http://www.googleplaymusicdesktopplayer.com/</projectUrl>
+    <iconUrl>http://fs5.directupload.net/images/160501/xfagph72.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Features:
+- Media Keys support (Play, Pause, Stop, Previous, Next)
+- Last.FM Scrobbling and Now Playing support!
+- Desktop notifications on track change
+- Simplistic mini player
+- Customizable dark theme
+- Taskbar media controls (media controls embedded into the taskbar) Windows only
+- HTML5 audio support - No more Adobe Flash Player
+- Built-in audio equalizer - Make it sound how you like it
+- Background music playing, minimize to the task bar
+- Customizable hotkeys. No worries if you don't have media keys - Choose your own shortcuts!
+- Choose your audio output device from within the player
+- Interface for external applications such as Rainmeter
+- And a whole lot more coming soon!!</description>
+    <summary>Google Play Music as a stand alone Desktop app. Never again will you have to hunt through your tabs to pause your music, or stop listening to your favourite song because Chrome is guzzling up all RAM.</summary>
+    <releaseNotes>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases</releaseNotes>
+    <copyright />
+    <language>en-US</language>
+    <tags>google play music unofficial player admin</tags>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/gpmdp</packageSourceUrl>
+    <docsUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/issues</bugTrackerUrl>
+  </metadata>
+   <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

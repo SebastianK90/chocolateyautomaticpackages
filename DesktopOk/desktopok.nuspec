@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>desktopok</id>
+    <version>4.42</version>
+    <title>DesktopOK</title>
+    <authors>Nenad Hrg</authors>
+    <owners>Nenad Hrg</owners>
+    <licenseUrl>http://www.softwareok.com/?seite=Freeware/desktopok/Eula</licenseUrl>
+    <projectUrl>http://www.softwareok.com/?seite=Freeware/DesktopOK</projectUrl>
+    <iconUrl>http://fs5.directupload.net/images/151222/y9gwxfqf.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Save and restore the positions of icons. 
+DesktopOK is a small but effective solution for user that have to change the screen resolution often.</description>
+    <summary>· Features:
+· Save your favorite icon locations for each screen resolution. 
+· Each user can then have his own arrangement.
+· Automatically hide and display desktop icons
+· Minimises to tray area</summary>
+    <releaseNotes>http://www.softwareok.com/?seite=Freeware/DesktopOK/History</releaseNotes>
+    <copyright />
+    <tags>tool desktop icon save position</tags>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/DesktopOK</packageSourceUrl>
+    <mailingListUrl>http://www.softwareok.com/?seite=Kontakt</mailingListUrl>
+  </metadata>
+   <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
