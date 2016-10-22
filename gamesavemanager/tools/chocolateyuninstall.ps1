@@ -1,2 +1,0 @@
-$icon_name = (Get-ChildItem "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs" -Filter "GameSave Manager 3.lnk" -ErrorAction SilentlyContinue).FullName
-Remove-Item $icon_name -ErrorAction SilentlyContinue
