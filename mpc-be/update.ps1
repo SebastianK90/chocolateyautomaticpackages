@@ -26,4 +26,4 @@ function global:au_GetLatest {
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
 
-update
+update -NoCheckUrl
