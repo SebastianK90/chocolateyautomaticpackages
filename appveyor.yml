@@ -12,7 +12,7 @@ branches:
 
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
-  au_version:
+  au_version: master
   au_push: true
 
   # Github token to commit pushed packages to repository
@@ -69,14 +69,19 @@ install:
 
 build_script:
 - ps: |
-    ./update_all.ps1
+    if ( ($Env:APPVEYOR_REPO_COMMIT_MESSAGE -match '\[AU (.+?)\]') -and
+         ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and
+         ($Env:APPVEYOR_FORCED_BUILD -ne 'true')
+    ) { $forced = $Matches[1] }
 
-#on_finish:
-#- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+    ./update_all.ps1 -ForcedPackages $forced
+
+    7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
 - path: update_info.xml
 - path: Update-AUPackages.md
+- path: au_temp.zip
 
 notifications:
 - provider: Email
@@ -85,3 +90,5 @@ notifications:
   on_build_failure: true
   on_build_status_changed: true
 
+#on_finish:
+#- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
