@@ -18,7 +18,7 @@ function global:au_GetLatest {
 
     $url32   = 'http://www.drivesnapshot.de/download/Setup.exe'
     $dirty = (($download_page.ParsedHtml.getElementsByTagName("h4") | Select-Object -ExpandProperty innerText -First 1))
-    [string]$version = [regex]::match($dirty,'[0-9]+(\.[0-9]+)*').value
+    $version = [regex]::match($dirty,'[0-9]+(\.[0-9]+)*').value
 
     return @{ URL32 = $url32; Version = $version }
 }
