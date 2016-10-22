@@ -20,10 +20,10 @@ function global:au_GetLatest {
 
     $url64   = 'http://www.softwareok.com/Download/DesktopOK_x64.zip'
     $url32   = 'http://www.softwareok.com/Download/DesktopOK.zip'
-    [string]$version =  [regex]::match(($download_page.ParsedHtml.getElementsByTagName("h3") | Where {$_.sourceindex -eq '121'}).innertext,'[0-9]+(\.[0-9]+)*').value
+    $version =  [regex]::match(($download_page.ParsedHtml.getElementsByTagName("h3") | Where {$_.sourceindex -eq '121'}).innertext,'[0-9]+(\.[0-9]+)*').value
     
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
 
 
-#update -NoCheckUrl
+update -NoCheckUrl
