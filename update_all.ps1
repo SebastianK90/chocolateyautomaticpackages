@@ -1,14 +1,15 @@
 # AU Packages Template: https://github.com/majkinetor/au-packages-template
 
-param($Name = $null)
+param([string] $Name, [string] $ForcedPackages, [string] $Root = $PSScriptRoot)
 
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
 $Options = [ordered]@{
-    Timeout    = 100                                        #Connection timeout in seconds
-    Threads    = 10                                         #Number of background jobs to use
-    Push       = $Env:au_Push -eq 'true'                    #Push to chocolatey
-    PluginPath = ''                                         #Path to user plugins
+    Timeout       = 100                                     #Connection timeout in seconds
+    UpdateTimeout = 1200                                    #Update timeout in seconds
+    Threads       = 10                                      #Number of background jobs to use
+    Push          = $Env:au_Push -eq 'true'                 #Push to chocolatey
+    PluginPath    = ''                                      #Path to user plugins
 
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
@@ -38,20 +39,27 @@ $Options = [ordered]@{
 
     Mail = if ($Env:mail_user) {
             @{
-                To          = $Env:mail_user
-                Server      = $Env:mail_server
-                UserName    = $Env:mail_user
-                Password    = $Env:mail_pass
-                Port        = $Env:mail_port
-                EnableSsl   = $Env:mail_enable_ssl -eq 'true'
-                Attachments = "$PSScriptRoot\update_info.xml"
+                To         = $Env:mail_user
+                Server     = $Env:mail_server
+                UserName   = $Env:mail_user
+                Password   = $Env:mail_pass
+                Port       = $Env:mail_port
+                EnableSsl  = $Env:mail_enablessl -eq 'true'
+                Attachment = "$PSScriptRoot\update_info.xml"
                 UserMessage = ''
                 SendAlways  = $false                        #Send notifications every time
              }
            } else {}
+
+    ForcedPackages = $ForcedPackages -split ' '
+    BeforeEach = {
+        param($PackageName, $Options )
+        if ($Options.ForcedPackages -contains $PackageName) { $global:au_Force = $true }
+    }
 }
 
-$global:au_Root = "$PSScriptRoot"                           #Path to the AU packages
+if ($ForcedPackages) { Write-Host "FORCED PACKAGES:  $ForcedPackages" }
+$global:au_Root = $Root                                    #Path to the AU packages
 $info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
