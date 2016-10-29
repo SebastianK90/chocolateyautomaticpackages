@@ -30,9 +30,11 @@ function global:au_GetLatest {
     $current = ($current_dirty[0].Split()[3]) -Replace("'",'')
 
     $remote = Get-RemoteChecksum $url32
-    if ($current -ne $remote) { $version = $version + (get-date).FormatString('yyyyMMdd') }
-        
-
+    if ($current -ne $remote)
+    { 
+        $version = $version + '.0.'+ (Get-Date -Format 'yyyyMMdd')
+    }
+       
     return @{ URL32 = $url32; Version = $version }
 }
 
