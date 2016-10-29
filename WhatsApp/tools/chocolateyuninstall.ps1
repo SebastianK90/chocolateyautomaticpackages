@@ -1,1 +1,1 @@
-﻿Start-Process "$env:LOCALAPPDATA\WhatsApp\Update.exe" -ArgumentList '--uninstall'
+﻿Uninstall-ChocolateyPackage -PackageName 'whatsapp' -FileType 'EXE' -SilentArgs '--uninstall' -File "$env:LOCALAPPDATA\WhatsApp\Update.exe"
