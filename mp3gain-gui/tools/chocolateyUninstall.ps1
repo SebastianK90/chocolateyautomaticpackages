@@ -16,7 +16,7 @@ while($process.MainWindowTitle -eq "MP3Gain Uninstall" -eq $false)
 }
 [System.Windows.Forms.SendKeys]::SendWait("{LEFT}")
 [System.Windows.Forms.SendKeys]::SendWait("{ENTER}")
-sleep 2
+sleep 3
 [System.Windows.Forms.SendKeys]::SendWait("{ENTER}")
-sleep 2
+sleep 3
 [System.Windows.Forms.SendKeys]::SendWait("{ENTER}")
