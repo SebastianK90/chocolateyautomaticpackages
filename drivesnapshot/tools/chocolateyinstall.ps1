@@ -1,6 +1,6 @@
 ﻿$packageName = 'drivesnapshot'
 $url32       = 'http://www.drivesnapshot.de/download/Setup.exe'
-$checksum32  = '3f6841992cb8868bdd5f95ab2ba54543b0c6789b983121c85d15e501786b1652'
+$checksum32  = 'f16b67cacc021f73dc745069221861842971ea913d9908dcedf0017ce727d4ea'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
