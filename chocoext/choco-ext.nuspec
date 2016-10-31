@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>chocoext</id>
+        <version>1.0.0.6</version>
+        <title>Chocolatey Extension</title>
+        <authors>sippi</authors>
+        <owners>sippi</owners>
+		<iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/chocoext.png</iconUrl>
+        <licenseUrl>http://en.wikipedia.org/wiki/End-user_license_agreement</licenseUrl>
+        <projectUrl>https://chrome.google.com/webstore/detail/chocoscriptgenerator/jecgfcdledpjnkijjlighceopgjcpjag</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+How to use this extension:
+- Click on the top right chocolatey symbol in Chrome, type a name in the textbox and click "Add" to add a new list.
+- Once created, the list will show up in the dropdown menu and also be synced with your Google account (if you are using one)
+- Again click the right choco symbol and click "Choclatey Packages"
+- Now start ticking some of your favourite apps
+- Once your done, click the choco symbol and select "Download"
+- This will download a ZIP-File containing two .cmd and .ps1 script-files
+- Extract the ZIP and run the Install.cmd to start the installation process.</description>
+        <summary>This is an unofficial Chocolatey Extension for Google Chrome</summary>
+        <copyright />
+        <tags>chrome extension helper utility admin</tags>
+		<dependencies>
+        <dependency id="googlechrome" />
+    </dependencies>
+    </metadata>
+	<files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
