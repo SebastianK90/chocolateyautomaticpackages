@@ -25,7 +25,7 @@ function global:au_GetLatest {
     $version = ((Get-ChildItem $output).VersionInfo).fileversion
     Remove-Item $output
         
-    return @{ URL32 = $url32; Version = $version }
+    return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
 
 update

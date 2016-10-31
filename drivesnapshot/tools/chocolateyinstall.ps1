@@ -3,8 +3,8 @@
 $packageName = 'drivesnapshot'
 $url32       = 'http://www.drivesnapshot.de/download/snapshot.exe'
 $url64       = 'http://www.drivesnapshot.de/download/snapshot64.exe'
-$checksum32  = '1f3ee1c15be3bfe2c8b2dbbc6110422fc15077895f4664c22a0e97474c8d3bdb'
-$checksum64  = '0c903246240da24588cf63646be0f73fe8651cd253f44204d97103c4397feccd'
+$checksum32  = '551DA25B68B6DA17D98C595694336D0E12935A905E163EB8AC14EDF10F9386B9'
+$checksum64  = '78874057DF7FE0825D3DBE15086051FCDFA18A571A27618FCF4937EEE9464451'
 $toolsPath   = (Split-Path $MyInvocation.MyCommand.Definition)
  
 $packageArgs = @{
@@ -17,6 +17,7 @@ $packageArgs = @{
   checksumType64 = 'sha256'
   FileFullPath  = "$toolsPath\snapshot.exe"
 }
+
 Get-ChocolateyWebFile @packageArgs -GetOriginalFileName
  
  
