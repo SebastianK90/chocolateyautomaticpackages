@@ -2,7 +2,7 @@
 
 # cd .\whatsapp
 
-$releases = 'http://www.softpedia.com/get/Internet/Chat/Instant-Messaging/WhatsApp.shtml'
+#$releases = 'http://www.softpedia.com/get/Internet/Chat/Instant-Messaging/WhatsApp.shtml'
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
@@ -15,13 +15,17 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    #$download_page = Invoke-WebRequest -Uri $releases
 
     $url64   = 'https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe'
     $url32   = 'https://web.whatsapp.com/desktop/windows/release/ia32/WhatsAppSetup.exe'
-    $version = [regex]::match(($download_page.Links.innerhtml | Where-Object {$_ -like '*<span>Whatsapp*'}),'[0-9]+(\.[0-9]+)*').value
+    $output = "$env:TEMP\WhatsAppSetup.exe"
+    Invoke-WebRequest -Uri $url32 -OutFile $output
+    $version = ((Get-ChildItem $output).VersionInfo).fileversion
+    Remove-Item $output
+    #$version = [regex]::match(($download_page.Links.innerhtml | Where-Object {$_ -like '*<span>Whatsapp*'}),'[0-9]+(\.[0-9]+)*').value
     #$version = '0.2.2245'
-
+    
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
 
