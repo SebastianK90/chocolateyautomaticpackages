@@ -3,11 +3,12 @@
     <metadata>
         <id>chocoext</id>
         <version>1.0.0.6</version>
-        <title>Chocolatey Extension</title>
+        <title>Chocolatey Extension (Unofficial)</title>
         <authors>sippi</authors>
         <owners>sippi</owners>
 		<iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/chocoext.png</iconUrl>
         <licenseUrl>http://en.wikipedia.org/wiki/End-user_license_agreement</licenseUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/chocoext</packageSourceUrl>
         <projectUrl>https://chrome.google.com/webstore/detail/chocoscriptgenerator/jecgfcdledpjnkijjlighceopgjcpjag</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>
