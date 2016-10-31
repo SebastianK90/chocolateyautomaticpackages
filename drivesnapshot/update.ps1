@@ -2,39 +2,29 @@ import-module au
 
 # cd .\drivesnapshot
 
-function Get-RemoteChecksum( $Url, $Algorithm='sha256' ) {
-    $fn = [System.IO.Path]::GetTempFileName()
-    Invoke-WebRequest $Url -OutFile $fn -UseBasicParsing
-    Get-FileHash $fn -Algorithm $Algorithm | % Hash
-}
-
-$releases = 'http://www.drivesnapshot.de/de/inews.htm'
+#$releases = 'http://www.drivesnapshot.de/de/inews.htm'
 
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
+            "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
             "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
      }
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    #$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $url32   = 'http://www.drivesnapshot.de/download/Setup.exe'
-    $dirty = (($download_page.ParsedHtml.getElementsByTagName("h4") | Select-Object -ExpandProperty innerText -First 1))
-    $version = [regex]::match($dirty,'[0-9]+(\.[0-9]+)*').value
-
-    $current_dirty = ((Get-Content tools\chocolateyInstall.ps1) -match 'checksum32')
-    $current = ($current_dirty[0].Split()[3]) -Replace("'",'')
-
-    $remote = Get-RemoteChecksum $url32
-    if ($current -ne $remote)
-    { 
-        $version = $version + '.0.'+ (Get-Date -Format 'yyyyMMdd')
-    }
-       
+    $url64   = 'http://www.drivesnapshot.de/download/snapshot64.exe'
+    $url32   = 'http://www.drivesnapshot.de/download/snapshot.exe'
+    $output = "$env:TEMP\snapshot.exe"
+    Invoke-WebRequest -Uri $url32 -OutFile $output
+    $version = ((Get-ChildItem $output).VersionInfo).fileversion
+    Remove-Item $output
+        
     return @{ URL32 = $url32; Version = $version }
 }
 
