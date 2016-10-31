@@ -8,7 +8,7 @@
     <owners>Nenad Hrg</owners>
     <licenseUrl>http://www.softwareok.com/?seite=Freeware/desktopok/Eula</licenseUrl>
     <projectUrl>http://www.softwareok.com/?seite=Freeware/DesktopOK</projectUrl>
-    <iconUrl>http://fs5.directupload.net/images/151222/y9gwxfqf.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/desktopok.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Save and restore the positions of icons. 
 DesktopOK is a small but effective solution for user that have to change the screen resolution often.</description>

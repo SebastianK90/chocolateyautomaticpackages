@@ -11,7 +11,7 @@
 		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/ChanSort</packageSourceUrl>
         <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
         <projectUrl>https://github.com/PredatH0r/ChanSort</projectUrl>
-        <iconUrl>http://fs5.directupload.net/images/160517/ufvmzr8v.png</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/chansort.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>How does it work?
 Plug a USB stick in your TV and export the channel list.

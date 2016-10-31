@@ -8,7 +8,7 @@
     <owners>sippi</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
     <projectUrl>https://sourceforge.net/projects/mpcbe</projectUrl>
-    <iconUrl>http://fs2.directupload.net/images/150517/du5i6wrb.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/mpc-be.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Media Player Classic - BE is based on the original "Media Player Classic" project (Gabest) and "Media Player Classic Home Cinema" project (Casimir666), contains additional features and bug fixes.</description>
     <summary>Media Player Classic - BE is a free and open source audio and video player for Windows.</summary>
