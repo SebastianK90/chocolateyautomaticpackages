@@ -6,7 +6,6 @@
         <title>Chocolatey Chrome Extension (Unofficial)</title>
         <authors>sippi</authors>
         <owners>sippi</owners>
-		<iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/choco-chrome-ext.png</iconUrl>
         <licenseUrl>https://www.google.com/intl/en/chrome/browser/privacy/eula_text.html</licenseUrl>
 		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/choco-chrome-ext</packageSourceUrl>
         <projectUrl>https://chrome.google.com/webstore/detail/chocoscriptgenerator/jecgfcdledpjnkijjlighceopgjcpjag</projectUrl>
