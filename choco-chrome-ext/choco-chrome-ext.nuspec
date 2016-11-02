@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
-        <id>chocoext</id>
-        <version>1.0.0.6</version>
-        <title>Chocolatey Extension (Unofficial)</title>
+        <id>choco-chrome-ext</id>
+        <version>1.0.0.7</version>
+        <title>Chocolatey Chrome Extension (Unofficial)</title>
         <authors>sippi</authors>
         <owners>sippi</owners>
-		<iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/chocoext.png</iconUrl>
-        <licenseUrl>http://en.wikipedia.org/wiki/End-user_license_agreement</licenseUrl>
+		<iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/choco-chrome-ext.png</iconUrl>
+        <licenseUrl>https://www.google.com/intl/en/chrome/browser/privacy/eula_text.html</licenseUrl>
 		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/chocoext</packageSourceUrl>
         <projectUrl>https://chrome.google.com/webstore/detail/chocoscriptgenerator/jecgfcdledpjnkijjlighceopgjcpjag</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
