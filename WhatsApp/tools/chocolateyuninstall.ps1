@@ -1,1 +1,6 @@
-﻿Uninstall-ChocolateyPackage -PackageName 'whatsapp' -FileType 'EXE' -SilentArgs '--uninstall' -File "$env:LOCALAPPDATA\WhatsApp\Update.exe"
+﻿$packageName = 'whatsapp'
+$fileType = 'exe'
+$silentArgs = "--uninstall -s"
+$uninstall = Get-UninstallRegistryKey -softwareName "Whatsapp"
+
+Uninstall-ChocolateyPackage -packageName $packageName -fileType $fileType -silentArgs $silentArgs -file ($uninstall.InstallLocation + "\update.exe")

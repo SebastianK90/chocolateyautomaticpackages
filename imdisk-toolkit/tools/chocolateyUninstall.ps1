@@ -1,3 +1,6 @@
-$uninstall= 'hklm:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ImDiskApp'
-$uninstall_exe = ((Get-ItemProperty -Path $uninstall).uninstallstring).trimend(' /u')
-Uninstall-ChocolateyPackage -PackageName 'imdisk-toolkit' -FileType 'EXE' -SilentArgs '/silentuninstall' -File $uninstall_exe
+﻿$packageName = 'imdisk-toolkit'
+$fileType = 'exe'
+$silentArgs = "/silentuninstall"
+$uninstall = Get-UninstallRegistryKey -softwareName "ImDisk Toolkit"
+
+Uninstall-ChocolateyPackage -packageName $packageName -fileType $fileType -silentArgs $silentArgs -file $uninstall.DisplayIcon
