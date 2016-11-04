@@ -6,7 +6,7 @@
         <title>Double Driver</title>
         <authors>Budy Setiawan Kusumah</authors>
         <owners>sippi</owners>
-        <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
+        <licenseUrl>https://github.com/sippi90/chocolateyautomaticpackages/blob/master/doubledriver/tools/license.txt</licenseUrl>
         <projectUrl>http://boozet.org/dd.htm</projectUrl>
 		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/doubledriver</packageSourceUrl>
         <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/doubledriver.png</iconUrl>
