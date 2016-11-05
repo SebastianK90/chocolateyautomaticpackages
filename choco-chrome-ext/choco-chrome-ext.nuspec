@@ -8,7 +8,8 @@
         <owners>sippi</owners>
         <licenseUrl>https://www.google.com/intl/en/chrome/browser/privacy/eula_text.html</licenseUrl>
 		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/choco-chrome-ext</packageSourceUrl>
-        <projectUrl>https://chrome.google.com/webstore/detail/chocoscriptgenerator/jecgfcdledpjnkijjlighceopgjcpjag</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/choco-chrome-ext.png</iconUrl>
+		<projectUrl>https://chrome.google.com/webstore/detail/chocoscriptgenerator/jecgfcdledpjnkijjlighceopgjcpjag</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>
 How to use this extension:
