@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'imdisk-toolkit'
-$url32       = 'https://sourceforge.net/projects/imdisk-toolkit/files/20161021/ImDiskTk.exe/download'
-$url64       = 'https://sourceforge.net/projects/imdisk-toolkit/files/20161021/ImDiskTk-x64.exe/download'
-$checksum32  = '90a167f596131c25aa599fe0a8242f09e3d0ddec0630c023f1c20226fc210c1d'
-$checksum64  = 'e61649d079d1f4eab0ef488edba2d2cd3e8a6f6f873c185a3fdf75005d66055f'
+$url32       = 'https://sourceforge.net/projects/imdisk-toolkit/files/20161105/ImDiskTk.exe/download'
+$url64       = 'https://sourceforge.net/projects/imdisk-toolkit/files/20161105/ImDiskTk-x64.exe/download'
+$checksum32  = '47f26e4d60ec45d643609a5ab0a14a464e16b2f30508edc97211039e35ccae91'
+$checksum64  = '6e61084b76480ccf90e80cd5c99556e652901ba0bfa8f3c0d13e7a7459ed87e9'
 
 
 $packageArgs = @{

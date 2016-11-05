@@ -1,6 +1,6 @@
 ﻿$packageName = 'imdisk-toolkit'
 $fileType = 'exe'
-$silentArgs = "/silentuninstall"
+$silentArgs = " /silentuninstall"
 $uninstall = Get-UninstallRegistryKey -softwareName "ImDisk Toolkit"
 
-Uninstall-ChocolateyPackage -packageName $packageName -fileType $fileType -silentArgs $silentArgs -file $uninstall.DisplayIcon
+Uninstall-ChocolateyPackage -packageName $packageName -fileType $fileType -silentArgs $silentArgs -file $uninstall.UninstallString.TrimEnd("/u").replace('"','')
