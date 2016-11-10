@@ -2,11 +2,15 @@
 
 param([string] $Name, [string] $ForcedPackages, [string] $Root = $PSScriptRoot)
 
+
+Set-ItemProperty 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3'-Name 1A10 -Value 0 -Force
+
+
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
 $Options = [ordered]@{
     Timeout       = 100                                     #Connection timeout in seconds
-    UpdateTimeout = 600                                    #Update timeout in seconds
+    UpdateTimeout = 780                                    #Update timeout in seconds
     Threads       = 10                                      #Number of background jobs to use
     Push          = $Env:au_Push -eq 'true'                 #Push to chocolatey
     PluginPath    = ''                                      #Path to user plugins
@@ -32,7 +36,7 @@ $Options = [ordered]@{
     Gist = @{
         Id     = $Env:gist_id                               #Your gist id; leave empty for new private or anonymous gist
         ApiKey = $Env:github_api_key                        #Your github api key - if empty anoymous gist is created
-        Path   = "$PSScriptRoot\Update-AUPackages.md", "$PSScriptRoot\UpdateHistory.md"       #List of files to add to the gist
+        Path        = "$PSScriptRoot\Update-AUPackages.md"  #List of files to add to gist
     }
 
     Git = @{
@@ -77,3 +81,4 @@ $global:info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
 #if ($global:info.error_count.total) { throw 'Errors during update' }
+Set-ItemProperty 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3'-Name 1A10 -Value 1 -Force
