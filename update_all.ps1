@@ -36,7 +36,7 @@ $Options = [ordered]@{
     Gist = @{
         Id     = $Env:gist_id                               #Your gist id; leave empty for new private or anonymous gist
         ApiKey = $Env:github_api_key                        #Your github api key - if empty anoymous gist is created
-        Path        = "$PSScriptRoot\Update-AUPackages.md"  #List of files to add to gist
+        Path   = "$PSScriptRoot\Update-AUPackages.md", "$PSScriptRoot\UpdateHistory.md"       #List of files to add to the gist
     }
 
     Git = @{
