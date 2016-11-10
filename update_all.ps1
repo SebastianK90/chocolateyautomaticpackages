@@ -31,10 +31,10 @@ $Options = [ordered]@{
         Path        = "$PSScriptRoot\Update-AUPackages.md"  #List of files to add to gist
     }
 
-    #Git = @{
+    Git = @{
         #User     = ''                                       #Git username, leave empty if github api key is used
-        #Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
-    #}
+        Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
+    }
 
     RunInfo = @{
         Exclude = 'password', 'apikey'                      #Option keys which contain those words will be removed
