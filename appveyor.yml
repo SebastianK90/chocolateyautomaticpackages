@@ -3,7 +3,8 @@
 version: '{build}'
 max_jobs: 1
 image: WMF 5
-clone_depth: 5
+# History plugin requires complete log
+#clone_depth: 5
 branches:
   only:
   - master
@@ -26,7 +27,7 @@ environment:
     secure: hHZYivZjd6iMBW2a9GjbC2wmzQ3cChXZOYCtLyTgaz4= # https://ci.appveyor.com/tools/encrypt
   mail_pass:
     secure: cqrvCTCZ2fxibyoH+0c/iA== #https://ci.appveyor.com/tools/encrypt
-  mail_server: smtp.gmail.com
+  mail_server: smtp-mail.outlook.com
   mail_port: 587
   mail_enablessl: true
 
@@ -46,33 +47,37 @@ init:
 install:
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
 - ps: $PSVersionTable
+- git --version
 - ps: |
-    $x=$null; $is_branch = ($Env:au_version -ne $null) -and ([version]::TryParse($Env:au_version, [ref]$x) -eq $false)
-    if ($is_branch) {
-        pushd ..
-            git clone -q https://github.com/majkinetor/au.git
-            cd au
-            git fetch
-            git checkout -q $Env:au_version
-            ./build.ps1 -Install -NoChocoPackage
-        popd
-    } else {
-        Install-PackageProvider -Name NuGet -Force
-        Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+    git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
+    . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
 
-        $params = @{ Name = 'au' }
-        if ( $Env:au_version -ne $null ) { $params.MinimumVersion = $Env:au_version }
-        Install-Module @params
-
-        Get-Module au -ListAvailable | select Name, Version
-    }
+- ps: |
+    "Build info"
+    '  {0,-20} {1}' -f 'SCHEDULED BUILD:', ($Env:APPVEYOR_SCHEDULED_BUILD -eq 'true')
+    '  {0,-20} {1}' -f 'FORCED BUILD:'   , ($Env:APPVEYOR_FORCED_BUILD    -eq 'true')
+    '  {0,-20} {1}' -f 'RE BUILD:'       , ($Env:APPVEYOR_RE_BUILD        -eq 'true')
 
 build_script:
 - ps: |
-    if ( ($Env:APPVEYOR_REPO_COMMIT_MESSAGE -match '\[AU (.+?)\]') -and
-         ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and
-         ($Env:APPVEYOR_FORCED_BUILD -ne 'true')
-    ) { $forced = $Matches[1] }
+    if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
+        switch -regex ($Env:APPVEYOR_REPO_COMMIT_MESSAGE)
+        {
+            '\[AU (.+?)\]'   { $forced = $Matches[1] }
+
+            '\[PUSH (.+?)\]' {
+                $packages = $Matches[1] -split ' '
+                Write-Host "PUSHING PACKAGES: $packages"
+                foreach ($package in $packages) {
+                    Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
+                    $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
+                    if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
+                    pushd $package_dir; choco pack; Push-Package; popd
+                }
+                return
+            }
+        }
+    }
 
     ./update_all.ps1 -ForcedPackages $forced
 
