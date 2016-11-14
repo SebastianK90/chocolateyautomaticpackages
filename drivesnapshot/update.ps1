@@ -28,4 +28,8 @@ function global:au_GetLatest {
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
 
+$date = Get-Date
+if (($date.DayOfWeek -eq 'Monday') -or ($date.DayOfWeek -eq 'Thursday'))
+{
 update
+}
