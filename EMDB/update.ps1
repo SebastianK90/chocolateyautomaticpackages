@@ -14,9 +14,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
-        
-    $version = ($download_page.AllElements | where {$_.innerHTML -like "EMDB V*"} | Select-Object -ExpandProperty innerHTML -First 1).replace('EMDB V','')
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $content = $download_page.content
+    $pattern = '(?<=img align="middle" class=)[\S\s]*EMDB V(?<Version>[\d\.]+)'
+
+    $version = [regex]::Match($content, $pattern).groups['Version'].value    
+    #$version = ($download_page.AllElements | where {$_.innerHTML -like "EMDB V*"} | Select-Object -ExpandProperty innerHTML -First 1).replace('EMDB V','')
     $url32   = 'http://www.emdb.eu/bin/emdb.zip'
     return @{ URL32 = $url32; Version = $version }
 }
