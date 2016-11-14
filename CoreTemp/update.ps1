@@ -16,14 +16,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $content = $download_page.content
+    $pattern = '(?<=font-size: 20pt"\>)[\S\s]*\<b\>Core Temp (?<Version>[\d\.]+)'
 
-    #$re      = 'CoreTemp*.zip'
-    #$url     = $download_page.links | ? href -match $re | select -First 2 -expand href
+
     $url64   = 'http://www.alcpu.com/CoreTemp/php/download.php?id=3'
     $url32   = 'http://www.alcpu.com/CoreTemp/php/download.php?id=2'
-    $version = [regex]::match((($download_page.ParsedHtml.getElementsByTagName("b") | Where {$_.sourceindex -eq '204'}).firstchild.textcontent),'[0-9]+(\.[0-9]+)*').value
-    #$version =  ($download_page.links.innerHtml | Where-Object {$_ -like 'Core Temp *'}).substring(10)[0]
+    #$version = [regex]::match((($download_page.ParsedHtml.getElementsByTagName("b") | Where {$_.sourceindex -eq '204'}).firstchild.textcontent),'[0-9]+(\.[0-9]+)*').value
+    $version = [regex]::Match($content, $pattern).groups['Version'].value
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
 
