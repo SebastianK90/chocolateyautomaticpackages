@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop'
 $packageName = 'coretemp'
 $url32       = 'http://www.alcpu.com/CoreTemp/php/download.php?id=2'
 $url64       = 'http://www.alcpu.com/CoreTemp/php/download.php?id=3'
-$checksum32  = '1728396e7e219eca1ccca8081d98234d3022cd303cfeeba7e710a2dcf6fc8dc4'
-$checksum64  = '16054325e203f9841090f4e6aaf0b2abfed9bf6d94e1edac2f8a58a3fd7d5adc'
+$checksum32  = '56c2b6d4c101ebb6f5fce9650b3b0ad43b3414d81ed1398f0f39deef9a221aa1'
+$checksum64  = 'ea4840260d48520a7cc7664c5e957f288993176164613f1bfe1bf89c822f112b'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
