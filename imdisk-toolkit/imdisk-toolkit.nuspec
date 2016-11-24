@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ImDisk-Toolkit</id>
+    <version>16.11.20.20161124</version>
+    <title>ImDisk-Toolkit</title>
+    <authors>LTR Data,Olof Lagerkvist,v77</authors>
+    <owners>sippi</owners>
+    <licenseUrl>http://www.ltr-data.se/files/license.txt</licenseUrl>
+    <projectUrl>http://imdisk-toolkit.sourceforge.net/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/imdisk-toolkit.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Here is the ImDisk Toolkit. This tool will let you mount image files of hard drive, cd-rom or floppy, and create one or several RamDisks with various parameters.</description>
+    <summary>Requirements:
+Windows XP, Vista, 7, 8, 8.1 or 10 (32 or 64 bits).
+Some image file formats also require .NET Framework 4 (included in Windows 8 and later) to be mounted with the DiscUtils library.</summary>
+    <releaseNotes>https://sourceforge.net/p/imdisk-toolkit/activity?source=project_activity</releaseNotes>
+    <copyright />
+    <language>en-US</language>
+    <tags>ram disk tool utility driver admin</tags>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/imdisk-toolkit/</packageSourceUrl>
+    <docsUrl>https://sourceforge.net/p/imdisk-toolkit/doc/</docsUrl>
+    <mailingListUrl>https://sourceforge.net/p/imdisk-toolkit/discussion/</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/imdisk-toolkit/tickets/</bugTrackerUrl>
+  </metadata>
+  	 <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
