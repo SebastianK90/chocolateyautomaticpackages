@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>emdb</id>
-    <version>2.59</version>
+    <id>EMDB</id>
+    <version>2.60</version>
     <title>EMDB - Eric's Movie Database</title>
     <authors>Wicked &amp; Wild Inc.</authors>
     <owners>sippi</owners>
