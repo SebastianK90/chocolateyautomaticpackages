@@ -20,7 +20,7 @@ DesktopOK is a small but effective solution for user that have to change the scr
     <releaseNotes>http://www.softwareok.com/?seite=Freeware/DesktopOK/History</releaseNotes>
     <copyright />
     <tags>tool desktop icon save position</tags>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/DesktopOK</packageSourceUrl>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/desktopok</packageSourceUrl>
     <mailingListUrl>http://www.softwareok.com/?seite=Kontakt</mailingListUrl>
   </metadata>
   	 <files>

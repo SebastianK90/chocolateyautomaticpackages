@@ -18,7 +18,7 @@ Some image file formats also require .NET Framework 4 (included in Windows 8 and
     <copyright />
     <language>en-US</language>
     <tags>ram disk tool utility driver admin</tags>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/imdisk-toolkit/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/ImDisk-Toolkit</packageSourceUrl>
     <docsUrl>https://sourceforge.net/p/imdisk-toolkit/doc/</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/imdisk-toolkit/discussion/</mailingListUrl>
     <bugTrackerUrl>https://sourceforge.net/p/imdisk-toolkit/tickets/</bugTrackerUrl>
