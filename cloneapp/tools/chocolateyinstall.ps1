@@ -1,8 +1,8 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
 $packageName = 'cloneapp'
 $url32       = 'http://mirinsoft.com/index.php/component/jdownloads/finish/39-cloneapp-portable/180-cloneapp?Itemid=235'
-$checksum32  = '60064f1cc05d840ea2b6b25facf2f30c5617d12b384c2b5078352d99587c18a1'
+$checksum32  = '88d099a2bcdda333e4b87b9544047540eac8e32f3a2b8e644a34f69fce7762d4'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{

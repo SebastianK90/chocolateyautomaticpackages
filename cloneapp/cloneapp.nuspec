@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>cloneapp</id>
-        <version>1.18.778.20160825</version>
+        <version>1.19.790</version>
         <title>CloneApp</title>
         <authors>Belmin Hasanovic</authors>
         <owners>sippi</owners>
