@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop'
 $packageName = 'whatsapp'
 $url32       = 'https://web.whatsapp.com/desktop/windows/release/ia32/WhatsAppSetup.exe'
 $url64       = 'https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe'
-$checksum32  = '2b1c17af338b31741c9ce46566e3dfdea3311a59aa16e4b67d3e553f0f420475'
-$checksum64  = '2a0de834edc952c3c480e06f0b3a0d5d6048a8c09082f731f0ec25815117001a'
+$checksum32  = 'd0f2c6010cbfaea29fdcd3d412aa18dff1286b66821ebf742c4c42e30659aa84'
+$checksum64  = '10fddb488e48d6b03ecc5c0707f0dcb0ab9aed67d1b4a208e8624f5f37fdc047'
 
 $packageArgs = @{
   packageName            = $packageName
