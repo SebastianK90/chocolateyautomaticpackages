@@ -3,7 +3,7 @@ $ErrorActionPreference = 'Stop'
 $packageName = 'emdb'
 $fileType    = 'EXE'
 $url32       = 'http://www.emdb.eu/bin/emdb.zip'
-$checksum32  = '076b2387d874cb1dfacaf8b11cb66673131aa46b641c5067585fd846c76f5133'
+$checksum32  = 'a2d8e118cc5dbb4890d05427ab6e3eab90e74a11e0b89aa9bfdc249fd6cadebe'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $silentArgs  = '/VERYSILENT /COMPONENTS="main,mpciconlib,mpcresources"'
 
