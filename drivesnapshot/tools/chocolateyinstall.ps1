@@ -1,10 +1,10 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
  
 $packageName = 'drivesnapshot'
 $url32       = 'http://www.drivesnapshot.de/download/snapshot.exe'
 $url64       = 'http://www.drivesnapshot.de/download/snapshot64.exe'
-$checksum32  = '4bc5a4150613cec40c0f13d9f7edc727cee072cf4a92f884b98a8ce8c7b32c2f'
-$checksum64  = '2ffd0850e731791f8ff9c20df83f4c1c1a2f9564d835c1861e96f84920c1ca58'
+$checksum32  = '8d77f544cf6c370764eb03b2b493500b97eea8f03f1d9bd9b908551832ae4382'
+$checksum64  = '1fd96fa5ae7611adcb37f621ed1cdb999e15e2431d4b74122c9a1c3566021f9a'
 $toolsPath   = (Split-Path $MyInvocation.MyCommand.Definition)
  
 $packageArgs = @{
