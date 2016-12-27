@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://cemu.info/index.html'
+$releases = 'http://cemu.info/'
 
 function global:au_SearchReplace {
     @{
