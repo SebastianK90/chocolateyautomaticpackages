@@ -6,7 +6,7 @@
         <title>Easy Context Menu</title>
         <authors>SORDUM.ORG</authors>
         <owners>sippi</owners>
-        <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
+        <licenseUrl>http://www.sordum.org/eula/</licenseUrl>
         <projectUrl>http://www.sordum.org/7615/</projectUrl>
 		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/ecm</packageSourceUrl>
         <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/ecm.png</iconUrl>
