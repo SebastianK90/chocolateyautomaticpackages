@@ -3,8 +3,8 @@
 $packageName = 'drivesnapshot'
 $url32       = 'http://www.drivesnapshot.de/download/snapshot.exe'
 $url64       = 'http://www.drivesnapshot.de/download/snapshot64.exe'
-$checksum32  = 'e81b9ca52a7c770c0bc820e3cae48f97a9e87f1c9bdfdd6ddb29613ee4e5fd27'
-$checksum64  = '66e3912ed629f3e1400040327a70d5cb05128e4b8125226adc5ab2fbe2bf55f9'
+$checksum32  = '3352c03f7efa9224768ecd26f7786bd9ca32f1661542b1d3905da886ae7c9a1f'
+$checksum64  = '039d663a7fc727e26fab344c42ffbb8560a06992c84b7134b0ca1c02e92a5069'
 $toolsPath   = (Split-Path $MyInvocation.MyCommand.Definition)
  
 $packageArgs = @{
