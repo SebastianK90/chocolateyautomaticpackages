@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>ChanSort</id>
-        <version>2016.8.10.20160823</version>
+        <version>2017.01.26</version>
         <title>ChanSort</title>
         <authors>Horst Beham</authors>
         <owners>sippi</owners>
