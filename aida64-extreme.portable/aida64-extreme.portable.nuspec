@@ -21,12 +21,7 @@ Usage of this software for commercial purposes is not permitted.
 
 #### Commercial software
 This package installs a 30-day trial version.
-
-#### AIDA64 [editions](http://www.aida64.com/compare-aida64-features)
-* AIDA64 Extreme (you are here)
-* [AIDA64 Network Audit](https://chocolatey.org/packages/aida64-networkaudit)
-* [AIDA64 Engineer](https://chocolatey.org/packages/aida64-engineer)
-* [AIDA64 Business](https://chocolatey.org/packages/aida64-business)</description>
+</description>
     <summary>Advanced system diagnostics utility for home users</summary>
     <releaseNotes>http://www.aida64.com/news</releaseNotes>
     <copyright>© 2017 FinalWire Ltd</copyright>
