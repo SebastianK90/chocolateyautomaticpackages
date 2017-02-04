@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>aida64-extreme.portable</id>
+    <version>5.80.4000</version>
+    <title>AIDA64 Extreme Portable</title>
+    <authors>FinalWire Ltd</authors>
+    <owners>sippi</owners>
+    <licenseUrl>http://www.aida64.com/licensing</licenseUrl>
+    <projectUrl>http://www.aida64.com/products/aida64-extreme</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/aida64-extreme.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AIDA64 Extreme is an industry-leading system information tool, loved by PC enthusiasts around the world, which not only provides extremely detailed information about both hardware and installed software, but also helps users diagnose issues and offers benchmarks to measure the performance of the computer.
+
+Usage of this software for commercial purposes is not permitted.
+
+#### Community
+* [Facebook](https://www.facebook.com/AIDA64)
+* [Google+](https://plus.google.com/+aida64)
+* [Twitter](https://twitter.com/FinalWire)
+
+#### Commercial software
+This package installs a 30-day trial version.
+
+#### AIDA64 [editions](http://www.aida64.com/compare-aida64-features)
+* AIDA64 Extreme (you are here)
+* [AIDA64 Network Audit](https://chocolatey.org/packages/aida64-networkaudit)
+* [AIDA64 Engineer](https://chocolatey.org/packages/aida64-engineer)
+* [AIDA64 Business](https://chocolatey.org/packages/aida64-business)</description>
+    <summary>Advanced system diagnostics utility for home users</summary>
+    <releaseNotes>http://www.aida64.com/news</releaseNotes>
+    <copyright>© 2017 FinalWire Ltd</copyright>
+    <tags>trial diagnostic benchmark monitor portable admin</tags>
+	<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/aida64-extreme.portable</packageSourceUrl>
+    <docsUrl>http://www.aida64.com/support/faq</docsUrl>
+    <mailingListUrl>https://forums.aida64.com/</mailingListUrl>
+    <bugTrackerUrl>http://www.aida64.com/support/contactform</bugTrackerUrl>
+  </metadata>
+  	<files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
