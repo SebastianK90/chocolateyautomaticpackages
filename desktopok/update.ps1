@@ -1,6 +1,5 @@
 ﻿import-module au
 
-# cd .\desktopok
 
 $releases = 'http://www.softwareok.de/?seite=Freeware/DesktopOK'
 
@@ -17,10 +16,11 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
+    $content = $download_page.Content
     $url64   = 'http://www.softwareok.com/Download/DesktopOK_x64.zip'
     $url32   = 'http://www.softwareok.com/Download/DesktopOK.zip'
-    $version =  [regex]::match($download_page.Content, '[0-9]+(\.[0-9]+)*').value
+    $pattern = '(?<=<a\ href="\?seite=Freeware/DesktopOK">)[\S\s]*DesktopOK (?<Version>[\d\.]+)'
+    $version = [regex]::Match($content, $pattern).groups['Version'].value
     
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
