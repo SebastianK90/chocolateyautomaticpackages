@@ -6,7 +6,6 @@
     <title>SBZ Switcher</title>
     <authors>applejack1</authors>
     <owners>sippi</owners>
-    <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
     <projectUrl>https://sourceforge.net/projects/sbzswitcher/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/sbz-switcher.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
