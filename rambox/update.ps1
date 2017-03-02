@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
-    $re64      = '*win-x64.zip'
+    $re64      = '*x64-win.zip'
     $re32      = '*ia32-win.zip'
     $dirty_url64     = $download_page.links | ? href -like $re64 | select -First 1 <# 2 #> -expand href
     $dirty_url32     = $download_page.links | ? href -like $re32 | select -First 1 <# 2 #> -expand href
