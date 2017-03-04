@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'gpmdp'
-$url32       = 'https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v4.1.1/Google.Play.Music.Desktop.Player.Setup.exe'
-$checksum32  = '536331db0dd3c81e270e8c5e724660672b15fbd38924facb91efd589626b981d'
+$url32       = 'https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v4.2.0/Google.Play.Music.Desktop.Player.Setup.exe'
+$checksum32  = '56371da4644d1eedc2e2e79af52eb493752f07eec7a60ad14ed8b52ea70d750a'
 
 $packageArgs = @{
   packageName            = $packageName
