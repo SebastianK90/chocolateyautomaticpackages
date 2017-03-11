@@ -14,6 +14,6 @@ $packageArgs = @{
 }
 Install-ChocolateyZipPackage @packageArgs
 
-$FileFullPath = get-childitem $toolsPath -recurse -include *.exe | select -First 1
+$FileFullPath = get-childitem $toolsPath -recurse -include Cemu.exe | sort {$_.CreationTime} | select -First 1
   
 Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\CEMU.lnk" $FileFullPath
