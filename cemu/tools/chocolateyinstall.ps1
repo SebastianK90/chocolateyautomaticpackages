@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'cemu'
-$url64       = 'http://cemu.info/releases/cemu_1.7.2.zip'
-$checksum64  = 'c501fe59d2236bd5efdd9e1d3ec521efe0f89a68b5786dc5462ba9d089f47b83'
+$url64       = 'http://cemu.info/releases/cemu_1.7.3.zip'
+$checksum64  = '45f033915a293a2dcf8693a91a280fc151fd3231a2ad94b0ef06cda6ec84731b'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
