@@ -3,12 +3,9 @@
 $packageName = 'cemu'
 $url64       = 'http://cemu.info/releases/cemu_1.7.3.zip'
 $checksum64  = '45f033915a293a2dcf8693a91a280fc151fd3231a2ad94b0ef06cda6ec84731b'
-<<<<<<< HEAD
 $toolsPath   =  (Split-Path $MyInvocation.MyCommand.Definition)
 $cemu_folder = "$toolsPath\cemu"
-=======
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
->>>>>>> origin/master
 
 $packageArgs = @{
   packageName    = $packageName
