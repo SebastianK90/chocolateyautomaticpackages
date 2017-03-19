@@ -24,10 +24,10 @@ environment:
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: hHZYivZjd6iMBW2a9GjbC2wmzQ3cChXZOYCtLyTgaz4= # https://ci.appveyor.com/tools/encrypt
+    secure: #hHZYivZjd6iMBW2a9GjbC2wmzQ3cChXZOYCtLyTgaz4= # https://ci.appveyor.com/tools/encrypt
   mail_pass:
-    secure: cqrvCTCZ2fxibyoH+0c/iA== #https://ci.appveyor.com/tools/encrypt
-  mail_server: smtp-mail.outlook.com
+    secure: #cqrvCTCZ2fxibyoH+0c/iA== #https://ci.appveyor.com/tools/encrypt
+  mail_server: #smtp-mail.outlook.com
   mail_port: 587
   mail_enablessl: true
 
