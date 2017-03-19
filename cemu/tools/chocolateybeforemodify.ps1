@@ -1,1 +1,0 @@
-﻿Get-Process "Cemu*" | Stop-Process -Force -ErrorAction SilentlyContinue
