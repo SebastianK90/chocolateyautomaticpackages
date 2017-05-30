@@ -8,7 +8,7 @@ $cemu_folder = "$toolsPath\cemu"
 
 $packageArgs = @{
   packageName    = $packageName
-  url32           = $url32
+  url          = $url32
   checksum32       = $checksum32
   checksumType   = 'sha256'
   unzipLocation  = $toolsPath
