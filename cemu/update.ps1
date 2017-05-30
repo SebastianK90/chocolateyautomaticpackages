@@ -19,7 +19,7 @@ function global:au_GetLatest {
     $url32 = $url64
     $version = [regex]::match($url32,'[0-9]+(\.[0-9]+)*').value
 
-    return @{ URL32 = $url32; URL64 = $url64; Version = $version }
+    return @{ URL32 = $url32; Version = $version }
 }
 
 update -ChecksumFor 32
