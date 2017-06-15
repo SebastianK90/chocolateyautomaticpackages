@@ -16,7 +16,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $content = $download_page.Content
 
-    $pattern = '(?<=<meta\ property="og:site_name"\ content="Sordum">)[\S\s]*<title>Easy Context menu v(?<Version>[\d\.]+)'
+    $pattern = '(?<=content="Sordum")[\S\s]*Easy Context menu v(?<Version>[\d\.]+)'
 
     $version = [regex]::Match($content, $pattern).groups['Version'].value
     $url32   = 'http://www.sordum.org/files/downloads.php?easy-context-menu'
