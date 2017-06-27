@@ -2,7 +2,7 @@
 
 $packageName = 'io-unlocker'
 $url32       = 'http://update.iobit.com/dl/unlocker-setup.exe'
-$checksum32  = 'c114ff90e7cb93cadea5d4af69624c5c17b7beaafe0e0285f41371fe5c68b76d'
+$checksum32  = '09d7fcbf95e66b242ff5d7bc76e4d2c912462c8c344cb2b90070a38d27aaef53'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
