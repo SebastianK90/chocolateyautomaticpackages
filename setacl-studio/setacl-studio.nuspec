@@ -6,7 +6,7 @@
     <title>setACL Studio</title>
     <authors>Helge Klein</authors>
     <owners>sippi</owners>
-    <licenseUrl>https://helgeklein.com/setacl-studio/frequently-asked-questions/#is-there-a-free-version-of-setacl-studio</licenseUrl>
+    <licenseUrl>https://helgeklein.com/terms-conditions</licenseUrl>
     <projectUrl>https://helgeklein.com/setacl-studio</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/setacl-studio.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

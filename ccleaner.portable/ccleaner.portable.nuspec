@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ccleaner.portable</id>
+    <version>5.31.6105</version>
+    <title>CCleaner Portable</title>
+    <authors>Piriform</authors>
+    <owners>sippi</owners>
+    <licenseUrl>https://www.piriform.com/legal/software-license/ccleaner</licenseUrl>
+    <projectUrl>https://www.piriform.com/ccleaner</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/ccleaner.portable.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The number-one tool for cleaning your Windows PC.
+
+It protects your privacy online and makes your computer faster and more secure.
+
+### Notes
+
+This package installs CCleaner without additional adware.</description>
+    <summary>The number-one tool for cleaning your Windows PC.</summary>
+    <releaseNotes>https://www.piriform.com/ccleaner/version-history</releaseNotes>
+    <copyright />
+    <tags>ccleaner system cleanup portable freeware trial registry admin</tags>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/ccleaner.portable</packageSourceUrl>
+  </metadata>
+  	 <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
