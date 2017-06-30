@@ -15,28 +15,6 @@ $packageArgs = @{
   unzipLocation  = $toolsPath
 }
 
-$iniFile = Join-Path $toolsPath 'ccleaner.ini'
- 
-# Automatic language selection
-$LCID = (Get-Culture).LCID
-$iniContent = @"
-[Options]
-WipeFreeSpaceDrives=C:\
-CookiesToSave=*.piriform.com
-RunICS=0
-Monitoring=0
-CheckTrialOffer=0
-WINDOW_LEFT=560
-WINDOW_TOP=220
-WINDOW_WIDTH=800
-WINDOW_HEIGHT=600
-WINDOW_MAX=0
-Language=$LCID
-"@
- 
-# Create the ini file for the installer
-New-Item $iniFile -type file -force -value $iniContent
-
 
 Install-ChocolateyZipPackage @packageArgs
 
