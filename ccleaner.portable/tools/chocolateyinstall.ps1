@@ -12,7 +12,6 @@ $packageArgs = @{
   url            = $url32
   checksum       = $checksum32
   checksumType   = 'sha256'
-  checksumType64 = 'sha256'
   unzipLocation  = $toolsPath
 }
 
