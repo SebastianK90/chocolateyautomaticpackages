@@ -15,7 +15,7 @@ function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
   $re  = '\.zip$'
-  $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+  $url = 'https://www.piriform.com/ccleaner/download/portable/downloadfile'
 
   $download_page = Invoke-WebRequest https://www.piriform.com/ccleaner/version-history -UseBasicParsing
   $Matches = $null
