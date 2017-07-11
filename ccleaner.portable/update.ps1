@@ -22,7 +22,7 @@ function global:au_GetLatest {
   $download_page.Content -match "\<h6\>v((?:[\d]\.)[\d\.]+)"
   $version = $Matches[1]
 
-  @{ URL32 = $url -replace 'http:','https:'; Version = $version }
+  @{ URL32 = $url ; Version = $version }
 }
 
 update -ChecksumFor 32
