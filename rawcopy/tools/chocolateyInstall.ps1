@@ -3,8 +3,8 @@
 $packageName = 'rawcopy'
 $url32       = 'http://ltr-data.se/files/rawcopy.zip'
 $url64       = 'http://ltr-data.se/files/win64/rawcopy64.zip'
-$checksum32  = '89a4bb16b7ebc76c9596c20cfdae85b0c025f58e6998ab9e5051a5759864ee5a'
-$checksum64  = '4fa1d4ad236b6efa5622e0f7835739c6d8a55c1204d402e1d332ee8fb2eec12c'
+$checksum32  = '1D3F51FADDEE222BE534A284D3C7905FF1353B905EBBEDC376ECB5D216EAEE0A'
+$checksum64  = '460AA2CF39917DF4EA0C011A4472FE78F0133C191D8BB7BBA3342311FD1C0841'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
