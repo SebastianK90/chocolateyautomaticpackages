@@ -1,0 +1,1 @@
+﻿Get-Process ResourceHacker* | Stop-Process -Force -ErrorAction SilentlyContinue
