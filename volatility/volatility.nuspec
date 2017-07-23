@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>volatility</id>
+        <version>2.6</version>
+        <title>Volatility Framework - Standalone</title>
+        <authors>The Volatility Foundation</authors>
+        <owners>sippi</owners>
+		<docsUrl>https://github.com/volatilityfoundation/volatility/wiki</docsUrl>
+		<bugTrackerUrl>https://github.com/volatilityfoundation/volatility/issues</bugTrackerUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/volatility</packageSourceUrl>
+		 <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/volatility.png</iconUrl>
+        <licenseUrl>https://github.com/volatilityfoundation/volatility/blob/master/LICENSE.txt</licenseUrl>
+        <projectUrl>http://www.volatilityfoundation.org</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>The Volatility Framework is a completely open collection of tools,
+implemented in Python under the GNU General Public License, for the
+extraction of digital artifacts from volatile memory (RAM) samples.
+The extraction techniques are performed completely independent of the
+system being investigated but offer visibilty into the runtime state
+of the system. The framework is intended to introduce people to the
+techniques and complexities associated with extracting digital artifacts
+from volatile memory samples and provide a platform for further work into
+this exciting area of research.</description>
+        <summary>The Volatility Framework is a completely open collection of tools,
+implemented in Python under the GNU General Public License, for the
+extraction of digital artifacts from volatile memory (RAM) samples.</summary>
+		<mailingListUrl>http://www.volatilityfoundation.org/contact</mailingListUrl>
+        <releaseNotes>http://www.volatilityfoundation.org/releases</releaseNotes>
+		<dependencies>
+        </dependencies>
+        <copyright>© 2013-2014 The Volatility Foundation</copyright>
+        <tags>ram memory analysis investigation forensic admin</tags>
+    </metadata>
+	<files>
+    <file src="tools\**" target="tools" />
+  </files>
+
+</package>
