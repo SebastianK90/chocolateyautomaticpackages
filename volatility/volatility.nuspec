@@ -30,7 +30,7 @@ extraction of digital artifacts from volatile memory (RAM) samples.</summary>
 		<dependencies>
         </dependencies>
         <copyright>© 2013-2014 The Volatility Foundation</copyright>
-        <tags>ram memory analysis investigation forensic admin</tags>
+        <tags>ram memory analysis investigation forensic</tags>
     </metadata>
 	<files>
     <file src="tools\**" target="tools" />
