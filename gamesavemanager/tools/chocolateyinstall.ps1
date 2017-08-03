@@ -1,8 +1,8 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
  
 $packageName = 'gamesavemanager'
 $url32       = 'http://www.gamesave-manager.com/?s=download&a=dl'
-$checksum32  = 'af088e7e13a04e8ade1196fd93f47f62ad1e18e45f689bfbeb3be4e96c8313fd'
+$checksum32  = 'F46DD0A491A8B327C5C160AFB42925567A110B6456CECACFB0816A756E2DA92A'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
  
 $packageArgs = @{
