@@ -2,7 +2,7 @@
  
 $packageName = 'gamesavemanager'
 $url32       = 'http://www.gamesave-manager.com/?s=download&a=dl'
-$checksum32  = 'a0ecf2f3e02bc1e89de7810e9aeec97ce6d3b6ad991e2c7f5e4d7e2977235955'
+$checksum32  = 'F46DD0A491A8B327C5C160AFB42925567A110B6456CECACFB0816A756E2DA92A'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
  
 $packageArgs = @{
