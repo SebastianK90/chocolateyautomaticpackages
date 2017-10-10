@@ -1,17 +1,18 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
 $packageName = 'oldcalc'
 $fileType    = 'EXE'
-$url32       = 'http://winaero.com/request.php?1795'
-$checksum32  = '00c13145cea7bb8bcae3e6e48837edf2237931841207f81116f910818fdde279'
+$url32       = 'https://winaero.com/e107_files/downloads/oldcalcwin10.zip'
+$checksum32  = '5AF17A5C9D65F95BF543D78C139740CF834A00644B255A6214A16576EB5CAB62'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $silentArgs  = '/S'
 $options =
 @{
   Headers = @{
-    'Accept' = 'text/html, application/xhtml+xml, image/jxr, */*';
-    'Accept-Language' = 'de-DE,de;q=0.5';
-    'Referer' = 'http://winaero.com/download.php?view.1795';
+    'GET' = 'https://winaero.com/e107_files/downloads/oldcalcwin10.zip HTTP/1.1'
+    'Accept' = 'text/html, application/xhtml+xml, image/jxr, */*'
+    'Referer' = 'https://winaero.com/download.php?view.1795';
+    'Accept-Language' = 'de-DE,de;q=0.5'
     'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko';
     'Accept-Encoding' = 'gzip, deflate'
   }
