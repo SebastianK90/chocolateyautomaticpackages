@@ -1,11 +1,11 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'mpc-be'
 $fileType    = 'EXE'
-$url32       = 'https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.5.0/MPC-BE.1.5.0.x86-installer.zip/download'
-$url64       = 'https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.5.0/MPC-BE.1.5.0.x64-installer.zip/download'
-$checksum32  = '685ddccd0e83c1d302dca1b05db02d3e276ef5af16c67612da52b2a93e901336'
-$checksum64  = '8092b43baab7123f8cbebbeccebf086992a939ef62b092b38398d3db09fa20eb'
+$url32       = 'https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.5.1/MPC-BE.1.5.1.x86-installer.zip/download'
+$url64       = 'https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.5.1/MPC-BE.1.5.1.x64-installer.zip/download'
+$checksum32  = 'b1c429d0e6f92f42edd54a15b588c141e8fcd43c80ebad81970c567b547d3460'
+$checksum64  = 'fc989957446fb24900c9c22443e8e7a2d8aad5d569b0abaef20a7a26770dbbfb'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $silentArgs  = '/VERYSILENT /COMPONENTS="main,mpciconlib,mpcresources"'
 
