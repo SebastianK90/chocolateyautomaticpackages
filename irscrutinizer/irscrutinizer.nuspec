@@ -5,7 +5,7 @@
         <version>1.4.1</version>
         <title>IrScrutinizer</title>
         <authors>Bengt Mårtensson</authors>
-        <owners>Bengt Mårtensson</owners>
+        <owners>sippi</owners>
         <licenseUrl>http://www.harctoolbox.org/IrScrutinizer.html#Copyright+and+License</licenseUrl>
         <projectUrl>http://www.harctoolbox.org/IrScrutinizer.html</projectUrl>
 		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/irscrutinizer</packageSourceUrl>
