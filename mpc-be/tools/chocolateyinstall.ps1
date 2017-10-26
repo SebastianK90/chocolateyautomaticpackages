@@ -22,7 +22,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$FileFullPath = get-childitem $toolsPath -recurse -include *.exe | select -First 1
+$FileFullPath = Get-ChildItem $toolsPath -Recurse -Include *.exe | Sort-Object -Descending | Select-Object -First 1
  
 Install-ChocolateyInstallPackage  $packageName $fileType $silentArgs $FileFullPath
 
