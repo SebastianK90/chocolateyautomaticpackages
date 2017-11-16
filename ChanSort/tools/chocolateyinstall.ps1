@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'ChanSort'
-$url32       = 'https://github.com/PredatH0r/ChanSort/releases/download/v2017-10-29/ChanSort_2017-10-29.zip'
-$checksum32  = 'a146a56bae997fb7f73c03af93a8b0638b032896c2f605c4e51a7342f8f2e4f1'
+$url32       = 'https://github.com/PredatH0r/ChanSort/releases/download/v2017-11-16/ChanSort_2017-11-16.zip'
+$checksum32  = 'e5360172506200bc88e2dcce7199de0ba1c5f5425d9e2523fc60aa8b345c99ef'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
