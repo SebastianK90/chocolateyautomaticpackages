@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
  
 $packageName = 'ecm'
 $url32       = 'https://www.sordum.org/files/easy-context-menu/ec_menu.zip'
-$checksum32  = '567DADB389FEC59529E2ADA6B9687C9897C44DC4B663D086CDAD044D0067724C'
+$checksum32  = 'b02c9ef742ca075a4d3d979ed20c77acf3db6b0e3b61fa94db2511a219b64c77'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 $options =
 @{
