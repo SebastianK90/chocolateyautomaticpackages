@@ -1,6 +1,6 @@
-﻿import-module au
+import-module au
 
-#cd .\imdisk-toolkit
+sp 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3' 1A10 0
 
 $releases = 'https://sourceforge.net/projects/imdisk-toolkit/files/'
 function global:au_SearchReplace {
