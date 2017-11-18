@@ -13,7 +13,6 @@ $options =
     'Accept-Language'= 'de-DE,de;q=0.5'
     'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'
     'Accept-Encoding' = 'gzip, deflate'
-    'Connection' = 'Keep-Alive'
     'Pragma' = 'no-cache'
     'DNT' = '1'
   }
