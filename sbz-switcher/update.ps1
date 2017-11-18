@@ -1,4 +1,6 @@
-﻿import-module au
+import-module au
+
+sp 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3' 1A10 0
 
 $releases = 'https://sourceforge.net/projects/sbzswitcher/files/Release/'
 
