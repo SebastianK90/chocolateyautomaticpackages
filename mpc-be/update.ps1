@@ -1,6 +1,6 @@
-﻿import-module au
+import-module au
 
-# cd .\mpc-be
+sp 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3' 1A10 0
 
 $releases = 'https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/'
 
