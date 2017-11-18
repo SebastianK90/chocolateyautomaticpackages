@@ -1,6 +1,6 @@
-﻿import-module au
+import-module au
 
-# cd .\mp3gain-gui
+sp 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3' 1A10 0
 
 $releases = 'https://sourceforge.net/projects/mp3gain/files/MP3Gain-Windows%20%28Stable%29/'
 
