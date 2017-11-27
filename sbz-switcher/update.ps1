@@ -1,7 +1,5 @@
 import-module au
 
-sp 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3' 1A10 0
-
 $releases = 'https://sourceforge.net/projects/sbzswitcher/files/Release/'
 
 function global:au_SearchReplace {
@@ -14,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $re = '*SBZSwitcher_*.7z*'
     $url32 = $download_page.Links.href | Where-Object {$_ -Like $re} | Select-Object -First 1
