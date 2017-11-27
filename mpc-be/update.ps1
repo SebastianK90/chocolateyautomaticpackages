@@ -1,7 +1,5 @@
 import-module au
 
-sp 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3' 1A10 0
-
 $releases = 'https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/'
 
 function global:au_SearchReplace {
@@ -16,9 +14,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
-        
-    $version = $download_page.links | Where-Object {$_.outerHTML -like '*Click to enter*'} | Select-Object -ExpandProperty outerText -First 1
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+          
+    $version = ($download_page.links | Where-Object {$_ -like '*Click to enter*'} | Select-Object -ExpandProperty title -First 1).substring(15)
     $url = $download_page.links | Where-Object {$_.outerHTML -like '*Click to enter*'} | Select-Object -ExpandProperty href -First 1
     $url32   = 'https://sourceforge.net'+$url +'MPC-BE.'+$version+ '.x86-installer.zip/download'
     $url64   = 'https://sourceforge.net'+$url +'MPC-BE.'+$version+ '.x64-installer.zip/download'
