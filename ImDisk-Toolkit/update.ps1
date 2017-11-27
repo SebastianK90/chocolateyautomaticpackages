@@ -1,7 +1,5 @@
 import-module au
 
-sp 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3' 1A10 0
-
 $releases = 'https://sourceforge.net/projects/imdisk-toolkit/files/'
 function global:au_SearchReplace {
     @{
@@ -15,10 +13,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     
-    $version_dirty = ($download_page.links | Where-Object {$_.title -like '*Click to enter*'} | Select-Object -ExpandProperty innerText -First 1).substring(2)
+    $version_dirty = ($download_page.links | Where-Object {$_ -like '*Click to enter*'} | Select-Object -ExpandProperty title -First 1).substring(17)
     $ver = for ($i = 0;$i -lt $version_dirty.length;$i += 2){$version_dirty.substring($i,2)}
     $version = $ver[0] + '.' + $ver[1] + '.' +$ver[2]
     $url64   = ('https://sourceforge.net/projects/imdisk-toolkit/files/20'+$version_dirty+'/ImDiskTk-x64.exe/download')
