@@ -16,7 +16,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$latest = (Get-ChildItem $toolsPath -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.Name -like '*cemu_*'} | sort {$_.CreationTime} | select -First 1).FullName
+$latest = (Get-ChildItem $toolsPath -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.Name -like '*cemu*'} | sort {$_.CreationTime} | select -First 1).FullName
 
 Robocopy $latest $cemu_folder /R:0 /W:0 /E /XO
 
