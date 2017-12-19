@@ -2,7 +2,7 @@
 
 $packageName = 'ccleaner.portable'
 $url32       = 'https://www.piriform.com/ccleaner/download/portable/downloadfile'
-$checksum32  = 'd163a633699ec6ad27337a325ce50b1663d71a80f944e1a9c45f38df797978bc'
+$checksum32  = 'ab17a4fa1b1c88d2d49a96c22703cf6479ddd040c756ab3e333fffc121eb6203'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 $bits = Get-ProcessorBits
 $ccleaner_temp = "$env:USERPROFILE\ccleaner_temp"
