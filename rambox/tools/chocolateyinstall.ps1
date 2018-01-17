@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'rambox'
-$url32       = 'https://github.com/saenzramiro/rambox/releases/download/0.5.13/Rambox-0.5.13-ia32-win.zip'
-$url64       = 'https://github.com/saenzramiro/rambox/releases/download/0.5.13/Rambox-0.5.13-x64-win.zip'
-$checksum32  = '28d502d8801e439399a7669e159aa56516227b398bccb5514b630b0ad76d2212'
-$checksum64  = '57a4a36b46336578f3eed9c7b8ad62e950bfa2d1ea3a6d63c5122e1926fc9456'
+$url32       = 'https://github.com/saenzramiro/rambox/releases/download/0.5.14/Rambox-0.5.14-ia32-win.zip'
+$url64       = 'https://github.com/saenzramiro/rambox/releases/download/0.5.14/Rambox-0.5.14-x64-win.zip'
+$checksum32  = '0ef3a3e16421866d9ec150d5a30ae8fd29e0d40388af49aa19292d99a178f1ff'
+$checksum64  = 'efa74ed29e38002dea4e60e96c150ac703666e3df31e48a5cbc4b551b354c874'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
