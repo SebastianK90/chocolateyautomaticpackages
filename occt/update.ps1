@@ -4,13 +4,12 @@
 $releases = 'http://www.ocbase.com/download/'
 
 function global:au_SearchReplace {
-    @{
-        'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+  @{
+        "$($Latest.PackageName).nuspec" = @{
+            "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
         }
-     }
-}
+    }
+ }
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
