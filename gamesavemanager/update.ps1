@@ -1,6 +1,4 @@
-﻿import-module au
-
-# cd .\gamesavemanager
+import-module au
 
 $releases = 'http://www.gamesave-manager.com/'
 
@@ -17,8 +15,8 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
     
     $url32   = 'http://www.gamesave-manager.com/?s=download&a=dl'
-    [string]$version = (($download_page.ParsedHtml.getElementsByTagName("b") | Where {$_.sourceindex -eq '51'}).firstchild.textcontent).substring(1).replace('(Build ','').trimend(')').replace(' ','.')
-    #$version = ($download_page.links.innerHtml | Where-Object {$_ -like 'GameSave Manager *'}).substring(17)[0]
+    $a = $download_page.Links.title[8]
+    [string]$version =  [regex]::match($a,'[0-9]+(\.[0-9]+)*').value
     return @{ URL32 = $url32; Version = $version }
 }
 
