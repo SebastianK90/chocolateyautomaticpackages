@@ -15,7 +15,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
     
     $url32   = 'http://www.gamesave-manager.com/?s=download&a=dl'
-    $a = $download_page.Links.title[8]
+    $a = $download_page.Links.title | Where-Object {$_ -like '*Download GameSave*'}
     [string]$version =  [regex]::match($a,'[0-9]+(\.[0-9]+)*').value
     return @{ URL32 = $url32; Version = $version }
 }
