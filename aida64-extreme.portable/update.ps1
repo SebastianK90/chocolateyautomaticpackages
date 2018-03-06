@@ -1,11 +1,9 @@
 import-module au
 
-# cd .\ChanSort
+$website =  Invoke-WebRequest -uri 'https://www.aida64.com/downloads' -UseBasicParsing
 
-$website =  Invoke-WebRequest -uri 'https://www.aida64.com/downloads'
-
-$links = $website.links | Where-Object {$_.outerText -like '*AIDA64 Extreme*'} | Select-Object 
-$links[1].href
+$links = $website.links | Where-Object {$_.outerHTML-like '*AIDA64 Extreme*'} | Select-Object
+#$links[1].href
 
 $releases = 'https://www.aida64.com' + $links[1].href
 
@@ -20,7 +18,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     
-     $download_page = Invoke-WebRequest -Uri $releases
+     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
  
 
      $re      = '*aida64extreme*.zip'
