@@ -1,6 +1,6 @@
 ﻿import-module au
 
-$releases = 'http://www.angusj.com/resourcehacker/'
+$releases = 'http://www.angusj.com/resourcehacker'
 
 function global:au_SearchReplace {
    @{
@@ -12,19 +12,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = (Invoke-WebRequest -Uri $releases -UseBasicParsing).content
+    $url_down = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $download_page = $url_down.Content
     #$download_page.AllElements | ? tagName -eq 'strong' | ? InnerText -match '^Version' | % InnerText | set version
     #$version = $version -split ' ' | select -Last 1
     $pattern = '(?<=<h2>Resource\ Hacker)[\S\s]*<strong>Version (?<Version>[\d\.]+)'
     $version = [regex]::Match($download_page, $pattern).groups['Version'].value
-    $url =  $download_page.Links | ? href -match 'zip' | % href | Select -First 1
+    $url =  $url_down.links | ? href -match 'zip' | % href | Select -First 1
     $url32 = "$releases/$url"
-
     
-
-
-
-
     @{ URL32 = $url32; Version = $version }
 }
 
