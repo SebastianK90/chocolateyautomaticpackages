@@ -1,6 +1,6 @@
 ﻿import-module au
 
-$releases = 'http://www.angusj.com/resourcehacker/#download'
+$releases = 'http://www.angusj.com/resourcehacker'
 
 function global:au_SearchReplace {
    @{
