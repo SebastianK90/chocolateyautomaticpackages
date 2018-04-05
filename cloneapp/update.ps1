@@ -1,8 +1,6 @@
-﻿import-module au
+import-module au
 
-#cd .\cloneapp
-
-$releases = 'http://www.mirinsoft.com/index.php/component/jdownloads/viewdownload/39-cloneapp-portable/180-cloneapp?Itemid=235'
+$releases = 'http://www.mirinsoft.com/index.php/downloads/category/2-cloneapp'
 
 function global:au_SearchReplace {
     @{
@@ -17,8 +15,8 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $content = $download_page.Content
 
-    $pattern = '(?<=align="top"\ width="32"\ height="32")[\S\s]*CloneApp Version:(?<Version>[\d\.]+)'
-    $url32 = 'http://mirinsoft.com/index.php/component/jdownloads/finish/39-cloneapp-portable/180-cloneapp?Itemid=235'
+    $pattern = '(?<=<a\ href="/index\.php/downloads/core/download/2-cloneapp/1-cloneapp">)[\S\s]*CloneApp</a> (?<Version>[\d\.]+)'
+    $url32 = 'http://www.mirinsoft.com/index.php/downloads/core/send/2-cloneapp/1-cloneapp'
     $version = [regex]::Match($content, $pattern).groups['Version'].value
     return @{ URL32 = $url32; Version = $version }
 }
