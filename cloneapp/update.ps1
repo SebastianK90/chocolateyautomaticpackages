@@ -15,8 +15,8 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $content = $download_page.Content
 
-    $pattern = '(?<=<a\ href="/index\.php/downloads/core/download/2-cloneapp/1-cloneapp">)[\S\s]*CloneApp</a> (?<Version>[\d\.]+)'
-    $url32 = 'http://www.mirinsoft.com/index.php/downloads/core/send/2-cloneapp/1-cloneapp'
+    $pattern = '(?<="jd_files_oneline"\ style=""><a\ href="/index\.php/downloads/core/download/2-cloneapp/19-cloneapp)[\S\s]*CloneApp</a> (?<Version>[\d\.]+)'
+    $url32 = 'http://www.mirinsoft.com/index.php/downloads/core/send/2-cloneapp/19-cloneapp'
     $version = [regex]::Match($content, $pattern).groups['Version'].value
     return @{ URL32 = $url32; Version = $version }
 }
