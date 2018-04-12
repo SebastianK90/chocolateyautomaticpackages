@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://www.mirinsoft.com/index.php/downloads/cloneapp/download/2-cloneapp/19-cloneapp'
+$releases = 'http://www.mirinsoft.com/index.php/downloads/cloneapp'
 
 function global:au_SearchReplace {
     @{
