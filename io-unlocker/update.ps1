@@ -1,6 +1,4 @@
-﻿import-module au
-
-# cd .\io-unlocker
+import-module au
 
 $releases = 'http://www.iobit.com/en/iobit-unlocker.php'
 
@@ -15,9 +13,11 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
+    $content = $download_page.Content
 
+    $pattern = '(?<=class="button\ btn-jadegreen\ large">Free\ Download)[\S\s]*<dd><span>V (?<Version>[\d\.]+)'
     $url32   = 'http://update.iobit.com/dl/unlocker-setup.exe'
-    [string]$version = (($download_page.ParsedHtml.getElementsByTagName("dl") | Where {$_.className -eq 'downloadinfo'}).children()[1].firstchild.innerhtml).substring(2)
+    $version = [regex]::Match($content, $pattern).groups['Version'].value
     return @{ URL32 = $url32; Version = $version }
 }
 
