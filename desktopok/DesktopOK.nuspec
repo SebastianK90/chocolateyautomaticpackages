@@ -5,7 +5,7 @@
     <version>5.17</version>
     <title>DesktopOK</title>
     <authors>Nenad Hrg</authors>
-    <owners>Nenad Hrg</owners>
+    <owners>sippi</owners>
     <licenseUrl>http://www.softwareok.com/?seite=Freeware/desktopok/Eula</licenseUrl>
     <projectUrl>http://www.softwareok.com/?seite=Freeware/DesktopOK</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/desktopok.png</iconUrl>
