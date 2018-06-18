@@ -1,7 +1,5 @@
 import-module au
 
-# cd .\ChanSort
-
 $releases = 'https://github.com/PredatH0r/ChanSort/releases'
 
 function global:au_SearchReplace {
@@ -14,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $re      = '*ChanSort*.zip'
     $url     = $download_page.links | ? href -like $re | select -First 1 -expand href
