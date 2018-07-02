@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
 $packageName = 'cemu'
 $url32       = 'http://cemu.info/releases/cemu_1.12.2.zip'
@@ -22,4 +22,4 @@ Robocopy $latest $cemu_folder /R:0 /W:0 /E /XO
 
 Remove-Item $latest -Recurse -Force -ErrorAction SilentlyContinue
 
-Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\CEMU.lnk" "$cemu_folder\cemu.exe"
+Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\CEMU.lnk" "$cemu_folder\cemu.exe" -WorkingDirectory "$cemu_folder" -RunAsAdmin
