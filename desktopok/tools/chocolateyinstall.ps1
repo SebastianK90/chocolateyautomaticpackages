@@ -3,8 +3,8 @@
 $packageName = 'desktopok'
 $url32       = 'http://www.softwareok.com/Download/DesktopOK.zip'
 $url64       = 'http://www.softwareok.com/Download/DesktopOK_x64.zip'
-$checksum32  = 'b68d9e51ae9f2b9f96854ad1c7f117c2a841e836df6806aec5c0711107d3bf57'
-$checksum64  = '20cdd4eae996ca9216bae9654ce3baa810622df871debd7f1e2fd3931ff2bd1c'
+$checksum32  = 'e53504e9477719b6043b7ecd8f4d3e51a1eea74edba5d93380f37d3eb78bb281'
+$checksum64  = '6fb992066ba6cad1ede53a6546ddc89dd64b900c19053bd79dc0133a2143739b'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
