@@ -2,7 +2,7 @@
 
 $packageName = 'reshack.portable'
 $url32       = 'http://www.angusj.com/resourcehacker/resource_hacker.zip'
-$checksum32  = '5db4a44db264fc1bef8a0b7cfac9917e422592ae55305fbd1767e2bffb718b6a'
+$checksum32  = '8f56034e34d731ba0f67f37114182b238f373d8ddda238ed6b4739c5fdafcb2e'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
