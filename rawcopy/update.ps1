@@ -21,7 +21,7 @@ function global:au_GetLatest {
 
     $url64   = 'http://ltr-data.se/files/win64/rawcopy64.zip'
     $url32   = 'http://ltr-data.se/files/rawcopy.zip'
-    $version = '1.3.3.10'
+    $version = '1.3.5.12'
 
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
