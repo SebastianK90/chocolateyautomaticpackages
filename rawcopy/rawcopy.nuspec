@@ -16,7 +16,7 @@ rawcopy -m diskimage.img \\.\A:
   Writes a diskette image file called "diskimage.img" to a physical diskette
   in drive A:. (File extension .img is just an example, sometimes</summary>
         <releaseNotes />
-        <copyright />
+        <copyright>Copyright © Olof Lagerkvist 1997-2018</copyright>
         <language>en-US</language>
         <tags>tool copy file raw</tags>
     </metadata>
