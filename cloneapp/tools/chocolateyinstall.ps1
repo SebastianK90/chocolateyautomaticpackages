@@ -2,7 +2,7 @@
 
 $packageName = 'cloneapp'
 $url32       = 'http://www.mirinsoft.com/index.php/download/send/2-cloneapp/19-cloneapp'
-$checksum32  = '1fc4ace2035d98be318ed708e27a671523d3ede183a0d959d818f6d7925ebc24'
+$checksum32  = 'ef84636d61dd06ffb108334ad1334dff11d2d43991e803373d17f5d8e5340567'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
