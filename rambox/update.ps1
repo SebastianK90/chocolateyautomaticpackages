@@ -1,6 +1,6 @@
-﻿import-module au
+import-module au
 
-$releases = 'https://github.com/saenzramiro/rambox/releases'
+$releases = 'https://github.com/ramboxapp/community-edition/releases'
 
 function global:au_SearchReplace {
     @{
@@ -16,8 +16,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $re64      = '*x64-win.zip'
-    $re32      = '*ia32-win.zip'
+    $re64      = '*-win-x64.zip'
+    $re32      = '*-win-ia32.zip'
     $dirty_url64     = $download_page.links | ? href -like $re64 | select -First 1 <# 2 #> -expand href
     $dirty_url32     = $download_page.links | ? href -like $re32 | select -First 1 <# 2 #> -expand href
     $url64 = 'https://github.com' + $dirty_url64
