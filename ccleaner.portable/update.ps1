@@ -12,13 +12,17 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-  $url = ($download_page.links | Where-Object {$_ -like '*zip*'} | select href).href
-
-  $ver_history = Invoke-WebRequest 'https://www.ccleaner.com/ccleaner/version-history' -UseBasicParsing
-  $Matches = $null
-  $ver_history.Content -match "\<h6\>v((?:[\d]\.)[\d\.]+)"
-  $version = $Matches[1]
+    $useragents = @('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246',`
+    'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3112 Safari/537.36',`
+    'Mozilla/5.0 (Windows NT x.y; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0')
+    $random = Get-Random -Maximum 3
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $url = ($download_page.links | Where-Object {$_ -like '*zip*'} | select href).href
+    $output = "$env:TEMP\ccleaner.zip"
+    Invoke-WebRequest -Uri $url -OutFile $output -UserAgent [$useragents[$random]]
+    Set-Location $env:TEMP
+    Expand-Archive .\ccleaner.zip -Force
+    $version = ((Get-ChildItem .\ccleaner\ccleaner.exe).VersionInfo).ProductVersion
 
   @{ URL32 = $url ; Version = $version }
 }
