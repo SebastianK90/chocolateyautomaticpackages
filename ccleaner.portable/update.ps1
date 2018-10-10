@@ -1,6 +1,6 @@
-﻿import-module au
+import-module au
 
-$releases = 'https://www.piriform.com/ccleaner/download/portable'
+$releases = 'https://www.ccleaner.com/de-de/ccleaner/download/portable'
 
 function global:au_SearchReplace {
    @{
@@ -13,13 +13,11 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $url = ($download_page.links | Where-Object {$_ -like '*zip*'} | select href).href
 
-  $re  = '\.zip$'
-  $url = 'https://www.ccleaner.com/de-de/ccleaner/download/portable'
-
-  $download_page = Invoke-WebRequest https://www.piriform.com/ccleaner/version-history -UseBasicParsing
+  $ver_history = Invoke-WebRequest 'https://www.ccleaner.com/ccleaner/version-history' -UseBasicParsing
   $Matches = $null
-  $download_page.Content -match "\<h6\>v((?:[\d]\.)[\d\.]+)"
+  $ver_history.Content -match "\<h6\>v((?:[\d]\.)[\d\.]+)"
   $version = $Matches[1]
 
   @{ URL32 = $url ; Version = $version }
