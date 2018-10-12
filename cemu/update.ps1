@@ -17,7 +17,16 @@ function global:au_GetLatest {
     $re      = '*cemu*.zip'
     $url64  = $download_page.links | ? href -like $re | select -First 1 -expand href
     $url32 = $url64
-    $version = [regex]::match($url32,'[0-9]+(\.[0-9]+)*').value
+    $versionGroups = [regex]::Match($url32,'(?<Version>[0-9]+(?:\.[0-9]+)*)(?<Revision>[A-Za-z]*)').Groups
+    $version = $versionGroups['Version'].Value
+
+    $revision = 0
+    foreach ($c in $versionGroups['Revision'].Value.ToLowerInvariant().ToCharArray()) {
+        $revision *= 26
+        $revision += [int]$c - [int][char]'a'
+    }
+    $revision *= 100
+    $version += '.' + $revision
 
     return @{ URL32 = $url32; Version = $version }
 }
