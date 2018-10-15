@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>telegram.install</id>
+    <version>1.3.10</version>
+    <title>Telegram (Install)</title>
+    <authors>Pavel Durov,Nikolai Durov</authors>
+    <owners>dtgm,sippi</owners>
+    <licenseUrl>https://github.com/telegramdesktop/tdesktop/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://desktop.telegram.org/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/telegram.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Telegram is a cloud-based synchronized messaging app with a focus on speed and security. It's superfast, simple and free. You can use Telegram on all your devices at the same time - [Android](https://telegram.org/dl/android), [iOS](https://telegram.org/dl/ios), [WP](https://telegram.org/dl/wp), [Firefox](https://marketplace.firefox.com/app/telegram), [Chrome](https://telegram.org/dl/webogram/chromeapp), [Web Browser](https://telegram.org/dl/webogram), [Mac](https://telegram.org/dl/osx), [Linux](https://desktop.telegram.org/linux), and Windows desktop (this package) - your messages sync seamlessly across any of your phones, tablets or computers.
+
+With Telegram, you can send messages, photos, videos and files of any type (doc, zip, mp3, etc) to people who are in your phone contacts and have Telegram. You can also create groups for up to 200 people or send broadcasts to up to 100 contacts. As a result, Telegram is like SMS and email combined - and can take care of all your personal or business messaging needs.
+
+#### [Features](https://telegram.org/#why-switch-to-Telegram)
+
+#### Documentation
+* [FAQ](https://telegram.org/faq)
+* [FAQ-Technical](https://core.telegram.org/techfaq)
+* [API](https://core.telegram.org/api)
+* [Protocol](https://core.telegram.org/mtproto)
+* [Schema](https://core.telegram.org/schema)
+
+#### Community
+* [Facebook](https://telegram.org/faq#facebook)
+* [Twitter](https://telegram.org/faq#twitter)</description>
+    <summary>Cloud-based synchronized messaging app with a focus on speed and security</summary>
+    <releaseNotes>#### Program
+* [News](https://telegram.org/blog)
+* [Changelog](https://desktop.telegram.org/#changelog)
+</releaseNotes>
+    <copyright>© 2018 Pavel Durov and Nikolai Durov</copyright>
+    <tags>im messenger chat synchronized cloud admin</tags>
+    <projectSourceUrl>https://telegram.org/apps#source-code</projectSourceUrl>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/telegram.install/</packageSourceUrl>
+    <docsUrl>https://telegram.org/faq</docsUrl>
+    <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
+  </metadata>
+     <files>
+    <file src="tools\*.ps1" target="tools" />
+  </files>
+</package>
