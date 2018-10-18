@@ -38,7 +38,7 @@ With Telegram, you can send messages, photos, videos and files of any type (doc,
     <docsUrl>https://telegram.org/faq</docsUrl>
     <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="telegram.install" version="[1.4.3]" />
+      <dependency id="telegram.install" version="1.4.3" />
     </dependencies>
   </metadata>
    <files>
