@@ -17,7 +17,7 @@ function global:au_GetLatest {
     $b =  ($a | Where-Object {$_ -like '*.exe*'} | Select-Object -Last 1).innertext
     $version = [regex]::match(($b -split '\/')[-1],'[0-9]+(\.[0-9]+)*').value
     $url32   = 'http://www.ocbase.com/download/' + $b
-    return @{ URL32 = $url32; Version = $version }
+    return @{Version = $version }
 }
 
-update
+update -ChecksumFor none
