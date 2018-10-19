@@ -25,7 +25,7 @@ Get-ChocolateyWebFile @packageArgs -GetOriginalFileName
  
 $FileFullPath = get-childitem $toolsPath -recurse -include *.exe | select -First 1
       
-Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Drive Snapshot.lnk" $FileFullPath
+Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Drive Snapshot.lnk" $FileFullPath -WorkingDirectory "$toolsPath" -RunAsAdmin
 
 
 if(!(Test-Path $lic_path -ErrorAction SilentlyContinue))
