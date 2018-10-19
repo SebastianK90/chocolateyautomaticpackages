@@ -16,7 +16,7 @@ Install-ChocolateyZipPackage @packageArgs
 
 $FileFullPath = get-childitem $toolsPath -Recurse -Filter "CloneApp*" -include *.exe | select -First 1
   
-Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\CloneApp.lnk" $FileFullPath
+Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\CloneApp.lnk" $FileFullPath -WorkingDirectory "$toolsPath"
 
 Install-ChocolateyPath $toolsPath
   
