@@ -15,7 +15,7 @@
     <releaseNotes>http://www.ocbase.com/</releaseNotes>
     <copyright />
 		<dependencies>
-		    <dependency id="occt.install" />
+		    <dependency id="occt.install" version="4.5.1" />
         </dependencies>
     <tags>system stability cpu gpu psu power supply stress test freeware admin</tags>
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/occt.install</packageSourceUrl>
