@@ -34,4 +34,7 @@ will delete an association from the user registry</description>
     <tags>tool association windows user fta file type</tags>
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/setuserfta</packageSourceUrl>
   </metadata>
+    <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
