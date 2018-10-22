@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>setuserfta</id>
+    <version>1.7.1</version>
+    <title>SetUserFTA</title>
+    <authors>Christoph Kolbicz</authors>
+    <owners>sippi</owners>
+    <licenseUrl>https://github.com/sippi90/chocolateyautomaticpackages/blob/master/setuserfta/tools/EULA.txt</licenseUrl>
+    <projectUrl>https://kolbi.cz/blog/2017/10/25/setuserfta-userchoice-hash-defeated-set-file-type-associations-per-user/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>how to use SetUserFTA:
+i made it very easy for you and the only thing you have to supply is the extension and the ProgId (optional since Version 1.1, a groupname). it works just like assoc.exe:
+
+SetUserFTA.exe extension progid (optional:Groupname)
+
+or
+
+SetUserFTA.exe configfile
+
+and since v1.7
+
+SetUserFTA.exe get
+
+will show all protected filetypes, just like GetUserFTA
+
+SetUserFTA.exe del extension
+
+will delete an association from the user registry</description>
+    <summary>SetUserFTA sets User File Type Associations per command line or script on Windows 8/10 and Server 2012/2016/2019</summary>
+    <releaseNotes>https://kolbi.cz/blog/2017/10/25/setuserfta-userchoice-hash-defeated-set-file-type-associations-per-user/</releaseNotes>
+    <copyright />
+    <language>en-US</language>
+    <tags>tool association windows user fta file type</tags>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/setuserfta</packageSourceUrl>
+  </metadata>
+</package>
