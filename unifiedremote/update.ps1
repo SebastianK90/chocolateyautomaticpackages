@@ -19,7 +19,7 @@ function global:au_SearchReplace {
     
     $url32   = 'https://www.unifiedremote.com/download/windows-setup'
     $output = "$env:TEMP\unifiedremote.exe"
-    Invoke-WebRequest -Uri $url32 -OutFile $output -UserAgent [$useragents[$random]]
+    Invoke-WebRequest -Uri $url32 -OutFile $output -UserAgent [$useragents[$random]] -UseBasicParsing
     Set-Location $env:TEMP
     $version = ((Get-ChildItem .\unifiedremote.exe).VersionInfo).FileVersion
     Remove-Item $output
