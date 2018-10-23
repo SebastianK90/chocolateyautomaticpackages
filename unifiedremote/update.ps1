@@ -14,12 +14,12 @@ function global:au_SearchReplace {
 
     $url32   = 'https://www.unifiedremote.com/download/windows'
     $output = "$env:TEMP\unifiedremote.exe"
-    Start-BitsTransfer -Source $url32 -Destination $output -TransferType Download
-    Set-Location $env:TEMP
-    $version = ((Get-ChildItem .\unifiedremote.exe).VersionInfo).FileVersion
+    Invoke-WebRequest -Uri $url32 -OutFile $output
+    $version = ((Get-ChildItem $env:TEMP\unifiedremote.exe).VersionInfo).FileVersion
+    $version = $version -replace '\s',''
     Remove-Item $output
     
     return @{URL32 = $url32; Version = $version }
 }
 
-update -NoCheckUrl all
+update
