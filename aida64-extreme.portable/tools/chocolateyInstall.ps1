@@ -18,7 +18,7 @@ Install-ChocolateyZipPackage @packageArgs
 
 $FileFullPath = get-childitem $toolsPath -recurse -include aida64.exe | select -First 1
   
-Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\AIDA64.lnk" $FileFullPath
+Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\AIDA64.lnk" $FileFullPath -WorkingDirectory $toolsPath
 
 if(Test-Path $aida64_temp)
     {
