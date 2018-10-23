@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/telegramdesktop/tdesktop/releases/'
+$releases = 'https://github.com/telegramdesktop/tdesktop/releases/latest'
 
 function global:au_SearchReplace {
    @{
