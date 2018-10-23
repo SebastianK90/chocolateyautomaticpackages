@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>unifiedremote</id>
+    <version>3.6.1.2342</version>
+    <title>Unified Remote</title>
+    <authors>Unified Intents AB</authors>
+    <owners>Nathan Mascitelli, sippi</owners>
+    <licenseUrl>https://www.unifiedremote.com/terms</licenseUrl>
+	<docsUrl>https://www.unifiedremote.com/help</docsUrl>
+	<mailingListUrl>https://www.unifiedremote.com/contact</mailingListUrl>
+    <projectUrl>http://www.unifiedremote.com</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/unifiedremote.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Unified Remote Windows server application. Allows a Unified Remote mobile app to control a Windows PC.</description>
+    <summary>The Unified Remote Windows Server</summary>
+    <releaseNotes />
+    <copyright>© 2010-2018 Unified Intents AB. All rights reserved.</copyright>
+    <tags>unified remote control mouse computer</tags>
+			<dependencies>
+		    <dependency id="autohotkey.portable" version="1.1.30.00"/>
+        </dependencies>
+	<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/unifiedremote</packageSourceUrl>
+  </metadata>
+   <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

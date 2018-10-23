@@ -1,0 +1,1 @@
+Get-Process RemoteServerWin | Stop-Process -Force
