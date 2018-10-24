@@ -27,7 +27,7 @@ else
     $FileFullPath = get-childitem $toolsPath -recurse -include *64*.exe | select -First 1
     }
 
-Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\CCleaner.lnk" $FileFullPath
+Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\CCleaner.lnk" $FileFullPath -WorkingDirectory "$toolsPath"
 
 if(Test-Path $ccleaner_temp)
     {
