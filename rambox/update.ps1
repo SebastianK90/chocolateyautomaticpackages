@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/ramboxapp/community-edition/releases'
+$releases = 'https://github.com/ramboxapp/community-edition/releases/latest'
 
 function global:au_SearchReplace {
     @{
