@@ -16,4 +16,4 @@ Install-ChocolateyZipPackage @packageArgs
 
 $FileFullPath = get-childitem $toolsPath -recurse -include *.exe | select -First 1
      
-Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Resource Hacker™.lnk" $FileFullPath
+Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Resource Hacker™.lnk" $FileFullPath -WorkingDirectory "$toolsPath"
