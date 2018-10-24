@@ -32,9 +32,9 @@ $FileFullPath = get-childitem $toolsPath -Recurse -Filter "EcMenu*" -include *.e
 $bits = Get-ProcessorBits
 if ($bits -eq 64)
 {
-Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Easy Context Menu.lnk" $FileFullPath[1]
+Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Easy Context Menu.lnk" $FileFullPath[1] -WorkingDirectory "$toolsPath"
 }
 else
 {
-Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Easy Context Menu.lnk" $FileFullPath[0]
+Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Easy Context Menu.lnk" $FileFullPath[0] -WorkingDirectory "$toolsPath"
 }
