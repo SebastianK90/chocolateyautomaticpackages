@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>setdefaultbrowser </id>
+    <version>1.3</version>
+    <title>SetDefaultBrowser</title>
+    <authors>Christoph Kolbicz</authors>
+    <owners>sippi</owners>
+    <projectUrl>https://kolbi.cz/blog/2017/11/10/setdefaultbrowser-set-the-default-browser-per-user-on-windows-10-and-server-2016-build-1607/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>how to use
+its really simple. just run SetDefaultBrowser.exe in the user context (there is a list of possible ways in my previous blog) with the the hive and browser of your choice. Since the version 1.3 there are more parameters and it might look complicated, but it gives you actually much more flexibility. Just run SetDefaultBrowser without parameters to get a list of all available browsers:
+
+
+
+as you can see, i have a ton of Browsers on my system and using the following examples i can change the default Browser:
+
+SetDefaultBrowser.exe HKLM Firefox-308046B0AF4A39CB
+this will set the x64 Firefox as my default
+SetDefaultBrowser HKCU “Google Chrome.HEYY3KJOYOAJOPVCHWOFAPMTPI”
+this will set the Chrome that is only installed in my AppData as my default
+SetDefaultBrowser.exe HKLM Edge delay=1000
+this will set Edge as my default browser, but will wait 1 second until it executes. delay must be provided in milliseconds.
+SetDefaultBrowser.exe HKLM IEXPLORE.EXE group=IE_Users
+this will set IE as my default Browser, if i am member of the IE_Users group
+i hope these examples explain the possibilities and parameters clearly. if a browser identifier contains a space, you must use quotes – for example “Google Chrome”. the same applies to group names (but you also can use Domain\Group or group@yourdomain.tld).
+
+to maintain limited compatibility with the older versions of SetDefaultBrowser, i have added shortcuts to the most used Browsers
+
+SetDefaultBrowser.exe chrome
+this will set Chrome as my default Browser, when its available in HKLM
+SetDefaultBrowser.exe ie delay=2000
+this will set Internet Explorer as my default Browser but delays two seconds before
+SetDefaultBrowser edge group=EdgeUsers
+this will make Edge the default if the user is member of the EdgeUsers group
+available shortcuts are: chrome, ie, iexplore and edge. i had to skip Firefox, since you can have multiple Firefox installations (for example x64 and x86, like on the screenshot above) and using the hive and browser parameter, you can better specify which one you want to set as default.
+
+SetDefaultBrowser will also find the browser when it is not installed at the default path.</description>
+    <summary>the story behind is pretty much the same, but to set a Browser, additional Registry Keys are needed (they are protected with the Hash like the Filetypes). the only difference is, that Microsoft also checks the path of the Browser (and hashes it too). for that reason i decided to create a separate tool to make it as simple as possible.</summary>
+    <releaseNotes>https://kolbi.cz/blog/2017/11/10/setdefaultbrowser-set-the-default-browser-per-user-on-windows-10-and-server-2016-build-1607/</releaseNotes>
+    <copyright />
+    <language>en-US</language>
+    <tags>tool set default browser windows 10</tags>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/setdefaultbrowser</packageSourceUrl>
+  </metadata>
+    <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
