@@ -16,7 +16,7 @@ function global:au_GetLatest {
 
     $url32     = 'https://kolbi.cz/SetDefaultBrowser.zip'
     $output = "$env:TEMP\SetDefaultBrowser.zip"
-    Invoke-WebRequest -Uri $url32 -OutFile $output
+    Invoke-WebRequest -Uri $url32 -OutFile $output -UseBasicParsing
     Set-Location $env:TEMP
     Expand-Archive "$env:TEMP\SetDefaultBrowser.zip" -Force
     $version = ((Get-ChildItem $env:TEMP\SetDefaultBrowser\SetDefaultBrowser\SetDefaultBrowser.exe).VersionInfo).FileVersion
