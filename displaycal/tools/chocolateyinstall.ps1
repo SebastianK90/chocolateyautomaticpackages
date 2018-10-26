@@ -2,7 +2,7 @@
 
 $packageName = 'displaycal'
 $url32       = 'https://sourceforge.net/projects/dispcalgui/files/release/3.7.0.0/DisplayCAL-3.7.0.0-Setup.exe/download'
-$checksum32  = 'BC16193229BABBA144A09357483FEBB4DFC59EF7421DBE69C1127F5891487A99'
+$checksum32  = 'bc16193229babba144a09357483febb4dfc59ef7421dbe69c1127f5891487a99'
 
 $packageArgs = @{
   packageName            = $packageName
