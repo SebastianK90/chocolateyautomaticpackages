@@ -28,7 +28,7 @@ Create synthetic ICC profiles with custom primaries, white- and blackpoint as we
         <summary>DisplayCAL (formerly known as dispcalGUI) is a display calibration and profiling solution with a focus on accuracy and versatility (in fact, the author is of the honest opinion it may be the most accurate and versatile ICC compatible display profiling solution available anywhere)</summary>
     <releaseNotes>
 * [Roadmap](https://displaycal.net/#todo)
-* [Changelog] (https://displaycal.net/CHANGES.html)
+* [Changelog](https://displaycal.net/CHANGES.html)
 </releaseNotes>
         <copyright>© 2018 Florian Höch</copyright>
         <tags>display calibration color management temperature brightness adjust </tags>
