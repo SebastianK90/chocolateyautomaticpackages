@@ -15,7 +15,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $url32 = ($download_page.links | Where-Object {$_ -like '*zip*'} | select href).href
     $output = "$env:TEMP\ccleaner.zip"
-    Invoke-WebRequest -Uri $url -OutFile $output -UseBasicParsing
+    Invoke-WebRequest -Uri $url32 -OutFile $output -UseBasicParsing
     Set-Location $env:TEMP
     Expand-Archive .\ccleaner.zip -Force
     $version = ((Get-ChildItem .\ccleaner\ccleaner.exe).VersionInfo).ProductVersion
