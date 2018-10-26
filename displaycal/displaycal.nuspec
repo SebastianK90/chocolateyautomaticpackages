@@ -26,6 +26,9 @@ Create synthetic ICC profiles with custom primaries, white- and blackpoint as we
         <releaseNotes>https://displaycal.net/CHANGES.html</releaseNotes>
         <copyright>© 2018 Florian Höch</copyright>
         <tags>display calibration color management temperature brightness adjust </tags>
+		    <dependencies>
+      <dependency id="dispcalgui.install" version="3.7.0.0" />
+    </dependencies>
     </metadata>
 	 <files>
     <file src="tools\**" target="tools" />
