@@ -19,7 +19,7 @@
         <summary>Highly experimental software to emulate Wii U applications on PC.</summary>
         <releaseNotes>http://cemu.info/changelog.html</releaseNotes>
 		<dependencies>
-		    <dependency id="vcredist2015" />
+		    <dependency id="vcredist2017" />
         </dependencies>
         <copyright />
         <tags>wii u emulator</tags>
