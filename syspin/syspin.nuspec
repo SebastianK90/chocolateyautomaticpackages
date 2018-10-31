@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>syspin</id>
+        <version>0.9</version>
+        <title>syspin</title>
+        <authors>Technosys Corporation</authors>
+		<owners>sippi</owners>
+        <licenseUrl>https://www.technosys.net/terms</licenseUrl>
+        <projectUrl>https://www.technosys.net/products/utils/pintotaskbar</projectUrl>
+		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/syspin</packageSourceUrl>
+		<iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/syspin.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>* Usage :
+  syspin ["file"] c:#### or syspin ["file"] c:"commandstring"
+  c:5386  : Pin to taskbar
+  c:5387  : Unpin from taskbar
+  c:51201 : Pin to start
+  c:51394 : Unpin to start
+
+* Samples :
+  syspin "%PROGRAMFILES%\Internet Explorer\iexplore.exe" c:5386
+  syspin "C:\Windows\notepad.exe" c:"Pin to taskbar"
+  syspin "%WINDIR%\System32\calc.exe" c:"Pin to start"
+  syspin "%WINDIR%\System32\calc.exe" c:"Unpin from taskbar"
+  syspin "C:\Windows\System32\calc.exe" c:51201
+
+* Note :
+  You cannot pin any metro app or batch file</description>
+        <summary>Windows 7,8,10 Pin To Taskbar Command Prompt Utility.</summary>
+        <releaseNotes>https://www.technosys.net/products/utils/pintotaskbar</releaseNotes>
+        <copyright>© Technosys Corporation 1998-2018</copyright>
+		<bugTrackerUrl>https://www.technosys.net/support</bugTrackerUrl>
+        <language>en-US</language>
+        <tags>pin taskbar start menu</tags>
+    </metadata>
+	 <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
