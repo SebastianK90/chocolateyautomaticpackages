@@ -10,12 +10,19 @@
     <projectUrl>https://sourceforge.net/projects/mpcbe</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/mpc-be.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Media Player Classic - BE is based on the original "Media Player Classic" project (Gabest) and "Media Player Classic Home Cinema" project (Casimir666), contains additional features and bug fixes.</description>
+    <description>Media Player Classic - BE is a free and open source audio and video player for Windows.
+Media Player Classic - BE is based on the original "Media Player Classic" project (Gabest) and "Media Player Classic Home Cinema" project (Casimir666), contains additional features and bug fixes.
+## Features
+* Playing various video and audio files
+* Support for hardware decoding and deinterlacing
+
+* Automatically mount ISO images.  </description>
     <summary>Media Player Classic - BE is a free and open source audio and video player for Windows.</summary>
-    <releaseNotes />
+    <releaseNotes>https://sourceforge.net/p/mpcbe/activity</releaseNotes>
     <copyright>MPC-BE Team</copyright>
-    <tags>media player audio video admin</tags>
+    <tags>media player audio video</tags>
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/mpc-be</packageSourceUrl>
+    <projectSourceUrl>https://sourceforge.net/p/mpcbe/code/HEAD/tree/</projectSourceUrl>
     <bugTrackerUrl>https://sourceforge.net/p/mpcbe/tickets/</bugTrackerUrl>
   </metadata>
    <files>

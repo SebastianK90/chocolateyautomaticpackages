@@ -22,7 +22,7 @@ Media Player Classic - BE is based on the original "Media Player Classic" projec
     <copyright>MPC-BE Team</copyright>
     <tags>media player audio video</tags>
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/mpc-be-beta</packageSourceUrl>
-	<projectSourceUrl>https://sourceforge.net/p/mpcbe/code/HEAD/tree/</projectSourceUrl>
+    <projectSourceUrl>https://sourceforge.net/p/mpcbe/code/HEAD/tree/</projectSourceUrl>
     <bugTrackerUrl>https://sourceforge.net/p/mpcbe/tickets/</bugTrackerUrl>
   </metadata>
    <files>

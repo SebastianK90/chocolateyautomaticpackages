@@ -7,7 +7,7 @@ $url64       = 'https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20bu
 $checksum32  = 'd5ed4d24ba9fa27647abc011b2dda4ee6feb01946595602aefa32a68d83f6c2d'
 $checksum64  = '6df7fbca20e21cb93c5835c0f59df3ad19400d824c887ab0453bd0b9186c9fe5'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$silentArgs  = '/VERYSILENT /COMPONENTS="main,mpciconlib,mpcresources"'
+$silentArgs  = '/VERYSILENT /NORESTART /SUPPRESSMSGBOXES /SP-'
 
 $packageArgs = @{
   packageName    = $packageName
@@ -26,18 +26,5 @@ $FileFullPath = Get-ChildItem $toolsPath -Recurse -Include *.exe | Sort-Object -
  
 Install-ChocolateyInstallPackage  $packageName $fileType $silentArgs $FileFullPath
 
-$uninstall = Get-ChildItem -ErrorAction SilentlyContinue -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall |
-    Get-ItemProperty |
-        Where-Object {$_.DisplayName -match "mpc-be" } |
-            Select-Object -Property DisplayName, UninstallString
- 
-$installpath = ($uninstall.UninstallString).Replace('unins000.exe','')
-$bits = Get-ProcessorBits
-if ($bits -eq 64)
-{
-Install-ChocolateyPath $installpath
-}
-else
-{
-Install-ChocolateyPath $installpath
-}
+$regkey = Get-InstallRegistryKey "MPC-BE*"
+Install-ChocolateyPath $regkey.InstallLocation
