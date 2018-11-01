@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>mpc-be</id>
-    <version>1.5.2</version>
+    <id>mpc-be-beta</id>
+    <version>1.5.2.3973-beta</version>
     <title>MPC-BE</title>
     <authors>MPC-BE Team</authors>
     <owners>sippi</owners>
