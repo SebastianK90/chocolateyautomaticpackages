@@ -38,7 +38,7 @@ Create synthetic ICC profiles with custom primaries, white- and blackpoint as we
     
 	
     <dependencies>
-      <dependency id="dispcalgui.install" version="3.7.0.0" />
+      <dependency id="dispcalgui.install" version="[3.7.0.0]" />
     </dependencies>
   </metadata>
 	 <files>
