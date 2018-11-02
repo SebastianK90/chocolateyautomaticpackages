@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'dispcalgui.install'
-$url32       = 'https://sourceforge.net/projects/dispcalgui/files/release/3.7.0.0/DisplayCAL-3.7.0.0-Setup.exe/download'
-$checksum32  = 'BC16193229BABBA144A09357483FEBB4DFC59EF7421DBE69C1127F5891487A99'
+$url32       = 'https://sourceforge.net/projects/dispcalgui/files/release/3.7.1.0/DisplayCAL-3.7.1.0-Setup.exe/download'
+$checksum32  = 'bb09c987ee592654a6fbf3114bcaeda191e8aadba7a5f1c31b6562b3ec901caf'
 
 $packageArgs = @{
   packageName            = $packageName
