@@ -5,7 +5,7 @@ $releases = 'https://sourceforge.net/projects/dispcalgui/files/release/'
 function global:au_SearchReplace {
   @{
         "$($Latest.PackageName).nuspec" = @{
-            "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
+            "(\<dependency .+?`"dispcalgui.portable`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
         }
     }
  }

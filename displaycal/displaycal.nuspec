@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>displaycal</id>
-        <version>3.7.0.0</version>
+        <version>3.7.1.1</version>
         <title>DisplayCAL</title>
         <authors>Florian Höch</authors>
         <owners>sippi</owners>
@@ -33,8 +33,8 @@ Create synthetic ICC profiles with custom primaries, white- and blackpoint as we
         <copyright>© 2018 Florian Höch</copyright>
         <tags>display calibration color management temperature brightness adjust </tags>
     <docsUrl>https://displaycal.net/#usage</docsUrl>
-		    <dependencies>
-      <dependency id="dispcalgui.install" version="3.7.0.0" />
+	    <dependencies>
+      <dependency id="dispcalgui.install" version="3.7.1.1" />
     </dependencies>
     </metadata>
 	 <files>
