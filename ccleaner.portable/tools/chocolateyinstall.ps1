@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'ccleaner.portable'
-$url32       = 'https://download.ccleaner.com/portable/ccsetup550.zip'
-$checksum32  = 'f8edfb434fd845259cfad8078dbf9873e318a38d8a74549a535bc5c47fe1bf91'
+$url32       = 'https://download.ccleaner.com/portable/ccsetup551.zip'
+$checksum32  = '83cb2475b68d007729c3f3ed6207b2dd87d161ae8d7027da45f1fdb15c2725e1'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 $bits = Get-ProcessorBits
 $ccleaner_temp = "$env:USERPROFILE\ccleaner_temp"
