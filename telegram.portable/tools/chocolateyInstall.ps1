@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'telegram.portable'
-$url32 = 'https://github.com/telegramdesktop/tdesktop/releases/download/v1.5.3/tportable.1.5.3.zip'
-$checksum32 = '9906bbebd44928647e3eeb02521d822f735a515dd53e1c2494e11e79f2379956'
+$url32 = 'https://github.com/telegramdesktop/tdesktop/releases/download/v1.5.4/tportable.1.5.4.zip'
+$checksum32 = '1beff93c0962f393751453e6b4c17f450fbe31d28808756e5b9761b26f1c3ea3'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
