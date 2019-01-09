@@ -3,8 +3,8 @@
 $packageName = 'coretemp'
 $url32       = 'http://www.alcpu.com/CoreTemp/php/download.php?id=2'
 $url64       = 'http://www.alcpu.com/CoreTemp/php/download.php?id=3'
-$checksum32  = '1a4db08f1a0f5afc326988348d88b54eec448439109232c446b5af56dffacf1d'
-$checksum64  = 'f9c277344ab41c876d0c5f297f139104ae955cc51a3eae746460633e553f2e55'
+$checksum32  = 'd10a793ad45eda7726663cb580716a1cdbf29913da3ca4fb3371712f4912a53a'
+$checksum64  = '997815238d03a5161ad83afe06499dcd0c0dfd614eb4b424f6fc2f80a5706d48'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
