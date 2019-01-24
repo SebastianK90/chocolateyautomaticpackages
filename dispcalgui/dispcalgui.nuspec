@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>dispcalgui</id>
-    <version>3.7.1.0</version>
+    <version>3.7.1.4</version>
     <title>dispcalGUI</title>
     <authors>Florian Höch</authors>
     <owners>dtgm, sippi</owners>
@@ -38,7 +38,7 @@ Create synthetic ICC profiles with custom primaries, white- and blackpoint as we
     
 	
     <dependencies>
-      <dependency id="dispcalgui.install" version="[3.7.1.1]" />
+      <dependency id="dispcalgui.install" version="[3.7.1.4]" />
     </dependencies>
   </metadata>
 	 <files>
