@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'telegram.install'
-$url32 = 'https://github.com/telegramdesktop/tdesktop/releases/download/v1.5.9/tsetup.1.5.9.exe'
-$checksum32 = 'c168968cd9f73300729c8def5a5499de1f8a80215a6458a1282df6ec8d4aa534'
+$url32 = 'https://github.com/telegramdesktop/tdesktop/releases/download/v1.5.11/tsetup.1.5.11.exe'
+$checksum32 = '5627de15ae00c1427152980c5c3cc5104019c85f70498cd66f2240d4598fb7c1'
 		  
 						  
 $packageArgs = @{
