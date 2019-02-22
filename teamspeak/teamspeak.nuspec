@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>teamspeak</id>
+    <title>TeamSpeak</title>
+    <version>3.2.3.20190222</version>
+    <authors>"TeamSpeak Systems GmbH"</authors>
+    <owners>caskater4,sippi</owners>
+    <summary>TeamSpeak Client</summary>
+    <description>A Voice-Over-IP (VoIP) software developed primarily for gamers to communicate with one another.</description>
+    <projectUrl>https://www.teamspeak.com/en/</projectUrl>
+    <tags>admin teamspeak team speak ts3 ts voip mumble ventrilo</tags>
+    <copyright>© 2019. TeamSpeak Systems, Inc. All Rights Reserved.</copyright>
+    <licenseUrl>http://www.teamspeak.com/?page=eula</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>http://forum.teamspeak.com/forums/91-Latest-News</releaseNotes>
+	<docsUrl>https://support.teamspeakusa.com/index.php?/Knowledgebase/List/Index/10/english</docsUrl>
+	<mailingListUrl>http://forum.teamspeak.com/</mailingListUrl>
+	<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/teamspeak</packageSourceUrl>
+    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/teamspeak.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
