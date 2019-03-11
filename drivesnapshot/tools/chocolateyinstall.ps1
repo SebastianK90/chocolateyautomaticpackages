@@ -3,8 +3,8 @@
 $packageName = 'drivesnapshot'
 $url32       = 'http://www.drivesnapshot.de/download/snapshot.exe'
 $url64       = 'http://www.drivesnapshot.de/download/snapshot64.exe'
-$checksum32  = 'e7c9a97feac101e081292f31ca255193e1636a76fdc7c217fe278904afc65edd'
-$checksum64  = '5b1cdf07781636523b4e5c15e35feb2b2de0fdde494961b74c7b4dbd93dbcdd6'
+$checksum32  = '91a6a6311953fda56e38ac7dfc250dcba36185793a9270370696a8a8414eb205'
+$checksum64  = '7eda963eb9dab0ba982095c683a502ac8d6b2ba0d0afb0fc98c97a1c31b7afbc'
 $toolsPath   = (Split-Path $MyInvocation.MyCommand.Definition)
 $bits = Get-ProcessorBits
 $lic_path = "$env:USERPROFILE\drivesnapshot_lic"
