@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $content = $download_page.content
-    $pattern = '(?<=img align="middle" class=)[\S\s]*EMDB V(?<Version>[\d\.]+)'
+    $pattern = '(?<=)[\S\s]*"version" content="(?<Version>[\d\.]+)'
 
     $version = [regex]::Match($content, $pattern).groups['Version'].value    
     #$version = ($download_page.AllElements | where {$_.innerHTML -like "EMDB V*"} | Select-Object -ExpandProperty innerHTML -First 1).replace('EMDB V','')
