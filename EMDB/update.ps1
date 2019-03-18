@@ -2,7 +2,7 @@
 
 # cd .\emdb
 
-$releases = 'http://www.emdb.eu/downloads.html'
+$releases = 'http://www.emdb.eu/index.html'
 
 function global:au_SearchReplace {
     @{
