@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>vidcoder</id>
-    <version>3.16</version>
+    <version>4.34</version>
     <title>VidCoder</title>
     <authors>RandomEng</authors>
     <owners>angryhussord,sippi</owners>
