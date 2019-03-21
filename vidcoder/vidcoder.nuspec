@@ -17,11 +17,14 @@
     <copyright />
     <tags>Handbrake Windows video transcoding blu-ray dvd ripper admin</tags>
     <projectSourceUrl>https://github.com/RandomEngy/VidCoder</projectSourceUrl>
-	<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/vidcoder</packageSourceUrl>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/vidcoder</packageSourceUrl>
     <docsUrl>http://vidcoder.net/Documentation/RippingDiscs.html</docsUrl>
     <bugTrackerUrl>https://github.com/RandomEngy/VidCoder/issues</bugTrackerUrl>
+	    <dependencies>
+      <dependency id="dotnetfx" />
+    </dependencies>
   </metadata>
-    <files>
+      <files>
     <file src="tools\**" target="tools" />
   </files>
 </package>
