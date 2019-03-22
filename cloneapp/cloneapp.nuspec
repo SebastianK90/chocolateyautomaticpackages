@@ -7,10 +7,10 @@
         <authors>Belmin Hasanovic</authors>
         <owners>sippi</owners>
 		<docsUrl>http://www.mirinsoft.com/downloads/ca_docs/manual.pdf</docsUrl>
-		<mailingListUrl>http://www.mirinsoft.com/index.php/support/community</mailingListUrl>
+		<mailingListUrl>http://www.mirinsoft.com/support</mailingListUrl>
 		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/cloneapp</packageSourceUrl>
         <licenseUrl>http://www.mirinsoft.com/downloads/ca_legal/license.txt</licenseUrl>
-        <projectUrl>http://www.mirinsoft.com/index.php/about-cloneapp</projectUrl>
+        <projectUrl>http://www.mirinsoft.com/ms-apps/cloneapp</projectUrl>
         <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/cloneapp.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A fresh re-install always makes Windows much faster but that means you lose all your program settings.
