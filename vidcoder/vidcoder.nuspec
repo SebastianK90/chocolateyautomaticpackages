@@ -21,7 +21,7 @@
     <docsUrl>http://vidcoder.net/Documentation/RippingDiscs.html</docsUrl>
     <bugTrackerUrl>https://github.com/RandomEngy/VidCoder/issues</bugTrackerUrl>
 	    <dependencies>
-      <dependency id="dotnetfx" />
+      <dependency id="dotnetfx" version="4.7.1.20180317" />
     </dependencies>
   </metadata>
       <files>
