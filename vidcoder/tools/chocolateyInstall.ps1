@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'vidcoder'
-$url32       = 'https://github.com/RandomEngy/VidCoder/releases/download/v4.34/VidCoder-4.34.exe'
-$checksum32  = '2F5B23D70F98B8B0B62A2A095FACD3F013F3DB6A474B05A2B74D326144F24EAB'
+$url32       = 'https://github.com/RandomEngy/VidCoder/releases/download/v4.35/VidCoder-4.35.exe'
+$checksum32  = 'cd443aaee0778b5801f6bf9c45b5435fa21a9b4fd2d918f62c3f118dadc8768b'
 
 $packageArgs = @{
   packageName            = $packageName
