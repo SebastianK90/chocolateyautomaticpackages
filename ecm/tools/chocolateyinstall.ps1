@@ -2,7 +2,7 @@
  
 $packageName = 'ecm'
 $url32       = 'https://www.sordum.org/files/easy-context-menu/ec_menu.zip'
-$checksum32  = 'aea6598e29aae8fde6c32db1e8c56a73d0cf97ae15a032daa947761e374bbe1e'
+$checksum32  = 'fc95324b24f5e03ed5e49a7cd63c5c9183ad2bc0c876ca2499ca7a84f9131ebb'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 $options =
 @{
