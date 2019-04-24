@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>desktopok</id>
-    <version>6.16</version>
+    <version>6.16.0.20190424</version>
     <title>DesktopOK</title>
     <authors>Nenad Hrg</authors>
     <owners>sippi</owners>
@@ -17,13 +17,14 @@ DesktopOK is a small but effective solution for user that have to change the scr
 · Each user can then have his own arrangement.
 · Automatically hide and display desktop icons
 · Minimises to tray area</summary>
-    <releaseNotes>http://www.softwareok.com/?seite=Freeware/DesktopOK/History</releaseNotes>
+    <releaseNotes></releaseNotes>
     <copyright />
     <tags>tool desktop icon save position</tags>
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/desktopok</packageSourceUrl>
     <mailingListUrl>http://www.softwareok.com/?seite=Kontakt</mailingListUrl>
   </metadata>
-  	 <files>
+  	<files>
     <file src="tools\**" target="tools" />
+	<file src="legal\**" target="legal" />
   </files>
 </package>

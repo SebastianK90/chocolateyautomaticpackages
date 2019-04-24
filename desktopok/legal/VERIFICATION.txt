@@ -1,0 +1,24 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to
+
+   x32: https://www.softwareok.com/Download/DesktopOK.zip
+   x64: https://www.softwareok.com/Download/DesktopOK_x64.zip
+
+   to download the installer.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum32: EB3AEA04F0ED204472F1C93096E8D3DEC8B1E5FA197085741993179044258ED8
+   checksum64: 18CBD54368D14FB0AA5433CA7FD56CAC4B0913206FD2343EC92216407A642A06
+
+
+File 'LICENSE.md' is obtained from:
+    http://www.softwareok.com/?seite=Freeware/DesktopOK/Eula
