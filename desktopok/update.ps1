@@ -1,8 +1,5 @@
 ﻿import-module au
 
-$au_Push = $true
-$au_Force = $true
-
 $releases = 'https://www.softwareok.de/?seite=Freeware/DesktopOK'
 
 function global:au_SearchReplace {

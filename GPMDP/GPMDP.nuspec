@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>GPMDP</id>
-    <version>4.6.1</version>
+    <id>gpmdp</id>
+    <version>4.6.1.20190424</version>
     <title>Google Play Music Desktop Player UNOFFICIAL</title>
     <authors>Samuel Attard</authors>
     <owners>sippi</owners>
@@ -25,7 +25,7 @@
 - Interface for external applications such as Rainmeter
 - And a whole lot more coming soon!!</description>
     <summary>Google Play Music as a stand alone Desktop app. Never again will you have to hunt through your tabs to pause your music, or stop listening to your favourite song because Chrome is guzzling up all RAM.</summary>
-    <releaseNotes>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases</releaseNotes>
+    <releaseNotes>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/tag/v4.6.1</releaseNotes>
     <copyright />
     <language>en-US</language>
     <tags>google play music unofficial player admin</tags>
@@ -33,7 +33,8 @@
     <docsUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/issues</bugTrackerUrl>
   </metadata>
-  	 <files>
+  	<files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
