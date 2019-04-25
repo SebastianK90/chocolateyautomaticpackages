@@ -1,18 +1,22 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = 'vidcoder'
-$url32       = 'https://github.com/RandomEngy/VidCoder/releases/download/v4.35/VidCoder-4.35.exe'
-$checksum32  = 'cd443aaee0778b5801f6bf9c45b5435fa21a9b4fd2d918f62c3f118dadc8768b'
+$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
-  packageName            = $packageName
-  fileType               = 'exe'
-  url                    = $url32
-  silentArgs             = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
-  checksum               = $checksum32
-  checksumType           = 'sha256'
-  validExitCodes         = @(0)
-  registryUninstallerKey = $packageName
+  packageName    = 'vidcoder'
+  softwareName   = 'vidcoder*'
+  fileType       = 'exe'
+  file           = gi $toolsPath\*_x32.exe
+  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
+  validExitCodes = @(0)
 }
+Install-ChocolateyInstallPackage @packageArgs
+ls $toolsPath\*.exe | % { rm $_ -ea 0; if (Test-Path $_) { sc "$_.ignore" "" }}
 
-Install-ChocolateyPackage @packageArgs
+$packageName = $packageArgs.packageName
+$installLocation = Get-AppInstallLocation $packageName
+if (!$installLocation)  { Write-Warning "Can't find $packageName install location"; return }
+Write-Host "$packageName installed to '$installLocation'"
+
+Register-Application "$installLocation\$packageName.exe"
+Write-Host "$packageName registered as $packageName"
