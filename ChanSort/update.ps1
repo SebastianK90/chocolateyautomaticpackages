@@ -1,8 +1,5 @@
 import-module au
 
-$au_Push = $false	
-$au_Force = $true
-
 
 $releases = 'https://github.com/PredatH0r/ChanSort/releases'
 

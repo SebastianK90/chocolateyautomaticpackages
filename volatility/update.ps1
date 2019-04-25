@@ -1,8 +1,5 @@
 import-module au
 
-$au_Push = $false	
-$au_Force = $true
-
 $releases = 'https://www.volatilityfoundation.org/releases'
 
 function global:au_SearchReplace {
