@@ -32,6 +32,9 @@
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/GPMDP</packageSourceUrl>
     <docsUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.3.3" />
+    </dependencies>
   </metadata>
   	<files>
     <file src="tools\**" target="tools" />
