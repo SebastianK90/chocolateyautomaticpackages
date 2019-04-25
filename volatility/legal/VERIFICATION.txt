@@ -1,0 +1,22 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to
+
+   x32: http://downloads.volatilityfoundation.org/releases/2.6/volatility_2.6_win64_standalone.zip
+
+   to download the installer.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum32: BB021F3B569BF8EE4A408B2E07B0662699894FF7EECD4473BADF0EF0C58F2FCE
+
+
+File 'LICENSE.txt' is obtained from:
+    https://raw.githubusercontent.com/volatilityfoundation/volatility/master/LICENSE.txt
