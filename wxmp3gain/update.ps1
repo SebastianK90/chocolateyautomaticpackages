@@ -1,17 +1,24 @@
 import-module au
 
+
 $releases = 'https://sourceforge.net/projects/wxmp3gain/files'
 
 function global:au_SearchReplace {
-    @{
-        'tools\chocolateyInstall.ps1' = @{
-            
-            "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-            
+   @{
+        ".\tools\chocolateyInstall.ps1" = @{
+            "(?i)(^\s*packageName\s*=\s*)('.*')"  = "`$1'$($Latest.PackageName)'"
         }
-     }
+
+
+        ".\legal\VERIFICATION.txt" = @{
+          "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
+          "(?i)(checksum32:).*"        = "`${1} $($Latest.Checksum32)"
+        }
+    }
 }
+
+function global:au_BeforeUpdate { Get-RemoteFiles -Purge -FileNameBase "wxmp3gain-win32-setup"}
+
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
@@ -20,7 +27,12 @@ function global:au_GetLatest {
     $url = $download_page.links | Where-Object {$_.outerHTML -like '*Click to enter*'} | Select-Object -ExpandProperty href -First 1
     $url32   = 'https://sourceforge.net'+$url +'wxmp3gain-'+$version+'-win32-setup.exe/download'
 
-    return @{ URL32 = $url32; Version = $version }
+     @{
+        URL32        = $url32
+        FileType     = 'exe'
+        Version      = $version
+    }
 }
 
-update -NoCheckUrl
+
+Update-Package -ChecksumFor none

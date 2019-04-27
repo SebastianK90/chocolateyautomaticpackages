@@ -1,6 +1,5 @@
 import-module au
 
-
 $releases = 'https://sourceforge.net/projects/imdisk-toolkit/files/'
 
 function global:au_SearchReplace {
@@ -19,7 +18,7 @@ function global:au_SearchReplace {
     }
 }
 
-function global:au_BeforeUpdate { Get-RemoteFiles -Purge}
+function global:au_BeforeUpdate { Get-RemoteFiles -Purge 'ImDiskTk'}
 
 
 function global:au_GetLatest {

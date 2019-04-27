@@ -1,19 +1,22 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = 'wxmp3gain'
-$url32       = 'https://sourceforge.net/projects/wxmp3gain/files/4.0/wxmp3gain-4.0-win32-setup.exe/download'
-$checksum32  = 'a5f1879d9e2eacf104e4a8bfbd0361226ed2b991090514a7d8d9d46041c8e13e'
-$toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
-  packageName            = $packageName
-  fileType               = 'EXE'
-  url                    = $url32
-  checksum               = $checksum32
-  checksumType           = 'sha256'
-  silentArgs             = '/Verysilent'
-  validExitCodes         = @(0)
-  registryUninstallerKey = $packageName
+  packageName    = 'wxmp3gain'
+  softwareName   = 'wxmp3gain*'
+  fileType       = 'exe'
+  file           = gi $toolsPath\*_x32.exe
+  silentArgs     = '/Verysilent'
+  validExitCodes = @(0)
 }
+Install-ChocolateyInstallPackage @packageArgs
+ls $toolsPath\*.exe | % { rm $_ -ea 0; if (Test-Path $_) { sc "$_.ignore" "" }}
 
-Install-ChocolateyPackage @packageArgs
+$packageName = $packageArgs.packageName
+$installLocation = Get-AppInstallLocation $packageName
+if (!$installLocation)  { Write-Warning "Can't find $packageName install location"; return }
+Write-Host "$packageName installed to '$installLocation'"
+
+Register-Application "$installLocation\$packageName.exe"
+Write-Host "$packageName registered as $packageName"
