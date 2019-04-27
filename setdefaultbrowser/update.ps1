@@ -1,8 +1,5 @@
 ﻿import-module au
 
-$au_Push = $false	
-$au_Force = $true
-
 function global:au_SearchReplace {
    @{
         ".\tools\chocolateyInstall.ps1" = @{
