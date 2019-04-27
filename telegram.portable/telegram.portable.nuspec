@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>telegram.portable</id>
-    <version>1.6.7</version>
+    <version>1.6.7.20190427</version>
     <title>Telegram (Portable)</title>
     <authors>Pavel Durov,Nikolai Durov</authors>
     <owners>dtgm,sippi</owners>
@@ -39,6 +39,7 @@ With Telegram, you can send messages, photos, videos and files of any type (doc,
     <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
   </metadata>
      <files>
-    <file src="tools\*.ps1" target="tools" />
+    <file src="tools\**" target="tools" />
+	<file src="legal\**" target="legal" />
   </files>
 </package>

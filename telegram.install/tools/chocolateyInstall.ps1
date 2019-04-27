@@ -1,18 +1,21 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = 'telegram.install'
-$url32 = 'https://github.com/telegramdesktop/tdesktop/releases/download/v1.6.7/tsetup.1.6.7.exe'
-$checksum32 = 'aaedf8bffc37f7699cf2034b3929a9a507c8d5d72d254511af7fb89298cc762f'
-		  
-						  
+$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
+
 $packageArgs = @{
-  packageName            = $packageName
-  fileType               = 'exe'
-  url                    = $url32
-  silentArgs             = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-  checksum               = $checksum32
-  checksumType           = 'sha256'
-  validExitCodes         = @(0)
-  registryUninstallerKey = $packageName
+  packageName    = 'telegram.install'
+  fileType       = 'exe'
+  file           = gi $toolsPath\*_x32.exe
+  silentArgs     = '/Verysilent'
+  validExitCodes = @(0)
 }
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
+ls $toolsPath\*.exe | % { rm $_ -ea 0; if (Test-Path $_) { sc "$_.ignore" "" }}
+
+$packageName = $packageArgs.packageName
+$installLocation = Get-AppInstallLocation $packageName
+if (!$installLocation)  { Write-Warning "Can't find $packageName install location"; return }
+Write-Host "$packageName installed to '$installLocation'"
+
+Register-Application "$installLocation\$packageName.exe"
+Write-Host "$packageName registered as $packageName"

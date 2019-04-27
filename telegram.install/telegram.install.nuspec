@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>telegram.install</id>
-    <version>1.6.7</version>
+    <version>1.6.7.20190427</version>
     <title>Telegram (Install)</title>
     <authors>Pavel Durov,Nikolai Durov</authors>
     <owners>dtgm,sippi</owners>
@@ -37,8 +37,12 @@ With Telegram, you can send messages, photos, videos and files of any type (doc,
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/telegram.install/</packageSourceUrl>
     <docsUrl>https://telegram.org/faq</docsUrl>
     <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
+	    <dependencies>
+		  <dependency id="chocolatey-core.extension" version="1.3.3" />
+        </dependencies>
   </metadata>
      <files>
-    <file src="tools\*.ps1" target="tools" />
+    <file src="tools\**" target="tools" />
+	<file src="legal\**" target="legal" />
   </files>
 </package>
