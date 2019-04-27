@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/PredatH0r/ChanSort/releases/download/v2019-02-12/ChanSort_2019-02-12.zip
+   x32: https://sourceforge.net/projects/dispcalgui/files/release/3.8.0.0/DisplayCAL-3.8.0.0-win32.zip/download
 
    to download the installer.
 
@@ -15,9 +15,9 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: BE0473D713B2028AB8FF55BCBD5F42D1C0BD083FC22E7518E330B52A4F51E054
+   checksum32: 65A58BE3B36340CF3EDDA3334F35CB0E4C17CD05047F83A6655886B06AF41152
 
 
 File 'LICENSE.txt' is obtained from:
-    https://github.com/PredatH0r/ChanSort#license-gplv3
+    https://sourceforge.net/directory/license:gplv3/
 	https://www.gnu.org/licenses/gpl-3.0.txt

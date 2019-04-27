@@ -1,18 +1,21 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = 'dispcalgui.install'
-$url32       = 'https://sourceforge.net/projects/dispcalgui/files/release/3.8.0.0/DisplayCAL-3.8.0.0-Setup.exe/download'
-$checksum32  = 'f04b2e871cdb02fe8388c2b1c9fd0a96c991719edbf18e907f8dfa5e7bf40db7'
+$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
-  packageName            = $packageName
-  fileType               = 'exe'
-  url                    = $url32
-  silentArgs             = '/VERYSILENT'
-  checksum               = $checksum32
-  checksumType           = 'sha256'
-  validExitCodes         = @(0)
-  registryUninstallerKey = $packageName
+  packageName    = 'dispcalgui.install'
+  fileType       = 'exe'
+  file           = gi $toolsPath\*_x32.exe
+  silentArgs     = '/VERYSILENT'
+  validExitCodes = @(0)
 }
+Install-ChocolateyInstallPackage @packageArgs
+ls $toolsPath\*.exe | % { rm $_ -ea 0; if (Test-Path $_) { sc "$_.ignore" "" }}
 
-Install-ChocolateyPackage @packageArgs
+$packageName = $packageArgs.packageName
+$installLocation = Get-AppInstallLocation $packageName
+if (!$installLocation)  { Write-Warning "Can't find $packageName install location"; return }
+Write-Host "$packageName installed to '$installLocation'"
+
+Register-Application "$installLocation\$packageName.exe"
+Write-Host "$packageName registered as $packageName"

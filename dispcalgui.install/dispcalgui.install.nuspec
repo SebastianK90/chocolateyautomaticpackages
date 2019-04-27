@@ -35,9 +35,11 @@ Create synthetic ICC profiles with custom primaries, white- and blackpoint as we
     <docsUrl>https://displaycal.net/#usage</docsUrl>
     <dependencies>
       <dependency id="argyll" />
+	  <dependency id="chocolatey-core.extension" version="1.3.3" />
     </dependencies>
   </metadata>
 	 <files>
     <file src="tools\**" target="tools" />
+	<file src="legal\**" target="legal" />
   </files>
 </package>

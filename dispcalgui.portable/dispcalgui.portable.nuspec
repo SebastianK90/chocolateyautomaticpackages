@@ -39,5 +39,6 @@ Create synthetic ICC profiles with custom primaries, white- and blackpoint as we
      </metadata>
 	 <files>
     <file src="tools\**" target="tools" />
+	<file src="legal\**" target="legal" />
   </files>
 </package>
