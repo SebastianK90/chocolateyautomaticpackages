@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'dispcalgui.portable'
-$url32       = 'https://sourceforge.net/projects/dispcalgui/files/release/3.7.2.0/DisplayCAL-3.7.2.0-win32.zip/download'
-$checksum32  = 'e0a60419c1776928e220ff83a793fd81d76fad467677a9d254426d47a1d98fa9'
+$url32       = 'https://sourceforge.net/projects/dispcalgui/files/release/3.8.0.0/DisplayCAL-3.8.0.0-win32.zip/download'
+$checksum32  = '65a58be3b36340cf3edda3334f35cb0e4c17cd05047f83a6655886b06af41152'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
