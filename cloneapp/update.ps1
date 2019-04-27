@@ -1,9 +1,5 @@
 import-module au
 
-$au_Push = $false	
-$au_Force = $true
-
-
 $releases = 'http://www.mirinsoft.com/index.php/download/cloneapp/download/2-cloneapp/19-cloneapp'
 
 function global:au_SearchReplace {
