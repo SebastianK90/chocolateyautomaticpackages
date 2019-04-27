@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>ecm</id>
-        <version>1.6.0.20190412</version>
+        <version>1.6.0.20190427</version>
         <title>Easy Context Menu</title>
         <authors>SORDUM.ORG</authors>
         <owners>sippi</owners>
@@ -19,5 +19,6 @@
     </metadata>
 	 <files>
     <file src="tools\**" target="tools" />
+	<file src="legal\**" target="legal" />
   </files>
 </package>
