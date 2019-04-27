@@ -1,5 +1,6 @@
 import-module au
 
+
 $releases = 'http://www.mirinsoft.com/index.php/download/cloneapp/download/2-cloneapp/19-cloneapp'
 
 function global:au_SearchReplace {
@@ -16,7 +17,7 @@ function global:au_SearchReplace {
     }
 }
 
-function global:au_BeforeUpdate { Get-RemoteFiles -Purge}
+function global:au_BeforeUpdate { Get-RemoteFiles -Purge -FileNameBase 'cloneapp'}
 
 
 function global:au_GetLatest {
