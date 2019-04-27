@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>setdefaultbrowser </id>
-    <version>1.3</version>
+    <id>setdefaultbrowser</id>
+    <version>1.3.0.20190427</version>
     <title>SetDefaultBrowser</title>
     <authors>Christoph Kolbicz</authors>
     <owners>sippi</owners>
@@ -46,5 +46,6 @@ SetDefaultBrowser will also find the browser when it is not installed at the def
   </metadata>
     <files>
     <file src="tools\**" target="tools" />
+	<file src="legal\**" target="legal" />
   </files>
 </package>

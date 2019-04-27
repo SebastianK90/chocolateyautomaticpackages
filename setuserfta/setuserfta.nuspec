@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>setuserfta</id>
-    <version>1.7.1</version>
+    <version>1.7.1.20190427</version>
     <title>SetUserFTA</title>
     <authors>Christoph Kolbicz</authors>
     <owners>sippi</owners>
@@ -36,5 +36,6 @@ will delete an association from the user registry</description>
   </metadata>
     <files>
     <file src="tools\**" target="tools" />
+	<file src="legal\**" target="legal" />
   </files>
 </package>
