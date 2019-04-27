@@ -1,24 +1,23 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = 'imdisk-toolkit'
-$url32       = 'https://sourceforge.net/projects/imdisk-toolkit/files/20190419/ImDiskTk.exe/download'
-$url64       = 'https://sourceforge.net/projects/imdisk-toolkit/files/20190419/ImDiskTk-x64.exe/download'
-$checksum32  = '4a890b1a1b679e3ac368dc9997a71375ce8b651d7bf8cba6efb184bf82dd955b'
-$checksum64  = 'ccf087db1613a7a2e3bd99341f42f446fd201307b85079baff3348125ba0501b'
-
+$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
-  packageName            = $packageName
-  fileType               = 'exe'
-  url                    = $url32
-  url64bit               = $url64
-  silentArgs             = '/fullsilent'
-  checksum               = $checksum32
-  checksum64             = $checksum64
-  checksumType           = 'sha256'
-  checksumType64         = 'sha256'
-  validExitCodes         = @(0)
-  registryUninstallerKey = $packageName
+  packageName    = 'ImDisk-Toolkit'
+  softwareName   = 'imdisk-toolkit*'
+  fileType       = 'exe'
+  file           = gi $toolsPath\*_x32.exe
+  file64         = gi $toolsPath\*_x64.exe
+  silentArgs     = '/fullsilent'
+  validExitCodes = @(0)
 }
+Install-ChocolateyInstallPackage @packageArgs
+ls $toolsPath\*.exe | % { rm $_ -ea 0; if (Test-Path $_) { sc "$_.ignore" "" }}
 
-Install-ChocolateyPackage @packageArgs
+$packageName = $packageArgs.packageName
+$installLocation = Get-AppInstallLocation $packageName
+if (!$installLocation)  { Write-Warning "Can't find $packageName install location"; return }
+Write-Host "$packageName installed to '$installLocation'"
+
+Register-Application "$installLocation\$packageName.exe"
+Write-Host "$packageName registered as $packageName"
