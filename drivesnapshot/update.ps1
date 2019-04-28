@@ -1,9 +1,5 @@
 import-module au
 
-# cd .\drivesnapshot
-
-#$releases = 'http://www.drivesnapshot.de/de/inews.htm'
-
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
