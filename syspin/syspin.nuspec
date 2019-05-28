@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>syspin</id>
-        <version>0.99.6.0</version>
+        <version>0.99.8.0</version>
         <title>syspin</title>
         <authors>Technosys Corporation</authors>
 		<owners>sippi</owners>

@@ -2,7 +2,7 @@
  
 $packageName = 'syspin'
 $url32       = 'http://www.technosys.net/download.aspx?file=syspin.exe'
-$checksum32  = 'a2a4ecd19af6717bc21f806eb74f2589f989b509d1625af6d802b71dff677d88'
+$checksum32  = 'ad3be60154059f74a6b63941479cc4b8582ad742ea4dcf307d9612ad7fadbb8d'
 $toolsPath   = (Split-Path $MyInvocation.MyCommand.Definition)
  
 $packageArgs = @{
