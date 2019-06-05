@@ -20,9 +20,9 @@ function global:au_GetLatest {
     $output64 = "$env:TEMP\snapshot64.exe"
     Start-BitsTransfer -Source $url32 -Destination $output32
     Start-BitsTransfer -Source $url64 -Destination $output64
-    $version = @(((Get-ChildItem $output32).VersionInfo).fileversion)
-    $version += @(((Get-ChildItem $output64).VersionInfo).fileversion)
-    $version = ($version | Sort-Object -Descending)[0]
+    $ver = @(((Get-ChildItem $output32).VersionInfo).fileversion)
+    $ver += @(((Get-ChildItem $output64).VersionInfo).fileversion)
+    $version = ($ver | Sort-Object -Descending)[0]
     Remove-Item $output32,$output64
         
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
