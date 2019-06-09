@@ -16,7 +16,6 @@ function global:au_GetLatest {
   Invoke-WebRequest -Uri $releases -OutFile $output -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
   $version =  (Get-Item $output).VersionInfo.ProductVersion
   $url32   = $releases
-  Remove-Item $output
   return @{ URL32 = $url32; Version = $version }
 }
 
