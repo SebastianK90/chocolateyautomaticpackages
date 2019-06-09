@@ -5,12 +5,11 @@ $releases = 'http://www.ocbase.com/download.php'
 
 function global:au_SearchReplace {
   @{
-    'tools\chocolateyInstall.ps1' = @{
-      "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-      "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+        "$($Latest.PackageName).nuspec" = @{
+            "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
+        }
     }
-  }
-}
+ }
 
 function global:au_GetLatest {
   $output = "$env:TEMP\occt.exe"
@@ -21,4 +20,4 @@ function global:au_GetLatest {
   return @{ URL32 = $url32; Version = $version }
 }
 
-update
+update -ChecksumFor none
