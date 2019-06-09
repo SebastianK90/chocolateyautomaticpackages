@@ -5,18 +5,19 @@ $releases = 'http://www.ocbase.com/download.php'
 
 function global:au_SearchReplace {
   @{
-        "$($Latest.PackageName).nuspec" = @{
-            "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
-        }
+    'tools\chocolateyInstall.ps1' = @{
+      "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+      "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
     }
- }
+  }
+}
 
 function global:au_GetLatest {
   $output = "$env:TEMP\occt.exe"
-  Invoke-WebRequest -Uri $releases -OutFile $output -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+  Start-BitsTransfer -Source $releases -Destination $output
   $version =  (Get-Item $output).VersionInfo.ProductVersion
   $url32   = $releases
   return @{ URL32 = $url32; Version = $version }
 }
 
-update -ChecksumFor none
+update
