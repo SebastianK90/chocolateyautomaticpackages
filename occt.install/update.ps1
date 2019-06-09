@@ -1,24 +1,24 @@
 ﻿import-module au
 
 
-$releases = 'http://www.ocbase.com/download/'
+$releases = 'http://www.ocbase.com/download.php'
 
 function global:au_SearchReplace {
-    @{
-        'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-        }
-     }
+  @{
+    'tools\chocolateyInstall.ps1' = @{
+      "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+      "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+    }
+  }
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
-    $a = $download_page.Links | Where-Object {$_ -like '*OCCTPT*'}
-    $b =  ($a | Where-Object {$_ -like '*.exe*'} | Select-Object -Last 1).innertext
-    $version = [regex]::match(($b -split '\/')[-1],'[0-9]+(\.[0-9]+)*').value
-    $url32   = 'http://www.ocbase.com/download/' + $b
-    return @{ URL32 = $url32; Version = $version }
+  $output = "$env:TEMP\occt.exe"
+  Invoke-WebRequest -Uri $releases -OutFile $output -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+  $version =  (Get-Item C:\Users\SEBAST~1\AppData\Local\Temp\occt.exe).VersionInfo.ProductVersion
+  $url32   = $releases
+  Remove-Item $output
+  return @{ URL32 = $url32; Version = $version }
 }
 
 update
