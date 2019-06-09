@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $output = "$env:TEMP\occt.exe"
   Invoke-WebRequest -Uri $releases -OutFile $output -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
-  $version =  (Get-Item C:\Users\SEBAST~1\AppData\Local\Temp\occt.exe).VersionInfo.ProductVersion
+  $version =  (Get-Item $output).VersionInfo.ProductVersion
   $url32   = $releases
   Remove-Item $output
   return @{ URL32 = $url32; Version = $version }

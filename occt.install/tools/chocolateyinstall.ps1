@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'occt.install'
-$url32       = 'http://www.ocbase.com/download/OCCTPT4.5.1.exe'
-$checksum32  = '936457C564731C0FAB37E869C884F2D13F2115966C3FBD24C9167380BAF771BB'
+$url32       = 'http://www.ocbase.com/download.php'
+$checksum32  = 'fda5e161ffcd52ae4665b166e6a9bb2bc5c2fcf0c318b8206613a6a5d3445818'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
