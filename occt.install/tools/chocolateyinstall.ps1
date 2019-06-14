@@ -2,7 +2,7 @@
 
 $packageName = 'occt.install'
 $url32       = 'http://www.ocbase.com/download.php'
-$checksum32  = 'fda5e161ffcd52ae4665b166e6a9bb2bc5c2fcf0c318b8206613a6a5d3445818'
+$checksum32  = '8a98c89fa0a475bb75d71e992e06c0570561f2f2585134ac3ed0fab70626344a'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{

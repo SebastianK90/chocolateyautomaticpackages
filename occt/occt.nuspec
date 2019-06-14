@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>occt</id>
-    <version>5.0.1.99</version>
+    <version>5.1.0.99</version>
     <title>OCCT Perestroïka</title>
     <authors>ocbase.com</authors>
     <owners>sippi</owners>
@@ -14,7 +14,7 @@
     <summary>OCCT Perestroïka is a stability checking tool, free for personal use.</summary>
     <releaseNotes>http://www.ocbase.com/#changelog</releaseNotes>
 		<dependencies>
-		    <dependency id="dotnetfx" version="4.7.2.20180712"/>
+		    <dependency id="dotnetfx" version="4.7.2.20180712" />
         </dependencies>
     <tags>system stability cpu gpu psu power supply stress test freeware admin</tags>
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/occt</packageSourceUrl>
