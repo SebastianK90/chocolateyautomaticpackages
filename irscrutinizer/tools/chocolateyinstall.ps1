@@ -1,18 +1,18 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = 'irscrutinizer'
-$url32       = 'https://github.com/bengtmartensson/harctoolboxbundle/releases/download/Version-1.4.3/IrScrutinizer-1.4.3.exe'
-$checksum32  = '619c2bb64ac793a9f448a728576950080d82b40f0eec13f1b3801dfb0e7b13d9'
+$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
-  packageName            = $packageName
-  fileType               = 'exe'
-  url                    = $url32
-  silentArgs             = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
-  checksum               = $checksum32
-  checksumType           = 'sha256'
-  validExitCodes         = @(0)
-  registryUninstallerKey = $packageName
+  packageName    = 'irscrutinizer'
+  fileType       = 'exe'
+  file           = gi $toolsPath\*_x32.exe
+  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
+  validExitCodes = @(0)
 }
+Install-ChocolateyInstallPackage @packageArgs
+ls $toolsPath\*.exe | % { rm $_ -ea 0; if (Test-Path $_) { sc "$_.ignore" "" }}
 
-Install-ChocolateyPackage @packageArgs
+$packageName = $packageArgs.packageName
+$installLocation = Get-AppInstallLocation $packageName
+if (!$installLocation)  { Write-Warning "Can't find $packageName install location"; return }
+Write-Host "$packageName installed to '$installLocation'"
