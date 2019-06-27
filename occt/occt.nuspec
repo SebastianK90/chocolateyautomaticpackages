@@ -6,7 +6,6 @@
     <title>OCCT Perestroïka</title>
     <authors>ocbase.com</authors>
     <owners>sippi</owners>
-    <licenseUrl>http://www.ocbase.com/#pricing</licenseUrl>
     <projectUrl>http://www.ocbase.com/</projectUrl>
     <iconUrl>https://raw.githack.com/sippi90/chocolateyautomaticpackages/master/icons/occt.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
