@@ -1,1 +1,0 @@
-﻿Get-Process Occt* | Stop-Process -Force -ErrorAction SilentlyContinue
