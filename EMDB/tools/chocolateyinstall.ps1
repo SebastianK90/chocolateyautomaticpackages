@@ -3,7 +3,7 @@
 $packageName = 'emdb'
 $fileType    = 'EXE'
 $url32       = 'http://www.emdb.eu/bin/emdb.zip'
-$checksum32  = '4cb79b18619b727d784bed8726b0282f09223de5f9cc83f0620c984da57dab58'
+$checksum32  = '9a47eae7a5fa9e299c3593d6b6d99a079ddead0a630142bac8e416b38c8553d3'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $silentArgs  = '/VERYSILENT /COMPONENTS="main,mpciconlib,mpcresources"'
 
