@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>telegram</id>
-    <version>1.7.13</version>
+    <version>1.7.14</version>
     <title>Telegram</title>
     <authors>Pavel Durov,Nikolai Durov</authors>
     <owners>dtgm,sippi</owners>
@@ -38,7 +38,7 @@ With Telegram, you can send messages, photos, videos and files of any type (doc,
     <docsUrl>https://telegram.org/faq</docsUrl>
     <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="telegram.install" version="1.7.13" />
+      <dependency id="telegram.install" version="1.7.14" />
     </dependencies>
   </metadata>
    <files>

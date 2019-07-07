@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v1.7.13/tportable.1.7.13.zip
+   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v1.7.14/tportable.1.7.14.zip
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 531E44499D2A7D0F4B227E573313499AE381F6B3639A9230C0C70FCDBDC9EDF6
+   checksum32: 479AB22DF8F81F8A28AD83EE3AC5F393FB53F898EAE17D403896ADFA21314490
 
 
 File 'LICENSE.txt' is obtained from:
