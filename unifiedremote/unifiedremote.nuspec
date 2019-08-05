@@ -23,6 +23,7 @@
 	<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/unifiedremote</packageSourceUrl>
   </metadata>
    <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\*ps1" target="tools" />
+	<file src="tools\*ahk" target="tools" />
   </files>
 </package>
