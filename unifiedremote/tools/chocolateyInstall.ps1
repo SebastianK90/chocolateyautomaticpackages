@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
  
 $packageName = 'unifiedremote'
-$url32       = 'https://www.unifiedremote.com/download/windows-setup'
-$checksum32  = '477292CC343800BAC042E854EECF0A7EE65E3575CF581D40E83A272128031306'
+$url32       = 'https://www.unifiedremote.com/download/windows'
+$checksum32  = '862468f393b06070fae1d5a3b9a732a91004946d7fee7a6c63935f0b150cceb8'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 $packageArgs = @{
   packageName            = $packageName
