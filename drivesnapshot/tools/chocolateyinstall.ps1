@@ -3,13 +3,24 @@
 $packageName = 'drivesnapshot'
 $url32       = 'http://www.drivesnapshot.de/download/snapshot.exe'
 $url64       = 'http://www.drivesnapshot.de/download/snapshot64.exe'
-$checksum32  = '9c2269e9ebb7fb55a2a9649dd73f6a1cd851d79d5eee9e2936564385b1c9bc1c'
-$checksum64  = '8258b7c1bf3fea6e07b5f8d526a2e04f49cf00f72098566941a5e8ad76d38ed2'
+$checksum32  = '74cfb21eca66f6ba199b99c2201f032cdd7f3831a55ba703bdfe5891578eb655'
+$checksum64  = '176174cdcb14d292e48aa572d706f1c8201f8e07eb29642ef765535ccae21592'
 $toolsPath   = (Split-Path $MyInvocation.MyCommand.Definition)
 $bits = Get-ProcessorBits
 $lic_path = "$env:USERPROFILE\drivesnapshot_lic"
 $lic=(Get-ChildItem $lic_path -Filter '*.txt' -ErrorAction SilentlyContinue).FullName
- 
+$options =
+@{
+  Headers = @{
+    Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8';
+    'Accept-Charset' = 'ISO-8859-1,utf-8;q=0.7,*;q=0.3';
+    'Accept-Language' = 'en-GB,en-US;q=0.8,en;q=0.6';
+    Cookie = 'requiredinfo=info';
+    Referer = 'http://www.drivesnapshot.de';
+  }
+} 
+
+
 $packageArgs = @{
   packageName    = $packageName
   url            = $url32
@@ -21,7 +32,7 @@ $packageArgs = @{
   FileFullPath  = "$toolsPath\snapshot.exe"
 }
 
-Get-ChocolateyWebFile @packageArgs -GetOriginalFileName
+Get-ChocolateyWebFile @packageArgs -GetOriginalFileName -options $options
  
 $FileFullPath = get-childitem $toolsPath -recurse -include *.exe | select -First 1
       
@@ -43,4 +54,3 @@ if(!(Test-Path $lic_path -ErrorAction SilentlyContinue))
             Start-ChocolateyProcessAsAdmin -Statements "--register:$lic" -ExeToRun "$toolsPath\snapshot.exe"
             }
   }
-    
