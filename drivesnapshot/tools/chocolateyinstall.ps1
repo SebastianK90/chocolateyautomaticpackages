@@ -9,18 +9,7 @@ $toolsPath   = (Split-Path $MyInvocation.MyCommand.Definition)
 $bits = Get-ProcessorBits
 $lic_path = "$env:USERPROFILE\drivesnapshot_lic"
 $lic=(Get-ChildItem $lic_path -Filter '*.txt' -ErrorAction SilentlyContinue).FullName
-$options =
-@{
-  Headers = @{
-    Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8';
-    'Accept-Charset' = 'ISO-8859-1,utf-8;q=0.7,*;q=0.3';
-    'Accept-Language' = 'en-GB,en-US;q=0.8,en;q=0.6';
-    Cookie = 'requiredinfo=info';
-    Referer = 'http://www.drivesnapshot.de';
-  }
-} 
-
-
+ 
 $packageArgs = @{
   packageName    = $packageName
   url            = $url32
@@ -32,7 +21,7 @@ $packageArgs = @{
   FileFullPath  = "$toolsPath\snapshot.exe"
 }
 
-Get-ChocolateyWebFile @packageArgs -GetOriginalFileName -options $options
+Get-ChocolateyWebFile @packageArgs -GetOriginalFileName
  
 $FileFullPath = get-childitem $toolsPath -recurse -include *.exe | select -First 1
       
@@ -54,3 +43,4 @@ if(!(Test-Path $lic_path -ErrorAction SilentlyContinue))
             Start-ChocolateyProcessAsAdmin -Statements "--register:$lic" -ExeToRun "$toolsPath\snapshot.exe"
             }
   }
+    
