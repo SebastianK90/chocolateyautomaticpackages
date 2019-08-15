@@ -10,7 +10,7 @@
 	<docsUrl>https://www.unifiedremote.com/help</docsUrl>
 	<mailingListUrl>https://www.unifiedremote.com/contact</mailingListUrl>
     <projectUrl>http://www.unifiedremote.com</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/unifiedremote.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/sippi90/chocolateyautomaticpackages/e9f67f7e6832edc25304e5779e58b5f4d255d191/icons/unifiedremote.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The Unified Remote Windows server application. Allows a Unified Remote mobile app to control a Windows PC.</description>
     <summary>The Unified Remote Windows Server</summary>
