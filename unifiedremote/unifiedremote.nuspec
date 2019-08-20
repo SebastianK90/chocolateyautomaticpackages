@@ -18,7 +18,8 @@
     <copyright>© 2010-2018 Unified Intents AB. All rights reserved.</copyright>
     <tags>unified remote control mouse computer</tags>
 			<dependencies>
-		    <dependency id="autohotkey.portable" version="1.1.30.00" />
+			<dependency id="autohotkey.portable" version="1.1.30.00" />
+			<dependency id="vcredist140" version="14.22.27821" />
         </dependencies>
 	<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/unifiedremote</packageSourceUrl>
   </metadata>

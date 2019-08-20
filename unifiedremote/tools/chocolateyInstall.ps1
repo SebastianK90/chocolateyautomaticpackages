@@ -15,5 +15,5 @@ $packageArgs = @{
   registryUninstallerKey = $packageName
 }
 
-Get-ChocolateyWebFile @packageArgs -fileFullPath "$toolsPath\installer.exe"
 Start-Process autohotkey.exe -ArgumentList "$toolsPath\install.ahk"
+Install-ChocolateyPackage @packageArgs
