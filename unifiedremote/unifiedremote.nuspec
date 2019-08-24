@@ -19,7 +19,7 @@
     <tags>unified remote control mouse computer</tags>
 			<dependencies>
 			<dependency id="autohotkey.portable" version="1.1.30.00" />
-			<dependency id="vcredist140" version="14.22.27821" />
+			<dependency id="kb2999226" version="1.0.20181019" />
         </dependencies>
 	<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/unifiedremote</packageSourceUrl>
   </metadata>
