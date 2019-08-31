@@ -2,7 +2,7 @@
 
 $packageName = 'cemu'
 $url32       = 'http://cemu.info/releases/cemu_1.15.13.zip'
-$checksum32  = 'cdc48e6b8a7d038b99cc18e0cad8eb6e320ada3000cceb464424bcd193dd6e1c'
+$checksum32  = '9e006f5424e0c781d4b01e67c75028230c535f99afd4f6e77ef40ae5d7b0a382'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 $cemu_folder = "$toolsPath\cemu"
 
