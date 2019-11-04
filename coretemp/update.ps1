@@ -21,8 +21,8 @@ function global:au_GetLatest {
     $pattern = '(?<=font-size: 20pt"\>)[\S\s]*\<b\>Core Temp (?<Version>[\d\.]+)'
 
 
-    $url64   = 'http://www.alcpu.com/CoreTemp/php/download.php?id=3'
-    $url32   = 'http://www.alcpu.com/CoreTemp/php/download.php?id=2'
+    $url64   = 'https://www.alcpu.com/CoreTemp/CoreTemp32.zip'
+    $url32   = 'https://www.alcpu.com/CoreTemp/CoreTemp64.zip'
     #$version = [regex]::match((($download_page.ParsedHtml.getElementsByTagName("b") | Where {$_.sourceindex -eq '204'}).firstchild.textcontent),'[0-9]+(\.[0-9]+)*').value
     $version = [regex]::Match($content, $pattern).groups['Version'].value
     return @{ URL64 = $url64; URL32 = $url32; Version = $version }
