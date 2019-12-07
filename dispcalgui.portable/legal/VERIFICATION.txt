@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://sourceforge.net/projects/dispcalgui/files/release/3.8.8.0/DisplayCAL-3.8.8.0-win32.zip/download
+   x32: https://sourceforge.net/projects/dispcalgui/files/release/3.8.9.0/DisplayCAL-3.8.9.0-win32.zip/download
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 9AFE74E6757E1ABB0FB9CBF2D9A4A569F2C00970EB397972F5A6EE2E73868FBF
+   checksum32: BABB1E6FDEB5FDCE3EA49297DDA1B943DCFBAC27CF3B201933D844E469080554
 
 
 File 'LICENSE.txt' is obtained from:
