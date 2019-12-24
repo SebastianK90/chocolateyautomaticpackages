@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>tidal</id>
+    <version>2.11.3.0</version>
+    <title>TIDAL - High Fidelity Music Streaming</title>
+    <authors>Aspiro AS</authors>
+    <owners>sippi</owners>
+    <licenseUrl>https://tidal.com/terms</licenseUrl>
+    <projectUrl>https://tidal.com/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/tidal.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Stream your favorite songs
+With our library of over 60 million tracks and 250,000 videos, you’ll get the ultimate music experience.
+
+Create a playlist or try one of ours, hand-curated by music editors and even the artists themselves.
+The highest quality audio available
+No compromises. Just pure sound. With our lossless audio experience and high-fidelity sound quality, stream your music like you’ve never heard before.</description>
+    <summary>All your favorite music. Best sound quality available.</summary>
+    <copyright>© 2019 Aspiro AS</copyright>
+    <tags>hifi master music streaming audio</tags>
+    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/tidal</packageSourceUrl>
+    <docsUrl>https://tidal.com/whatistidal</docsUrl>
+    <mailingListUrl>https://tidal.com/help</mailingListUrl>
+  </metadata>
+   <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
