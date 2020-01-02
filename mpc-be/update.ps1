@@ -24,10 +24,15 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge 'MPC-BE-installer'}
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
           
-    $version = ($download_page.links | Where-Object {$_ -like '*Click to enter*'} | Select-Object -ExpandProperty title -First 1).substring(15)
+    $ver = ($download_page.links | Where-Object {$_ -like '*Click to enter*'} | Select-Object -ExpandProperty title -First 1).substring(15)
     $url = $download_page.links | Where-Object {$_.outerHTML -like '*Click to enter*'} | Select-Object -ExpandProperty href -First 1
-    $url32   = 'https://sourceforge.net'+$url +'MPC-BE.'+$version+ '.x86-installer.zip/download'
-    $url64   = 'https://sourceforge.net'+$url +'MPC-BE.'+$version+ '.x64-installer.zip/download'
+    
+    $urls_dirty = (Invoke-WebRequest -Uri "https://sourceforge.net$url" -UseBasicParsing).links
+    $32 = ($urls_dirty | Where-Object {$_ -like '*x86-installer.zip/download*'}) | Sort-Object title | Select-Object -First 1
+    $64 = ($urls_dirty | Where-Object {$_ -like '*x64-installer.zip/download*'}) | Sort-Object title | Select-Object -First 1
+    $url32 = $32.href
+    $url64 = $64.href
+    [string]$version =  [regex]::match($64.title,'[0-9]+(\.[0-9]+)*').value
 
      @{
         URL32        = $url32
