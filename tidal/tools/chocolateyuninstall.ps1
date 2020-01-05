@@ -1,6 +1,7 @@
-﻿$packageName = 'tidal'
-$fileType = 'exe'
-$silentArgs = "--uninstall -s"
-$uninstall = Get-UninstallRegistryKey -softwareName "Tidal"
-
-Uninstall-ChocolateyPackage -packageName $packageName -fileType $fileType -silentArgs $silentArgs -file ($uninstall.InstallLocation + "\update.exe")
+﻿$packageArgs = @{
+  packageName            = 'tidal'
+  fileType               = 'exe'
+  silentArgs             = "--uninstall -s"
+  file                   = (Get-UninstallRegistryKey -softwareName "Tidal").InstallLocation + "\update.exe"
+}
+Uninstall-ChocolateyPackage @packageArgs
