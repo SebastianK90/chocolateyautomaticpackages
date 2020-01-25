@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/bengtmartensson/harctoolboxbundle/releases'
+$releases = 'https://github.com/bengtmartensson/harctoolboxbundle/releases/latest'
 
 function global:au_SearchReplace {
    @{
