@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'cemu'
-$url32       = 'http://cemu.info/releases/cemu_1.16.1.zip'
-$checksum32  = '916a0584dc932bb4d3e1ae70cdc172d112bd9f1c7195309dea5d0d79a51dbfd9'
+$url32       = 'http://cemu.info/releases/cemu_1.17.0.zip'
+$checksum32  = '3f00fa77c550f439845675160881fbcf81eab54059b499610a7e7b127426849f'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 $cemu_folder = "$(Get-ToolsLocation)\cemu"
 
