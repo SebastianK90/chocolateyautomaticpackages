@@ -6,10 +6,10 @@
         <title>CloneApp</title>
         <authors>Belmin Hasanovic</authors>
         <owners>sippi</owners>
-		<docsUrl>http://www.mirinsoft.com/downloads/ca_docs/manual.pdf</docsUrl>
-		<mailingListUrl>http://www.mirinsoft.com/support</mailingListUrl>
+		<docsUrl>https://github.com/mirinsoft/CloneApp/blob/master/docs/manual.pdf</docsUrl>
+		<mailingListUrl>https://github.com/mirinsoft/CloneApp/issues</mailingListUrl>
 		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/cloneapp</packageSourceUrl>
-        <licenseUrl>http://www.mirinsoft.com/downloads/ca_legal/license.txt</licenseUrl>
+        <licenseUrl>https://github.com/mirinsoft/CloneApp/blob/master/LICENSE.md</licenseUrl>
         <projectUrl>http://www.mirinsoft.com/ms-apps/cloneapp</projectUrl>
         <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/cloneapp.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
