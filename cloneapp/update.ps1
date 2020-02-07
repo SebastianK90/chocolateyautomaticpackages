@@ -1,7 +1,7 @@
 import-module au
 
 
-$releases = 'http://www.mirinsoft.com/index.php/download/cloneapp/download/2-cloneapp/19-cloneapp'
+$releases = 'https://github.com/mirinsoft/CloneApp/releases/latest'
 
 function global:au_SearchReplace {
    @{
@@ -19,21 +19,20 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge -FileNameBase 'cloneapp'}
 
-
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $content = $download_page.Content
-
-    $pattern = '(?<=</div>\ <!--\ end\ of\ screenshot\ zone\ -->)[\S\s]*Version: (?<Version>[\d\.]+)'
-    $url = 'http://www.mirinsoft.com/index.php/download/send/2-cloneapp/19-cloneapp'
-    $version = [regex]::Match($content, $pattern).groups['Version'].value
+    $re      = 'CloneApp*.zip'
+    $url     = ($download_page.links | Where-Object {$_.href -match $re}).href
+    $version = [regex]::match(($url -split '\/'),'[0-9]+(\.[0-9]+)*').value
 
      @{
-        URL32        = $url
-        FileType     = 'zip'
+        URL32        = 'https://github.com' + $url
         Version      = $version
+        FileType     = 'zip'
+        ReleaseNotes = "https://github.com/RandomEngy/VidCoder/releases/tag/v${version}"
     }
 }
+
 
 
 Update-Package -ChecksumFor none
