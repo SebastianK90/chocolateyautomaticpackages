@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: http://www.mirinsoft.com/index.php/download/send/2-cloneapp/19-cloneapp
+   x32: https://github.com/mirinsoft/CloneApp/releases/download/2.14.555/cloneapp.zip
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: B2A056BF24368992731FE64E2EE46F8A2966239C0D1B08F51134D3474014A06D
+   checksum32: 18E3DE7985285DD5E9B1A52337B43D51739D9F1D9FAE0E545C8D788CB2A4CB39
 
 
 File 'LICENSE.txt' is obtained from:
