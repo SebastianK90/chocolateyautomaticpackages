@@ -3,19 +3,21 @@
   <metadata>
     <id>WhatsApp</id>
     <version>0.4.930</version>
-    <title>WhatsApp</title>
+    <title>WhatsApp Messenger</title>
     <authors>WhatsApp Inc.</authors>
     <owners>sippi</owners>
-    <licenseUrl>https://www.whatsapp.com/legal/</licenseUrl>
+    <licenseUrl>https://www.whatsapp.com/legal</licenseUrl>
     <projectUrl>http://www.whatsapp.com</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/whatsapp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>WhatsApp Messenger is available for iPhone, BlackBerry, Android, Windows Phone and Nokia and yes, those phones can all message each other! Because WhatsApp Messenger uses the same internet data plan that you use for email and web browsing, there is no cost to message and stay in touch with your friends. In addition to basic messaging WhatsApp users can create groups, send each other unlimited images, video and audio media messages.</description>
     <summary>WhatsApp Messenger is a cross-platform mobile messaging app which allows you to exchange messages without having to pay for SMS</summary>
-    <copyright>© 2018 WhatsApp Inc.</copyright>
+    <copyright>© 2020 WhatsApp Inc.</copyright>
     <tags>messenger chat windows client admin</tags>
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/WhatsApp</packageSourceUrl>
-    <docsUrl>https://www.whatsapp.com/faq/en/web</docsUrl>
+    <docsUrl>https://faq.whatsapp.com/</docsUrl>
+	<bugTrackerUrl>https://blog.whatsapp.com/</bugTrackerUrl>
+	<releaseNotes>https://blog.whatsapp.com/</releaseNotes>
     <mailingListUrl>https://www.whatsapp.com/contact/</mailingListUrl>
   </metadata>
    <files>
