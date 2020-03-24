@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/ramboxapp/community-edition/releases/download/0.7.3/Rambox-0.7.3-win-ia32.zip
-   x64: https://github.com/ramboxapp/community-edition/releases/download/0.7.3/Rambox-0.7.3-win-x64.zip
+   x32: https://github.com/ramboxapp/community-edition/releases/download/0.7.4/Rambox-0.7.4-win-ia32.zip
+   x64: https://github.com/ramboxapp/community-edition/releases/download/0.7.4/Rambox-0.7.4-win-x64.zip
 
    to download the installer.
 
@@ -16,8 +16,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 25597725D0532BC3C2DD2DBA82798F6FB212FA1EA6B509603CC34E06301E61E5
-   checksum64: BE3A27FE290C154DF562A8E6CD759EE611994A0CD3B4ABE12013C4FE2363BD6C
+   checksum32: F1350930B8556ADEB579DFEBDB4294ABFB8948F79AF45EF499054A4212175C58
+   checksum64: 71EDA68438CA87681D521715116EF3643C88C7A67430F490C8422BB39BDC3873
 
 
 File 'LICENSE.txt' is obtained from:
