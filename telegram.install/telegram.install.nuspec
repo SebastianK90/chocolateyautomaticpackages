@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>telegram.install</id>
-    <version>1.9.14</version>
+    <version>2.0.0</version>
     <title>Telegram (Install)</title>
     <authors>Pavel Durov,Nikolai Durov</authors>
     <owners>dtgm,sippi</owners>
