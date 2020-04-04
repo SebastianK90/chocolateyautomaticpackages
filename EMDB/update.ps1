@@ -2,7 +2,7 @@
 
 # cd .\emdb
 
-$releases = 'http://www.emdb.eu/index.html'
+$releases = 'https://www.emdb.eu/index.html'
 
 function global:au_SearchReplace {
     @{
@@ -20,7 +20,7 @@ function global:au_GetLatest {
 
     $version = [regex]::Match($content, $pattern).groups['Version'].value    
     #$version = ($download_page.AllElements | where {$_.innerHTML -like "EMDB V*"} | Select-Object -ExpandProperty innerHTML -First 1).replace('EMDB V','')
-    $url32   = 'http://www.emdb.eu/bin/emdb.zip'
+    $url32   = 'https://www.emdb.eu/bin/emdb.zip'
     return @{ URL32 = $url32; Version = $version }
 }
 
