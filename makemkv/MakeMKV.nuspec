@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>MakeMKV</id>
-    <version>1.15.0</version>
+    <id>makemkv</id>
+    <version>1.15.1</version>
     <title>MakeMKV</title>
     <authors>GuinpinSoft inc</authors>
     <owners>Kristinn-Stefansson,sippi</owners>
