@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>telegram</id>
-    <version>1.9.21</version>
+    <version>2.1.0</version>
     <title>Telegram</title>
     <authors>Pavel Durov,Nikolai Durov</authors>
     <owners>dtgm,sippi</owners>
@@ -60,7 +60,7 @@ We keep expanding the boundaries of what you can do with a messaging app. Don’
     <docsUrl>https://telegram.org/faq</docsUrl>
     <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="telegram.install" version="1.9.21" />
+      <dependency id="telegram.install" version="2.1.0" />
     </dependencies>
   </metadata>
    <files>
