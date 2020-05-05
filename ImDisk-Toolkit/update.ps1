@@ -24,17 +24,17 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge 'ImDiskTk'}
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    
-    $version_dirty = ($download_page.links | Where-Object {$_ -like '*Click to enter*'} | Select-Object -ExpandProperty title -First 1).substring(17)
+    $version_link = ($download_page.links | Where-Object {$_ -like '*Click to enter*'} | Select-Object -ExpandProperty title -First 1).substring(15)
+    $version_dirty =  $version_link.substring(2)
     $ver = for ($i = 0;$i -lt $version_dirty.length;$i += 2){$version_dirty.substring($i,2)}
     $version = $ver[0] + '.' + $ver[1] + '.' +$ver[2]
-    $url64   = ('https://sourceforge.net/projects/imdisk-toolkit/files/20'+$version_dirty+'/ImDiskTk-x64.exe/download')
-    $url32 = ('https://sourceforge.net/projects/imdisk-toolkit/files/20'+$version_dirty+'/ImDiskTk.exe/download')
+    $url64   = "https://sourceforge.net/projects/imdisk-toolkit/files/$version_link/ImDiskTk-x64.zip/download"
+    $url32 = "https://sourceforge.net/projects/imdisk-toolkit/files/$version_link/ImDiskTk.zip/download"
 
      @{
         URL32        = $url32
         URL64        = $url64
-        FileType     = 'exe'
+        FileType     = 'zip'
         Version      = $version
     }
 }

@@ -1,23 +1,23 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
+$silentArgs     = '/fullsilent'
 
 $packageArgs = @{
   packageName    = 'ImDisk-Toolkit'
   softwareName   = 'imdisk-toolkit*'
-  fileType       = 'exe'
-  file           = gi $toolsPath\*_x32.exe
-  file64         = gi $toolsPath\*_x64.exe
-  silentArgs     = '/fullsilent'
+  fileType       = 'zip'
+  file           = gi $toolsPath\*_x32.zip
+  file64         = gi $toolsPath\*_x64.zip
+
   validExitCodes = @(0)
+  destination    = $toolsPath
 }
-Install-ChocolateyInstallPackage @packageArgs
-ls $toolsPath\*.exe | % { rm $_ -ea 0; if (Test-Path $_) { sc "$_.ignore" "" }}
+Get-ChocolateyUnzip @packageArgs
+Get-ChocolateyUnzip (Get-ChildItem $toolsPath\*.cab -Recurse) $toolsPath
 
-$packageName = $packageArgs.packageName
-$installLocation = Get-AppInstallLocation $packageName
-if (!$installLocation)  { Write-Warning "Can't find $packageName install location"; return }
-Write-Host "$packageName installed to '$installLocation'"
+Remove-Item $toolsPath\*.zip -ea 0
 
-Register-Application "$installLocation\$packageName.exe"
-Write-Host "$packageName registered as $packageName"
+$FileFullPath = Get-ChildItem $toolsPath -Recurse -Include config.exe | Sort-Object -Descending | Select-Object -First 1
+
+Start-ChocolateyProcess $silentArgs $FileFullPath

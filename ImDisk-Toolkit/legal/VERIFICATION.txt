@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://sourceforge.net/projects/imdisk-toolkit/files/20200402/ImDiskTk.exe/download
-   x64: https://sourceforge.net/projects/imdisk-toolkit/files/20200402/ImDiskTk-x64.exe/download
+   x32: https://sourceforge.net/projects/imdisk-toolkit/files/20200412/ImDiskTk.zip/download
+   x64: https://sourceforge.net/projects/imdisk-toolkit/files/20200412/ImDiskTk-x64.zip/download
 
    to download the installer.
 
@@ -16,8 +16,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: F4DE1BF4E845561DAB0D1C56ACDA83F2C7459C7FA266EF3D03FA2F7D98013301
-   checksum64: 56082B4C590E97A3EE05852D8FF260C26CD71644A240FFCC0921918A7C394EE1
+   checksum32: 26A589EA1B8785BBA9037F4DFE62992272220F4AEC447E023E613BC3F00D8B0F
+   checksum64: 3D11BD8D7B58E16CF94E02E0FD251E77008948637F77D973DA4379AFC4B8DF1A
 
 
 File 'LICENSE.txt' is obtained from:
