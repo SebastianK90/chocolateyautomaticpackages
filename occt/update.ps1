@@ -1,7 +1,7 @@
 ﻿import-module au
 
 
-$releases = 'http://www.ocbase.com/download.php'
+$releases = 'https://www.ocbase.com/download'
 
 function global:au_SearchReplace {
   @{
