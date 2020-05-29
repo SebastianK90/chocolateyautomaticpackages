@@ -21,5 +21,6 @@ No longer do you need to manually track through all of the those different direc
     </metadata>
 	 <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
