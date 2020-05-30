@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
  
 $packageName = 'occt'
-$url32       = 'http://www.ocbase.com/download'
-$checksum32  = 'a1aacee3b2d5324a5613c4e188f62925c5666414f80bd2543ef99d17daa4c224'
+$url32       = 'https://www.ocbase.com/download'
+$checksum32  = '09057ea705792f01f2e568c34bb32e2deb628f1bbc88d1d063cb87dc418cec8a'
 $toolsPath   = (Split-Path $MyInvocation.MyCommand.Definition)
 
  
