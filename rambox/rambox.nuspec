@@ -18,7 +18,6 @@ ALL WILL BE DIFFERENT...</summary>
     <copyright />
     <tags>multi chat client messenger whatsapp facebook skype slack hangouts telegram wechat gmail inbox hipchat chatwork groupme grape gitter steam discord noysi outlook tutanota hushmail baerychat aol sync aim wire rocketchat missive yahoo! ryver yandexmail dasher dingtalk flockdock mattermost voxer glip mysms icq tweetdeck zinc freenode mightytext zohoemail zohochat roundcube horde squirrelmail zimbra hootsuite amium rainloop icloudmail irccloud kiwiirc smooch crisp flock openmailbox typetalk drift mmmelon ciscospark fleep socialcast actor riot pushbullet movim kaiwa zyptonite linkedin thelounge kezmo teams xing workplace</tags>
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/rambox</packageSourceUrl>
-    <mailingListUrl>mailto:rambox@protonmail.com</mailingListUrl>
     <bugTrackerUrl>https://github.com/saenzramiro/rambox/issues</bugTrackerUrl>
   </metadata>
   	<files>

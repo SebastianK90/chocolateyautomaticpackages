@@ -18,6 +18,9 @@ You can see temperature fluctuations in real time with varying workloads. Core T
         <releaseNotes>http://www.alcpu.com/CoreTemp/history.html</releaseNotes>
         <copyright />
         <tags>tool temperature temp core cpu admin</tags>
+		<dependencies>
+		<dependency id="KB2919355" version="1.0.20160915" />
+    </dependencies>
     </metadata>
 	 <files>
     <file src="tools\**" target="tools" />
