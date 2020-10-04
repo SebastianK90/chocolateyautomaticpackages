@@ -1,7 +1,7 @@
 import-module au
 
 
-$releases = 'https://github.com/mirinsoft/CloneApp/releases/latest'
+$releases = 'https://github.com/builtbybel/CloneApp/releases/latest'
 
 function global:au_SearchReplace {
    @{
@@ -29,7 +29,7 @@ function global:au_GetLatest {
         URL32        = 'https://github.com' + $url
         Version      = $version
         FileType     = 'zip'
-        ReleaseNotes = "https://github.com/RandomEngy/VidCoder/releases/tag/v${version}"
+        ReleaseNotes = "https://github.com/builtbybel/CloneApp/releases/tag/v${version}"
     }
 }
 
