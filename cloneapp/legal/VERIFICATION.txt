@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/builtbybel/CloneApp/releases/download/2.15.600/cloneapp.zip
+   x32: https://github.com/builtbybel/CloneApp/releases/download/2.15.606/cloneapp.zip
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 387305B74C6C599C2B1E98B9E00A8BF15367C007743F7D9D5380E770495C097D
+   checksum32: 2D0F580483EFEA09C75312FC32B596E18A4EEDD6979BC5A5C218FA5F3D5FEDA6
 
 
 File 'LICENSE.txt' is obtained from:
