@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>aida64-extreme.portable</id>
-    <version>6.30.5500</version>
+    <version>6.32.5600</version>
     <title>AIDA64 Extreme (Portable)</title>
     <authors>FinalWire Ltd</authors>
     <owners>sippi</owners>
