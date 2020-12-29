@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>ChanSort</id>
-        <version>2020.12.05</version>
+        <version>2020.12.29</version>
         <title>ChanSort</title>
         <authors>Horst Beham</authors>
         <owners>sippi</owners>
