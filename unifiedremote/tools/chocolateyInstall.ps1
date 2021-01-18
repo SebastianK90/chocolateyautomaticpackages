@@ -8,12 +8,12 @@ $packageArgs = @{
   packageName            = $packageName
   fileType               = 'exe'
   url                    = $url32
-  silentArgs             = '/Verysilent'
+  silentArgs             = '/Verysilent /Norestart'
   checksum               = $checksum32
   checksumType           = 'sha256'
   validExitCodes         = @(0)
   registryUninstallerKey = $packageName
 }
 
-Start-Process autohotkey.exe -ArgumentList "$toolsPath\install.ahk"
+certutil -addstore "TrustedPublisher" "$toolsPath\cert.cer"
 Install-ChocolateyPackage @packageArgs
