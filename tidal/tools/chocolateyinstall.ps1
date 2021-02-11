@@ -2,7 +2,7 @@
 
 $packageName = 'tidal'
 $url32       = 'http://download.tidal.com/desktop/TIDALSetup.exe'
-$checksum32  = 'ee6176c069ab8d1788dc24c986e35249775870b583bbade66f0c15576a5e6cc2'
+$checksum32  = '8837ba0b66cbf1861aede0f21fcbe3c3a9b0f725215ed14d950298e17c58dce1'
 
 $packageArgs = @{
   packageName            = $packageName
