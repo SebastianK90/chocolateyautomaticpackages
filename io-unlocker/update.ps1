@@ -16,7 +16,7 @@ function global:au_GetLatest {
     $content = $download_page.Content
 
     $pattern = '(?<=button\ btn-jadegreen\ large)[\S\s]*"ver_size"><span>V (?<Version>[\d\.]+)'
-    $url32   = 'http://update.iobit.com/dl/unlocker-setup.exe'
+    $url32   = 'https://cdn.iobit.com/dl/unlocker-setup.exe'
     $version = [regex]::Match($content, $pattern).groups['Version'].value
     return @{ URL32 = $url32; Version = $version }
 }
