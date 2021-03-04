@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'MakeMKV'
-$url32       = 'https://www.makemkv.com/download/Setup_MakeMKV_v1.16.0.exe'
-$checksum32  = 'f9bc8d0049b9fe2d67587990409790cb5b72cdb3e4018eb354f2d63d7ad7e9a4'
+$url32       = 'https://www.makemkv.com/download/Setup_MakeMKV_v1.16.1.exe'
+$checksum32  = '86c76877d3441603d79af576bcc8923033598aebe393a79bae6ab621a558d067'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
