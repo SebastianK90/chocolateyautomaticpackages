@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'aida64-extreme.portable'
-$url32       = 'https://download.aida64.com/aida64extreme632.zip'
-$checksum32  = '71b232281776ccbe527030a5a590f55ba8e9876632782012c2b71c99450163d1'
+$url32       = 'https://download.aida64.com/aida64extreme633.zip'
+$checksum32  = '14c7d3414519875b2eb7ed7afc5da37bd4e947fc0ab69ff78519e9e60636119c'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 $aida64_temp = "$env:USERPROFILE\aida64_temp"
 
