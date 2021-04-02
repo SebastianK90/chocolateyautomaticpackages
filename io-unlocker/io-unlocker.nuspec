@@ -10,7 +10,7 @@
         <projectUrl>http://www.iobit.com/en/iobit-unlocker.php</projectUrl>
 		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/io-unlocker</packageSourceUrl>
         <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/unlocker.png</iconUrl>
-		<mailingListUrl>http://forums.iobit.com/</mailingListUrl>
+		<mailingListUrl>https://forums.iobit.com/</mailingListUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>With IObit Unlocker, you won't be annoyed any more by messages like "Cannot delete file", "Access is denied", "undeleted files",
 		"The file is in use by another program or user", or "There has been a sharing violation!"
