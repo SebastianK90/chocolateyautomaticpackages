@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'coretemp'
-$url32       = 'https://www.alcpu.com/CoreTemp/CoreTemp64.zip'
-$url64       = 'https://www.alcpu.com/CoreTemp/CoreTemp32.zip'
-$checksum32  = 'e82ac0b3fb404bc4542efba8329e8bfeb43403e76ffed67f5efa704ad31ad863'
-$checksum64  = '3b181f766aa1a1ea9ced8aacb24a8a6342a3bf89a2714a2422cc924a23d18a16'
+$url32       = 'https://www.alcpu.com/CoreTemp/CoreTemp32.zip'
+$url64       = 'https://www.alcpu.com/CoreTemp/CoreTemp64.zip'
+$checksum32  = '3B181F766AA1A1EA9CED8AACB24A8A6342A3BF89A2714A2422CC924A23D18A16'
+$checksum64  = 'E82AC0B3FB404BC4542EFBA8329E8BFEB43403E76FFED67F5EFA704AD31AD863'
 $toolsPath   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
