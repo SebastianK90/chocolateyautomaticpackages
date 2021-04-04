@@ -14,9 +14,10 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $output = "$env:TEMP\occt.exe"
-  Start-BitsTransfer -Source $releases -Destination $output
-  $version =  (Get-Item $output).VersionInfo.ProductVersion
   $url32   = $releases
+  Invoke-WebRequest -Uri $url32 -OutFile $output
+  $version =  (Get-Item $output).VersionInfo.ProductVersion
+  Remove-Item $output
   return @{ URL32 = $url32; Version = $version }
 }
 
