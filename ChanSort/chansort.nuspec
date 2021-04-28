@@ -22,7 +22,7 @@ Make a donation if you like the program.</description>
         <summary>ChanSort is a PC/Windows application that allows you to reorder your TV's channel list.Most modern TVs can transfer channel lists via USB stick, which you can plug into your PC. ChanSort supports various models from Hisense (NEW), LG, Panasonic, Samsung, Toshiba and the Linux VDR project.</summary>
         <releaseNotes>https://github.com/PredatH0r/ChanSort/releases</releaseNotes>
 		<dependencies>
-            <dependency id="DotNet4.0" version="4.0.30319.20141222" />
+            <dependency id="dotnetfx" version="4.8 4.8.0.20190930" />
             <dependency id="vcredist2010" version="10.0.40219.1" />
         </dependencies>
         <copyright />
