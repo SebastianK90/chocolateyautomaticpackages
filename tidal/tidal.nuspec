@@ -21,7 +21,7 @@ No compromises. Just pure sound. With our lossless audio experience and high-fid
     <tags>hifi master music streaming audio</tags>
     <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/tidal</packageSourceUrl>
     <docsUrl>https://tidal.com/whatistidal</docsUrl>
-    <mailingListUrl>https://tidal.com/help</mailingListUrl>
+    <mailingListUrl>https://support.tidal.com/hc/en-us</mailingListUrl>
   </metadata>
    <files>
     <file src="tools\**" target="tools" />
