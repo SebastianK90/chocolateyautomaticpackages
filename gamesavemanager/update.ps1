@@ -2,6 +2,20 @@ import-module au
 
 $releases = 'https://www.gamesave-manager.com/'
 
+function global:au_SearchReplace {
+   @{
+        ".\tools\chocolateyInstall.ps1" = @{
+            "(?i)(^\s*packageName\s*=\s*)('.*')"  = "`$1'$($Latest.PackageName)'"
+        }
+
+
+        ".\legal\VERIFICATION.txt" = @{
+          "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
+          "(?i)(checksum32:).*"        = "`${1} $($Latest.Checksum32)"
+        }
+    }
+}
+
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
