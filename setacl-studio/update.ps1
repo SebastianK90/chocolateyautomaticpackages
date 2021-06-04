@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $content = $download_page.Content
 
     $pattern = "(?<='Download',\ 'SetACL\ Studio',)[\S\s]*SetACL Studio (?<Version>[\d\.]+)"
