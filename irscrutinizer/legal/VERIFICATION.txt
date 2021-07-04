@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/bengtmartensson/IrScrutinizer/releases/download/Version-2.3.0/IrScrutinizer-2.3.0.exe
+   x32: https://github.com/bengtmartensson/IrScrutinizer/releases/download/Version-2.3.1/IrScrutinizer-2.3.1.exe
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 193E09FFDE01879DA0692C386C40988F021834FA5A0530C6AC25F564309193FF
+   checksum32: 63E7E604420BAB2A3DA45394B5DAC63F9E6B8294CB08D89E999220A376AAB788
 
 
 File 'LICENSE.txt' is obtained from:
