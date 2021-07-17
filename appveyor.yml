@@ -18,7 +18,7 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: sippi90/chocolateyautomaticpackages
+  github_user_repo: SebastianK90/chocolateyautomaticpackages
   github_api_key:
     secure: B1rQI7iabDwq+lsHW7CGqBy9k7eRNzuGn9kQ+LhsWxcc7IcRHzTudUMgZNE8Q+nT #https://ci.appveyor.com/tools/encrypt
 
@@ -41,7 +41,7 @@ environment:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: MnTUBuZcq79j6jyHwaFGhWjLM+CK94LW1kBzebRsa0ILSKwdpeb+TupaB/C07E5B # https://ci.appveyor.com/tools/encrypt
+    secure: EIDWSn6t1aflXqKuGnR9PM81Y8Q+Lzr86caExXh/MjtJxcMCV36sOXYPTsXu+EvU # https://ci.appveyor.com/tools/encrypt
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
