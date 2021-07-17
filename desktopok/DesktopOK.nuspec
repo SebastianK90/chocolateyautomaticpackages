@@ -8,7 +8,7 @@
     <owners>sippi</owners>
     <licenseUrl>http://www.softwareok.com/?seite=Freeware/desktopok/Eula</licenseUrl>
     <projectUrl>http://www.softwareok.com/?seite=Freeware/DesktopOK</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/desktopok.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/desktopok.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Save and restore the positions of icons. 
 DesktopOK is a small but effective solution for user that have to change the screen resolution often.</description>
@@ -20,7 +20,7 @@ DesktopOK is a small but effective solution for user that have to change the scr
     <releaseNotes></releaseNotes>
     <copyright />
     <tags>tool desktop icon save position</tags>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/desktopok</packageSourceUrl>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/desktopok</packageSourceUrl>
     <mailingListUrl>http://www.softwareok.com/?seite=Kontakt</mailingListUrl>
   </metadata>
   	<files>

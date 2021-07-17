@@ -8,7 +8,7 @@
     <owners>sippi</owners>
     <licenseUrl>https://tidal.com/terms</licenseUrl>
     <projectUrl>https://tidal.com/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/tidal.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/tidal.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Stream your favorite songs
 With our library of over 60 million tracks and 250,000 videos, you’ll get the ultimate music experience.
@@ -19,7 +19,7 @@ No compromises. Just pure sound. With our lossless audio experience and high-fid
     <summary>All your favorite music. Best sound quality available.</summary>
     <copyright>© 2019 Aspiro AS</copyright>
     <tags>hifi master music streaming audio</tags>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/tidal</packageSourceUrl>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/tidal</packageSourceUrl>
     <docsUrl>https://tidal.com/whatistidal</docsUrl>
     <mailingListUrl>https://support.tidal.com/hc/en-us</mailingListUrl>
   </metadata>

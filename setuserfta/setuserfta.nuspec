@@ -6,7 +6,7 @@
     <title>SetUserFTA</title>
     <authors>Christoph Kolbicz</authors>
     <owners>sippi</owners>
-    <licenseUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/setuserfta/legal/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/setuserfta/legal/LICENSE.txt</licenseUrl>
     <projectUrl>https://kolbi.cz/blog/2017/10/25/setuserfta-userchoice-hash-defeated-set-file-type-associations-per-user/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>how to use SetUserFTA:
@@ -32,7 +32,7 @@ will delete an association from the user registry</description>
     <copyright />
     <language>en-US</language>
     <tags>tool association windows user fta file type</tags>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/setuserfta</packageSourceUrl>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/setuserfta</packageSourceUrl>
   </metadata>
     <files>
     <file src="tools\**" target="tools" />

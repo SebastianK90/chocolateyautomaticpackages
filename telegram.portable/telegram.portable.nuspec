@@ -8,7 +8,7 @@
     <owners>dtgm,sippi</owners>
     <licenseUrl>https://github.com/telegramdesktop/tdesktop/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://desktop.telegram.org/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/telegram.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/telegram.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Pure instant messaging — simple, fast, secure, and synced across all your devices. Over 200 million active users in four years.
 
@@ -56,7 +56,7 @@ We keep expanding the boundaries of what you can do with a messaging app. Don’
     <copyright>© 2018 Pavel Durov and Nikolai Durov</copyright>
     <tags>im messenger chat synchronized cloud</tags>
     <projectSourceUrl>https://telegram.org/apps#source-code</projectSourceUrl>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/telegram.portable</packageSourceUrl>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/telegram.portable</packageSourceUrl>
     <docsUrl>https://telegram.org/faq</docsUrl>
     <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
   </metadata>

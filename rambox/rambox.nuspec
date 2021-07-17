@@ -8,7 +8,7 @@
     <owners>sippi</owners>
     <licenseUrl>https://github.com/saenzramiro/rambox/blob/master/LICENSE</licenseUrl>
     <projectUrl>http://rambox.pro/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/rambox.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/rambox.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>THE NEW WAY TO ORGANIZE YOUR SERVICES
 Rambox gives you the possibility to add common services many times you need, all in one place. It's perfect for people who work with many services for business and private accounts.</description>
@@ -17,7 +17,7 @@ ALL WILL BE DIFFERENT...</summary>
     <releaseNotes>https://github.com/saenzramiro/rambox/wiki/CHANGELOG</releaseNotes>
     <copyright />
     <tags>multi chat client messenger whatsapp facebook skype slack hangouts telegram wechat gmail inbox hipchat chatwork groupme grape gitter steam discord noysi outlook tutanota hushmail baerychat aol sync aim wire rocketchat missive yahoo! ryver yandexmail dasher dingtalk flockdock mattermost voxer glip mysms icq tweetdeck zinc freenode mightytext zohoemail zohochat roundcube horde squirrelmail zimbra hootsuite amium rainloop icloudmail irccloud kiwiirc smooch crisp flock openmailbox typetalk drift mmmelon ciscospark fleep socialcast actor riot pushbullet movim kaiwa zyptonite linkedin thelounge kezmo teams xing workplace</tags>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/rambox</packageSourceUrl>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/rambox</packageSourceUrl>
     <bugTrackerUrl>https://github.com/saenzramiro/rambox/issues</bugTrackerUrl>
   </metadata>
   	<files>

@@ -6,7 +6,7 @@
     <title>SetDefaultBrowser</title>
     <authors>Christoph Kolbicz</authors>
     <owners>sippi</owners>
-	<licenseUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/setdefaultbrowser/legal/LICENSE.txt</licenseUrl>
+	<licenseUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/setdefaultbrowser/legal/LICENSE.txt</licenseUrl>
     <projectUrl>https://kolbi.cz/blog/2017/11/10/setdefaultbrowser-set-the-default-browser-per-user-on-windows-10-and-server-2016-build-1607/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>how to use
@@ -42,7 +42,7 @@ SetDefaultBrowser will also find the browser when it is not installed at the def
     <copyright />
     <language>en-US</language>
     <tags>tool set default browser windows 10</tags>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/setdefaultbrowser</packageSourceUrl>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/setdefaultbrowser</packageSourceUrl>
   </metadata>
     <files>
     <file src="tools\**" target="tools" />

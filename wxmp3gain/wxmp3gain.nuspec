@@ -8,8 +8,8 @@
         <owners>sippi</owners>
         <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
         <projectUrl>https://sourceforge.net/projects/wxmp3gain/</projectUrl>
-		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/wxmp3gain</packageSourceUrl>
-        <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/wxmp3gain.png</iconUrl>
+		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/wxmp3gain</packageSourceUrl>
+        <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/wxmp3gain.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>wxMP3gain is a free front-end for the MP3gain.</description>
 		<summary>wxMP3gain is a free front-end for the MP3gain.</summary>

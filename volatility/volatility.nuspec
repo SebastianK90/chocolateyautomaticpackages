@@ -8,8 +8,8 @@
         <owners>sippi</owners>
 		<docsUrl>https://github.com/volatilityfoundation/volatility/wiki</docsUrl>
 		<bugTrackerUrl>https://github.com/volatilityfoundation/volatility/issues</bugTrackerUrl>
-		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/volatility</packageSourceUrl>
-		 <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/volatility.png</iconUrl>
+		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/volatility</packageSourceUrl>
+		 <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/volatility.png</iconUrl>
         <licenseUrl>https://github.com/volatilityfoundation/volatility/blob/master/LICENSE.txt</licenseUrl>
         <projectUrl>http://www.volatilityfoundation.org</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>

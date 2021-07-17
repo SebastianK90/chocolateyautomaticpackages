@@ -7,10 +7,10 @@
         <authors>Arthur Liberman</authors>
         <owners>sippi</owners>
         <licenseUrl>http://www.alcpu.com/CoreTemp/terms.html</licenseUrl>
-		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/coretemp</packageSourceUrl>
+		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/coretemp</packageSourceUrl>
 		<mailingListUrl>http://www.alcpu.com/CoreTemp/contact.html</mailingListUrl>
         <projectUrl>http://www.alcpu.com/CoreTemp/</projectUrl>
-        <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/coretemp.png</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/coretemp.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Core Temp is a compact, no fuss, small footprint, yet powerful program to monitor processor temperature and other vital information.</description>
         <summary>What makes Core Temp unique is the way it works. It is capable of displaying a temperature of each individual core of every processor in your system!

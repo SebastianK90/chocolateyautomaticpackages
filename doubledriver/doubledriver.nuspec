@@ -6,10 +6,10 @@
         <title>Double Driver</title>
         <authors>Budy Setiawan Kusumah</authors>
         <owners>sippi</owners>
-        <licenseUrl>https://github.com/sippi90/chocolateyautomaticpackages/blob/master/doubledriver/tools/license.txt</licenseUrl>
+        <licenseUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/blob/master/doubledriver/tools/license.txt</licenseUrl>
         <projectUrl>http://boozet.org/dd.htm</projectUrl>
-		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/doubledriver</packageSourceUrl>
-        <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/doubledriver.png</iconUrl>
+		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/doubledriver</packageSourceUrl>
+        <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/doubledriver.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>One of the main reasons why you would want to collect installed drivers is if you don’t have the Driver CD that came with the computer or they are unavailable online. This comes in quite handy if you purchase a computer and want to backup the initial set of drivers. It can be quite difficulty for example to find drivers for hardware installed in a notebook if the operating system has to be setup again. Luckily Double Driver can now lend you a hand with that and save you a lot of time.
 		Double Driver Features:

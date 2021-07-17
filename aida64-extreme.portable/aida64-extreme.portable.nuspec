@@ -8,7 +8,7 @@
     <owners>sippi</owners>
     <licenseUrl>http://www.aida64.com/licensing</licenseUrl>
     <projectUrl>http://www.aida64.com/products/aida64-extreme</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/aida64-extreme.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/aida64-extreme.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>AIDA64 Extreme is an industry-leading system information tool, loved by PC enthusiasts around the world, which not only provides extremely detailed information about both hardware and installed software, but also helps users diagnose issues and offers benchmarks to measure the performance of the computer.
 
@@ -26,7 +26,7 @@ This package installs a 30-day trial version.
     <releaseNotes>http://www.aida64.com/news</releaseNotes>
     <copyright>© 2017 FinalWire Ltd</copyright>
     <tags>trial diagnostic benchmark monitor portable admin</tags>
-	<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/aida64-extreme.portable</packageSourceUrl>
+	<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/aida64-extreme.portable</packageSourceUrl>
     <docsUrl>http://www.aida64.com/support/faq</docsUrl>
     <mailingListUrl>https://forums.aida64.com/</mailingListUrl>
     <bugTrackerUrl>http://www.aida64.com/support/contactform</bugTrackerUrl>

@@ -8,7 +8,7 @@
     <owners>sippi</owners>
     <licenseUrl>https://helgeklein.com/terms-conditions</licenseUrl>
     <projectUrl>https://helgeklein.com/setacl-studio</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/setacl-studio.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/setacl-studio.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>##Feature Set
 
@@ -45,7 +45,7 @@ SetACL Studio works on all Windows languages. It comes with English and German l
 <copyright>Helge Klein</copyright>
     <summary>Intuitive permission management with the power of SetACL. Less clicks, no more UAC prompts, increased productivity.</summary>
     <tags>set acl studio freeware admin</tags>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/setacl-studio</packageSourceUrl>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/setacl-studio</packageSourceUrl>
   </metadata>
   	 <files>
     <file src="tools\**" target="tools" />

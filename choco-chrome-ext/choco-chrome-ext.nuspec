@@ -7,8 +7,8 @@
         <authors>sippi</authors>
         <owners>sippi</owners>
         <licenseUrl>https://www.google.com/intl/en/chrome/browser/privacy/eula_text.html</licenseUrl>
-		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/choco-chrome-ext</packageSourceUrl>
-        <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/choco-chrome-ext.png</iconUrl>
+		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/choco-chrome-ext</packageSourceUrl>
+        <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/choco-chrome-ext.png</iconUrl>
 		<projectUrl>https://chrome.google.com/webstore/detail/chocoscriptgenerator/jecgfcdledpjnkijjlighceopgjcpjag</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>

@@ -8,7 +8,7 @@
     <owners>sippi</owners>
     <licenseUrl>http://en.wikipedia.org/wiki/End-user_license_agreement</licenseUrl>
     <projectUrl>http://www.bullzip.com/products/cfn/info.php</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/copyfilename.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/copyfilename.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>This will copy the name of the selected file to the clipboard. Before the name is copied you will see a list of different representations of the file name.
 
@@ -18,7 +18,7 @@ When you right click the file and chooses Copy File Name the program will displa
     <copyright />
     <language>en-US</language>
     <tags>tool copy file name full short unc url path admin</tags>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/copyfilename</packageSourceUrl>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/copyfilename</packageSourceUrl>
     <bugTrackerUrl>https://bullzip.jitbit.com/helpdesk/Tickets/New</bugTrackerUrl>
   </metadata>
   <files>

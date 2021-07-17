@@ -8,7 +8,7 @@
     <owners>sippi</owners>
     <licenseUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/blob/master/README.md#license</licenseUrl>
     <projectUrl>http://www.googleplaymusicdesktopplayer.com/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/gpmdp.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/gpmdp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Features:
 - Media Keys support (Play, Pause, Stop, Previous, Next)
@@ -29,7 +29,7 @@
     <copyright />
     <language>en-US</language>
     <tags>google play music unofficial player admin</tags>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/gpmdp</packageSourceUrl>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/gpmdp</packageSourceUrl>
     <docsUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/issues</bugTrackerUrl>
     <dependencies>

@@ -7,9 +7,9 @@
         <authors>Exzap, Petergov</authors>
         <owners>sippi</owners>
 		<docsUrl>http://cemu.info/faq.html</docsUrl>
-		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/cemu</packageSourceUrl>
+		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/cemu</packageSourceUrl>
         <projectUrl>http://cemu.info</projectUrl>
-        <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/cemu.png</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/cemu.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Highly experimental software to emulate Wii U applications on PC.
 		#System requirements:

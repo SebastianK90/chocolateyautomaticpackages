@@ -8,10 +8,10 @@
         <owners>sippi</owners>
 		<docsUrl>https://github.com/PredatH0r/ChanSort/wiki</docsUrl>
 		<bugTrackerUrl>https://github.com/PredatH0r/ChanSort/issues</bugTrackerUrl>
-		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/ChanSort</packageSourceUrl>
+		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/ChanSort</packageSourceUrl>
         <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
         <projectUrl>https://github.com/PredatH0r/ChanSort</projectUrl>
-        <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/chansort.png</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/chansort.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>How does it work?
 Plug a USB stick in your TV and export the channel list.

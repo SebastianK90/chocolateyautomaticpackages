@@ -8,7 +8,7 @@
     <owners>sippi</owners>
     <licenseUrl>https://www.piriform.com/legal/software-license/ccleaner</licenseUrl>
     <projectUrl>https://www.piriform.com/ccleaner</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/ccleaner.portable.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/ccleaner.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The number-one tool for cleaning your Windows PC.
 
@@ -21,7 +21,7 @@ This package installs CCleaner without additional adware.</description>
     <releaseNotes>https://www.piriform.com/ccleaner/version-history</releaseNotes>
     <copyright />
     <tags>ccleaner system cleanup portable freeware trial registry admin</tags>
-    <packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/ccleaner.portable</packageSourceUrl>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/ccleaner.portable</packageSourceUrl>
   </metadata>
   	 <files>
     <file src="tools\**" target="tools" />

@@ -8,10 +8,10 @@
         <owners>sippi</owners>
 		<docsUrl>https://github.com/builtbybel/CloneApp/blob/master/docs/manual.pdf</docsUrl>
 		<mailingListUrl>https://github.com/builtbybel/CloneApp/issues</mailingListUrl>
-		<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/cloneapp</packageSourceUrl>
+		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/cloneapp</packageSourceUrl>
         <licenseUrl>https://github.com/builtbybel/CloneApp/blob/master/LICENSE.md</licenseUrl>
         <projectUrl>https://www.builtbybel.com/ms-apps/cloneapp</projectUrl>
-        <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/cloneapp.png</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/cloneapp.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A fresh re-install always makes Windows much faster but that means you lose all your program settings.
 

@@ -16,8 +16,8 @@
     <releaseNotes>http://forum.teamspeak.com/forums/91-Latest-News</releaseNotes>
 	<!--docsUrl>https://support.teamspeakusa.com/index.php?/Knowledgebase/List/Index/10/english</docsUrl-->
 	<mailingListUrl>http://forum.teamspeak.com/</mailingListUrl>
-	<packageSourceUrl>https://github.com/sippi90/chocolateyautomaticpackages/tree/master/teamspeak</packageSourceUrl>
-    <iconUrl>https://raw.githubusercontent.com/sippi90/chocolateyautomaticpackages/master/icons/teamspeak.png</iconUrl>
+	<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/teamspeak</packageSourceUrl>
+    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/teamspeak.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
