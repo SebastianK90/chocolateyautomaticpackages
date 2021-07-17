@@ -1,10 +1,10 @@
 
 <!-- EDIT ME-->
 
-[![](https://ci.appveyor.com/api/projects/status/github/sippi90/chocolateyautomaticpackages?svg=true)](https://ci.appveyor.com/project/sippi90/chocolateyautomaticpackages)
-[Update status](https://gist.github.com/sippi90/a80d008be848e4754c459284f24be9fa)
+[![](https://ci.appveyor.com/api/projects/status/github/SebastianK90/chocolateyautomaticpackages?svg=true)](https://ci.appveyor.com/project/SebastianK90/chocolateyautomaticpackages)
+[Update status](https://gist.github.com/SebastianK90/a80d008be848e4754c459284f24be9fa)
 [![](http://transparent-favicon.info/favicon.ico)](#)
-[chocolatey/sippi](https://chocolatey.org/profiles/sippi)
+[chocolatey/SebastianK](https://chocolatey.org/profiles/SebastianK)
 
 <!-- EDIT ME-->
 <!-- REMOVE THE squiggles "~" surrounding this (this should not be a code block) -->
