@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/PredatH0r/ChanSort/releases/download/v2021-07-18/ChanSort_2021-07-18.zip
+   x32: https://github.com/PredatH0r/ChanSort/releases/download/v2021-07-18_2100/ChanSort_2021-07-18_2100.zip
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 0A599F6E2A1CA580DED980CE4839C4D0FAD2DD53B8D0925D877CE08ABB34C602
+   checksum32: A6CD8567379EA206E24B854EBF0CEBF575DEC0C5DDF5DBC7D03A8635103D2709
 
 
 File 'LICENSE.txt' is obtained from:
