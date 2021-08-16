@@ -15,4 +15,4 @@ Remove-Item $toolsPath\*.zip -ea 0
 
 $Shortcut = Get-ChildItem $toolsPath -Recurse -Include *.exe | Select-Object -First 1
       
-Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Rambox.lnk" $Shortcut -WorkingDirectory "$toolsPath"
+Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Rambox.lnk" $Shortcut -WorkingDirectory "$toolsPath" -Arguments "--without-update"
