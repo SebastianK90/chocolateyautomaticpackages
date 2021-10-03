@@ -1,15 +1,23 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>telegram</id>
     <version>3.1.1</version>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/telegram/</packageSourceUrl>
+    <owners>dtgm,sippi</owners>
+ 
     <title>Telegram</title>
     <authors>Pavel Durov,Nikolai Durov</authors>
-    <owners>dtgm,sippi</owners>
-    <licenseUrl>https://github.com/telegramdesktop/tdesktop/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://desktop.telegram.org/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/telegram.png</iconUrl>
+    <copyright>© 2021 Pavel Durov and Nikolai Durov</copyright>
+    <licenseUrl>https://github.com/telegramdesktop/tdesktop/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://telegram.org/apps#source-code</projectSourceUrl>
+    <docsUrl>https://telegram.org/faq</docsUrl>
+    <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
+    <tags>im messenger chat synchronized cloud</tags>
+    <summary>Cloud-based synchronized messaging app with a focus on speed and security</summary>
     <description>Pure instant messaging — simple, fast, secure, and synced across all your devices. Over 200 million active users in four years.
 
 FAST: Telegram is the fastest messaging app on the market, connecting people via a unique, distributed network of data centers around the globe.
@@ -48,21 +56,14 @@ We keep expanding the boundaries of what you can do with a messaging app. Don’
 #### Community
 * [Facebook](https://telegram.org/faq#facebook)
 * [Twitter](https://telegram.org/faq#twitter)</description>
-    <summary>Cloud-based synchronized messaging app with a focus on speed and security</summary>
     <releaseNotes>#### Program
 * [News](https://telegram.org/blog)
 * [Changelog](https://desktop.telegram.org/#changelog)
 </releaseNotes>
-    <copyright>© 2018 Pavel Durov and Nikolai Durov</copyright>
-    <tags>im messenger chat synchronized cloud</tags>
-    <projectSourceUrl>https://telegram.org/apps#source-code</projectSourceUrl>
-    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/telegram/</packageSourceUrl>
-    <docsUrl>https://telegram.org/faq</docsUrl>
-    <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
-    <dependencies>
+ <dependencies>
       <dependency id="telegram.install" version="3.1.1" />
     </dependencies>
-  </metadata>
+	</metadata>
    <files>
     <file src="tools\*.ps1" target="tools" />
   </files>
