@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>telegram</id>
-    <version>3.1.1</version>
+    <version>3.1.8</version>
     <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/telegram/</packageSourceUrl>
     <owners>dtgm,sippi</owners>
  
@@ -61,7 +61,7 @@ We keep expanding the boundaries of what you can do with a messaging app. Don’
 * [Changelog](https://desktop.telegram.org/#changelog)
 </releaseNotes>
  <dependencies>
-      <dependency id="telegram.install" version="3.1.1" />
+      <dependency id="telegram.install" version="3.1.8" />
     </dependencies>
 	</metadata>
    <files>
