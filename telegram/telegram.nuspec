@@ -44,7 +44,6 @@ For those interested in maximum privacy, Telegram offers Secret Chats. Secret Ch
 
 We keep expanding the boundaries of what you can do with a messaging app. Don’t wait years for older messengers to catch up with Telegram — join the revolution today.
 
-#### [Features](https://telegram.org/#why-switch-to-Telegram)
 
 #### Documentation
 * [FAQ](https://telegram.org/faq)
@@ -54,12 +53,9 @@ We keep expanding the boundaries of what you can do with a messaging app. Don’
 * [Schema](https://core.telegram.org/schema)
 
 #### Community
-* [Facebook](https://telegram.org/faq#facebook)
-* [Twitter](https://telegram.org/faq#twitter)</description>
-    <releaseNotes>#### Program
-* [News](https://telegram.org/blog)
-* [Changelog](https://desktop.telegram.org/#changelog)
-</releaseNotes>
+* [Facebook](https://telegram.org/faq#facebook-or-other-platforms)
+* [Twitter](https://twitter.com/telegram)</description>
+    <releaseNotes>https://github.com/telegramdesktop/tdesktop/releases</releaseNotes>
  <dependencies>
       <dependency id="telegram.install" version="3.1.8" />
     </dependencies>

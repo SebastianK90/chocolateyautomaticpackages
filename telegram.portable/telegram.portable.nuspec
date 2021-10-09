@@ -1,15 +1,23 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>telegram.portable</id>
     <version>3.1.8</version>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/telegram/</packageSourceUrl>
+    <owners>dtgm,sippi</owners>
+ 
     <title>Telegram (Portable)</title>
     <authors>Pavel Durov,Nikolai Durov</authors>
-    <owners>dtgm,sippi</owners>
-    <licenseUrl>https://github.com/telegramdesktop/tdesktop/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://desktop.telegram.org/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/telegram.png</iconUrl>
+    <copyright>© 2021 Pavel Durov and Nikolai Durov</copyright>
+    <licenseUrl>https://github.com/telegramdesktop/tdesktop/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://telegram.org/apps#source-code</projectSourceUrl>
+    <docsUrl>https://telegram.org/faq</docsUrl>
+    <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
+    <tags>im messenger chat synchronized cloud</tags>
+    <summary>Cloud-based synchronized messaging app with a focus on speed and security</summary>
     <description>Pure instant messaging — simple, fast, secure, and synced across all your devices. Over 200 million active users in four years.
 
 FAST: Telegram is the fastest messaging app on the market, connecting people via a unique, distributed network of data centers around the globe.
@@ -36,7 +44,6 @@ For those interested in maximum privacy, Telegram offers Secret Chats. Secret Ch
 
 We keep expanding the boundaries of what you can do with a messaging app. Don’t wait years for older messengers to catch up with Telegram — join the revolution today.
 
-#### [Features](https://telegram.org/#why-switch-to-Telegram)
 
 #### Documentation
 * [FAQ](https://telegram.org/faq)
@@ -46,19 +53,9 @@ We keep expanding the boundaries of what you can do with a messaging app. Don’
 * [Schema](https://core.telegram.org/schema)
 
 #### Community
-* [Facebook](https://telegram.org/faq#facebook)
-* [Twitter](https://telegram.org/faq#twitter)</description>
-    <summary>Cloud-based synchronized messaging app with a focus on speed and security</summary>
-    <releaseNotes>#### Program
-* [News](https://telegram.org/blog)
-* [Changelog](https://desktop.telegram.org/#changelog)
-</releaseNotes>
-    <copyright>© 2018 Pavel Durov and Nikolai Durov</copyright>
-    <tags>im messenger chat synchronized cloud</tags>
-    <projectSourceUrl>https://telegram.org/apps#source-code</projectSourceUrl>
-    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/telegram.portable</packageSourceUrl>
-    <docsUrl>https://telegram.org/faq</docsUrl>
-    <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
+* [Facebook](https://telegram.org/faq#facebook-or-other-platforms)
+* [Twitter](https://twitter.com/telegram)</description>
+    <releaseNotes>https://github.com/telegramdesktop/tdesktop/releases</releaseNotes>
   </metadata>
      <files>
     <file src="tools\**" target="tools" />
