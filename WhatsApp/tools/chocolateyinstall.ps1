@@ -3,8 +3,8 @@
 $packageName = 'whatsapp'
 $url32       = 'https://web.whatsapp.com/desktop/windows/release/ia32/WhatsAppSetup.exe'
 $url64       = 'https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe'
-$checksum32  = 'd77230840d4018511d064bac75b99e4a18e32df976b5ae18b10b0cbd6ab339a9'
-$checksum64  = 'd2efcad59b003b0d7d747a5191f61beb42730d55b148be98e7eb9592a3359d97'
+$checksum32  = '926b6e0b06d5af4ef3f06e0466e4f2caef9454595f4578ef882a2731d1a69e54'
+$checksum64  = 'f6be748ee249f786a518a9121b86b6ce5de2c3000241c601bb2078de56dc09ba'
 
 $packageArgs = @{
   packageName            = $packageName
