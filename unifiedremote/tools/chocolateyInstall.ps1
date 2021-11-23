@@ -2,7 +2,7 @@
  
 $packageName = 'unifiedremote'
 $url32       = 'https://www.unifiedremote.com/download/windows'
-$checksum32  = '239ccdebb1305460a7f4817fe0c74595acd3a99b55c29e4570f90e99f4e4262d'
+$checksum32  = '6fe9b9e8a32e81b40a00b36adea705d766aab7fa7eb6018e79ac07a327af695e'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 $packageArgs = @{
   packageName            = $packageName

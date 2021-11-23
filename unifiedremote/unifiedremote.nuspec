@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>unifiedremote</id>
-    <version>3.10.0.2467</version>
+    <version>3.11.0.2483</version>
     <title>Unified Remote</title>
     <authors>Unified Intents AB</authors>
     <owners>Nathan Mascitelli, sippi</owners>
