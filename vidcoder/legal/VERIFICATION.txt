@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/RandomEngy/VidCoder/releases/download/v6.43/VidCoder-6.43.exe
+   x32: https://github.com/RandomEngy/VidCoder/releases/download/v6.44/VidCoder-6.44.exe
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 3B04CD571D4B1CA737FDC5087535D78CDB22117DC33EA706B06F5E201676BAE2
+   checksum32: D9A53E32D6F0D2E431861E8A21E79C555E0A55BC1B287731E9F0BADCEACE2BB0
 
 
 File 'LICENSE.txt' is obtained from:
