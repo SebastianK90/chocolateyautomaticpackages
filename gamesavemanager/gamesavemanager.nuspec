@@ -5,7 +5,7 @@
         <version>3.1.507.0</version>
         <title>GameSave Manager</title>
         <authors>InsaneMatt</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
         <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
         <projectUrl>http://www.gamesave-manager.com/</projectUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/gamesavemanager</packageSourceUrl>

@@ -5,7 +5,7 @@
     <title>TeamSpeak</title>
     <version>3.5.6</version>
     <authors>"TeamSpeak Systems GmbH"</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <summary>TeamSpeak Client</summary>
     <description>A Voice-Over-IP (VoIP) software developed primarily for gamers to communicate with one another.</description>
     <projectUrl>https://www.teamspeak.com/en/</projectUrl>

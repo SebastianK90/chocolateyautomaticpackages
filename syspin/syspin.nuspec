@@ -5,7 +5,7 @@
         <version>0.99.9.20210303</version>
         <title>syspin</title>
         <authors>Technosys Corporation</authors>
-		<owners>sippi</owners>
+		<owners>SebastianK</owners>
         <licenseUrl>https://www.technosys.net/terms</licenseUrl>
         <projectUrl>https://www.technosys.net/products/utils/pintotaskbar</projectUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/syspin</packageSourceUrl>

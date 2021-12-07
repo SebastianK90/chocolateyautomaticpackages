@@ -5,7 +5,7 @@
     <version>1.2.4</version>
     <title>setACL Studio</title>
     <authors>Helge Klein</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>https://helgeklein.com/terms-conditions</licenseUrl>
     <projectUrl>https://helgeklein.com/setacl-studio</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/setacl-studio.png</iconUrl>

@@ -5,7 +5,7 @@
     <version>5.87.0.9306</version>
     <title>CCleaner (Portable)</title>
     <authors>Piriform</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>https://www.piriform.com/legal/software-license/ccleaner</licenseUrl>
     <projectUrl>https://www.piriform.com/ccleaner</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/ccleaner.portable.png</iconUrl>

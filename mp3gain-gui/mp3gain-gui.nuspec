@@ -5,7 +5,7 @@
         <version>1.2.5.20161028</version>
         <title>MP3GainGUI</title>
         <authors>Glen Sawyer</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
         <licenseUrl>http://gnu.org/licenses/lgpl-2.1</licenseUrl>
         <projectUrl>http://mp3gain.sourceforge.net</projectUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/mp3gain-gui</packageSourceUrl>

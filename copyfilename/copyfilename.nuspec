@@ -5,7 +5,7 @@
     <version>2.2.022.20160824</version>
     <title>Copy File Name</title>
     <authors>Bullzip.com</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>http://en.wikipedia.org/wiki/End-user_license_agreement</licenseUrl>
     <projectUrl>http://www.bullzip.com/products/cfn/info.php</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/copyfilename.png</iconUrl>

@@ -5,7 +5,7 @@
     <version>0.7.9</version>
     <title>Rambox Community-Edition</title>
     <authors>Ramiro Saenz</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>https://github.com/saenzramiro/rambox/blob/master/LICENSE</licenseUrl>
     <projectUrl>http://rambox.pro/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/rambox.png</iconUrl>

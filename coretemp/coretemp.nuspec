@@ -5,7 +5,7 @@
         <version>1.17.1</version>
         <title>CoreTemp</title>
         <authors>Arthur Liberman</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
         <licenseUrl>http://www.alcpu.com/CoreTemp/terms.html</licenseUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/coretemp</packageSourceUrl>
 		<mailingListUrl>http://www.alcpu.com/CoreTemp/contact.html</mailingListUrl>

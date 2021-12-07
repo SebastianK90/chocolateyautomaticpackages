@@ -5,7 +5,7 @@
     <version>5.1.8</version>
     <title>Resource Hacker (Portable)</title>
     <authors>Angus Johnson</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>http://www.angusj.com/resourcehacker/</licenseUrl>
     <projectUrl>http://www.angusj.com/resourcehacker/</projectUrl>
 	<iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/reshack.portable.png</iconUrl>

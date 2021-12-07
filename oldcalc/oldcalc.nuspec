@@ -5,7 +5,7 @@
     <version>1.1.20200529</version>
     <title>Old Calculator for Windows 10</title>
     <authors>winaero.com</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
     <projectUrl>http://winaero.com/blog/get-calculator-from-windows-8-and-windows-7-in-windows-10/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/oldcalc.png</iconUrl>

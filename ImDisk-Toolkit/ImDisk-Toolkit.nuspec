@@ -5,7 +5,7 @@
     <version>21.11.03</version>
     <title>ImDisk-Toolkit</title>
     <authors>LTR Data,Olof Lagerkvist,v77</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>http://www.ltr-data.se/files/license.txt</licenseUrl>
     <projectUrl>http://imdisk-toolkit.sourceforge.net/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/imdisk-toolkit.png</iconUrl>

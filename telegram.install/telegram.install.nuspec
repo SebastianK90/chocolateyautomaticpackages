@@ -4,7 +4,7 @@
     <id>telegram.install</id>
     <version>3.2.5</version>
     <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/telegram.install/</packageSourceUrl>
-    <owners>dtgm,sippi</owners>
+    <owners>SebastianK</owners>
  
     <title>Telegram (Install)</title>
     <authors>Pavel Durov,Nikolai Durov</authors>

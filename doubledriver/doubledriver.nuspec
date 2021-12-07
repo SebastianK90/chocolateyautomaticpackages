@@ -5,7 +5,7 @@
         <version>4.1</version>
         <title>Double Driver</title>
         <authors>Budy Setiawan Kusumah</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
         <licenseUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/blob/master/doubledriver/tools/license.txt</licenseUrl>
         <projectUrl>http://boozet.org/dd.htm</projectUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/doubledriver</packageSourceUrl>

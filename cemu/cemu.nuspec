@@ -5,7 +5,7 @@
         <version>1.25.6.0</version>
         <title>CEMU - Wii U emulator</title>
         <authors>Exzap, Petergov</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
 		<docsUrl>http://cemu.info/faq.html</docsUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/cemu</packageSourceUrl>
         <projectUrl>http://cemu.info</projectUrl>

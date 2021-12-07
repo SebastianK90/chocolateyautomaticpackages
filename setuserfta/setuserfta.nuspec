@@ -5,7 +5,7 @@
     <version>1.7.1.20190427</version>
     <title>SetUserFTA</title>
     <authors>Christoph Kolbicz</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/setuserfta/legal/LICENSE.txt</licenseUrl>
     <projectUrl>https://kolbi.cz/blog/2017/10/25/setuserfta-userchoice-hash-defeated-set-file-type-associations-per-user/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

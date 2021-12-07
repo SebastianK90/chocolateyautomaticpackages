@@ -5,7 +5,7 @@
         <version>2021.10.24</version>
         <title>ChanSort</title>
         <authors>Horst Beham</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
 		<docsUrl>https://github.com/PredatH0r/ChanSort/wiki</docsUrl>
 		<bugTrackerUrl>https://github.com/PredatH0r/ChanSort/issues</bugTrackerUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/ChanSort</packageSourceUrl>

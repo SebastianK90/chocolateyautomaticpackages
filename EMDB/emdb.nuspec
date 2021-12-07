@@ -5,7 +5,7 @@
     <version>4.13</version>
     <title>EMDB - Eric's Movie Database</title>
     <authors>Wicked &amp; Wild Inc.</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
     <projectUrl>http://www.emdb.eu/index.html</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/emdb.png</iconUrl>

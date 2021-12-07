@@ -5,7 +5,7 @@
     <version>1.9.6</version>
     <title>SBZ Switcher</title>
     <authors>applejack1</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <projectUrl>https://sourceforge.net/projects/sbzswitcher/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/sbz-switcher.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

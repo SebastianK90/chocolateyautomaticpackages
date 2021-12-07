@@ -5,7 +5,7 @@
     <version>6.44</version>
     <title>VidCoder</title>
     <authors>RandomEng</authors>
-    <owners>angryhussord,sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>https://github.com/RandomEngy/VidCoder/blob/master/License.txt</licenseUrl>
     <projectUrl>http://vidcoder.net/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/vidcoder.png</iconUrl>

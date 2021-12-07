@@ -5,7 +5,7 @@
         <version>2.15.606</version>
         <title>CloneApp</title>
         <authors>builtbybel</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
 		<docsUrl>https://github.com/builtbybel/CloneApp/blob/master/docs/manual.pdf</docsUrl>
 		<mailingListUrl>https://github.com/builtbybel/CloneApp/issues</mailingListUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/cloneapp</packageSourceUrl>

@@ -5,7 +5,7 @@
         <version>1.6.0.20190427</version>
         <title>Easy Context Menu</title>
         <authors>SORDUM.ORG</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
         <licenseUrl>http://www.sordum.org/eula/</licenseUrl>
         <projectUrl>http://www.sordum.org/7615/</projectUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/ecm</packageSourceUrl>

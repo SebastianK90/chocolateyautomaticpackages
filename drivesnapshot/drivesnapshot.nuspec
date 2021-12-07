@@ -5,7 +5,7 @@
         <version>1.49.19014</version>
         <title>Drive Snapshot</title>
         <authors>Tom Ehlert Software</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
 		<docsUrl>http://www.drivesnapshot.de/en/backup.htm</docsUrl>
         <licenseUrl>http://www.drivesnapshot.de/en/down.htm</licenseUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/drivesnapshot</packageSourceUrl>

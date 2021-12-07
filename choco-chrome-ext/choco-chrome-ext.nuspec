@@ -5,7 +5,7 @@
         <version>1.0.0.8</version>
         <title>Chocolatey Chrome Extension (Unofficial)</title>
         <authors>sippi</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
         <licenseUrl>https://www.google.com/intl/en/chrome/browser/privacy/eula_text.html</licenseUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/choco-chrome-ext</packageSourceUrl>
         <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/choco-chrome-ext.png</iconUrl>

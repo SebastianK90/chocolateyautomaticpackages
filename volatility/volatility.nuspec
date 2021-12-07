@@ -5,7 +5,7 @@
         <version>2.6.0.20190425</version>
         <title>Volatility Framework - Standalone</title>
         <authors>The Volatility Foundation</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
 		<docsUrl>https://github.com/volatilityfoundation/volatility/wiki</docsUrl>
 		<bugTrackerUrl>https://github.com/volatilityfoundation/volatility/issues</bugTrackerUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/volatility</packageSourceUrl>

@@ -5,7 +5,7 @@
         <version>1.2.0.20210225</version>
         <title>IObitUnlocker</title>
         <authors>IObit</authors>
-        <owners>sippi</owners>
+        <owners>SebastianK</owners>
         <licenseUrl>http://www.iobit.com/en/eula.php</licenseUrl>
         <projectUrl>http://www.iobit.com/en/iobit-unlocker.php</projectUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/io-unlocker</packageSourceUrl>

@@ -5,7 +5,7 @@
         <version>3.8.9.3</version>
     <title>dispcalGUI (Install)</title>
         <authors>Florian Höch</authors>
-    <owners>dtgm, sippi</owners>
+    <owners>SebastianK</owners>
         <licenseUrl>https://displaycal.net/LICENSE.txt</licenseUrl>
 		<bugTrackerUrl>https://hub.displaycal.net/issue/status/!closed/</bugTrackerUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/displaycal</packageSourceUrl>

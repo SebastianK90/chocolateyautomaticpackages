@@ -5,7 +5,7 @@
     <version>2.28.0.20210717</version>
     <title>TIDAL - High Fidelity Music Streaming</title>
     <authors>Aspiro AS</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>https://tidal.com/terms</licenseUrl>
     <projectUrl>https://tidal.com/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/tidal.png</iconUrl>

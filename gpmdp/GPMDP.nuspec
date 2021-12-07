@@ -5,7 +5,7 @@
     <version>4.6.1.20190424</version>
     <title>Google Play Music Desktop Player UNOFFICIAL</title>
     <authors>Samuel Attard</authors>
-    <owners>sippi</owners>
+    <owners>SebastianK</owners>
     <licenseUrl>https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/blob/master/README.md#license</licenseUrl>
     <projectUrl>http://www.googleplaymusicdesktopplayer.com/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/gpmdp.png</iconUrl>
