@@ -2,7 +2,7 @@
 
 $packageName = 'ccleaner.portable'
 $url32       = 'https://download.ccleaner.com/portable/ccsetup589.zip'
-$checksum32  = '554df2b06833d4ae48aeaafb79a55a58a14c895613aa7397abd12e4906e306ea'
+$checksum32  = 'dab95285d352299acf3d50d505608c418d79eb214e31cdcc6b07ef3ea049c5be'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 $bits = Get-ProcessorBits
 $ccleaner_temp = "$env:USERPROFILE\ccleaner_temp"
