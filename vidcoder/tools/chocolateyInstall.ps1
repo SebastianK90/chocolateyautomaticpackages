@@ -7,7 +7,7 @@ $packageArgs = @{
   softwareName   = 'vidcoder*'
   fileType       = 'exe'
   file           = gi $toolsPath\*_x32.exe
-  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
+  silentArgs     = '--silent'
   validExitCodes = @(0)
 }
 Install-ChocolateyInstallPackage @packageArgs
