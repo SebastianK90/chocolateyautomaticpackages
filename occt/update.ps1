@@ -1,7 +1,6 @@
 ﻿import-module au
 
-
-$releases = 'https://www.ocbase.com/download'
+$releases = 'https://www.ocbase.com/download/edition:Personal'
 
 function global:au_SearchReplace {
   @{
