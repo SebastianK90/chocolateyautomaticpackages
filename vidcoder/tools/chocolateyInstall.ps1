@@ -8,7 +8,7 @@ $packageArgs = @{
   fileType       = 'exe'
   file           = gi $toolsPath\*_x32.exe
   silentArgs     = '--silent'
-  validExitCodes = @(0)
+  validExitCodes = @(0,1)
 }
 Install-ChocolateyInstallPackage @packageArgs
 ls $toolsPath\*.exe | % { rm $_ -ea 0; if (Test-Path $_) { sc "$_.ignore" "" }}
