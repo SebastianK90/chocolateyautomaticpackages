@@ -21,7 +21,7 @@
     <docsUrl>http://vidcoder.net/Documentation/RippingDiscs.html</docsUrl>
     <bugTrackerUrl>https://github.com/RandomEngy/VidCoder/issues</bugTrackerUrl>
 	    <dependencies>
-      <dependency id="dotnet" version="5.0.0" />
+      <dependency id="dotnet-5.0-desktopruntime" version="5.0.14" />
 	  <dependency id="chocolatey-core.extension" version="1.3.3" />
     </dependencies>
   </metadata>
