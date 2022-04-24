@@ -1,3 +1,4 @@
+
 import-module au
 
 $releases = 'https://www.ccleaner.com/de-de/ccleaner/download/portable'
@@ -18,7 +19,7 @@ function global:au_GetLatest {
     $extract_to = "$env:TEMP\ccleaner"
     Invoke-WebRequest -Uri $url32 -OutFile $output -UseBasicParsing
     Expand-Archive "$env:TEMP\ccleaner.zip" -DestinationPath $extract_to -Force
-    $version = ((Get-ChildItem $env:TEMP\ccleaner\ccleaner.exe).VersionInfo).ProductVersion
+    $version = ((Get-ChildItem $env:TEMP\ccleaner\x86\ccleaner.exe).VersionInfo).ProductVersion
     Remove-Item $output
 
   @{ URL32 = $url32 ; Version = $version }
