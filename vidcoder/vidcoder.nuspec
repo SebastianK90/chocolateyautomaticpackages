@@ -4,7 +4,7 @@
     <id>vidcoder</id>
     <version>7.14</version>
     <title>VidCoder</title>
-    <authors>RandomEng</authors>
+    <authors>RandomEngy/David Rickard</authors>
     <owners>SebastianK</owners>
     <licenseUrl>https://github.com/RandomEngy/VidCoder/blob/master/License.txt</licenseUrl>
     <projectUrl>http://vidcoder.net/</projectUrl>
@@ -14,19 +14,19 @@
 	| Calling directly into the HandBrake library gives it a more rich UI than the official HandBrake Windows GUI.</description>
     <summary>VidCoder is a DVD/Blu-ray ripping and video transcoding application for Windows.</summary>
     <releaseNotes>https://github.com/RandomEngy/VidCoder/releases/tag/v7.14</releaseNotes>
-    <copyright />
+    <copyright>2010-2021 VidCoder Developers</>
     <tags>Handbrake Windows video transcoding blu-ray dvd ripper admin</tags>
     <projectSourceUrl>https://github.com/RandomEngy/VidCoder</projectSourceUrl>
     <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/vidcoder</packageSourceUrl>
     <docsUrl>http://vidcoder.net/Documentation/RippingDiscs.html</docsUrl>
     <bugTrackerUrl>https://github.com/RandomEngy/VidCoder/issues</bugTrackerUrl>
-	    <dependencies>
-      <dependency id="dotnet-5.0-desktopruntime" version="5.0.14" />
-	  <dependency id="chocolatey-core.extension" version="1.3.3" />
+    <dependencies>
+      <dependency id="choco install dotnet-6.0-runtime" version="6.0.2" />
+      <dependency id="chocolatey-core.extension" version="1.3.3" />
     </dependencies>
   </metadata>
-      <files>
+  <files>
      <file src="tools\**" target="tools" />
-	 <file src="legal\**" target="legal" />
+     <file src="legal\**" target="legal" />
   </files>
 </package>
