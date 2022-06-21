@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v3.7.3/tsetup-x64.3.7.3.exe
+   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v4.0.0/tsetup-x64.4.0.0.exe
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 0C04C4A9892D46DAE9AA48F64DE06DE2CB9CDC80E8831DC91146AE8BC1FDEE85
+   checksum32: 71C6B7A59926A2CEC00D79AF76C22AB759D89ECB16561891685A4D69FF11A567
 
 
 File 'LICENSE.txt' is obtained from:
