@@ -6,10 +6,12 @@
         <title>CEMU - Wii U emulator</title>
         <authors>Exzap, Petergov</authors>
         <owners>SebastianK</owners>
-		<docsUrl>http://cemu.info/faq.html</docsUrl>
+		<docsUrl>https://wiki.cemu.info/wiki/Main_Page</docsUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/cemu</packageSourceUrl>
         <projectUrl>http://cemu.info</projectUrl>
 		<licenseUrl>https://raw.githubusercontent.com/cemu-project/Cemu/main/LICENSE.txt</licenseUrl>
+		<bugTrackerUrl>https://github.com/cemu-project/Cemu/issues</bugTrackerUrl>
+		<mailingListUrl>http://cemu.info/community.html</mailingListUrl>
 		<projectSourceUrl>https://github.com/cemu-project/Cemu/</projectSourceUrl>
         <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/cemu.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
