@@ -2,13 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>cemu</id>
-        <version>2.0.0</version>
+        <version>2.0.20220910</version>
         <title>CEMU - Wii U emulator</title>
         <authors>Exzap, Petergov</authors>
         <owners>SebastianK</owners>
 		<docsUrl>http://cemu.info/faq.html</docsUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/cemu</packageSourceUrl>
         <projectUrl>http://cemu.info</projectUrl>
+		<licenseUrl>https://raw.githubusercontent.com/cemu-project/Cemu/main/LICENSE.txt</licenseUrl>
+		<projectSourceUrl>https://github.com/cemu-project/Cemu/</projectSourceUrl>
         <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/cemu.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Highly experimental software to emulate Wii U applications on PC.
@@ -26,6 +28,7 @@
     </metadata>
 	<files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 
 </package>

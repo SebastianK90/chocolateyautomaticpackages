@@ -1,28 +1,30 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = 'cemu'
-$url32       = 'https://cemu.info/releases/cemu_1.26.2.zip'
-$checksum32  = 'b0e3abf5048f78e352b42c3e1660a2c6e85d6905cd9f60d06ca2f2318fa3152c'
-$toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
+$PackageName    = 'cemu'
+$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 $cemu_folder = "$(Get-ToolsLocation)\cemu"
 
 $packageArgs = @{
   packageName    = $packageName
-  url            = $url32
-  checksum       = $checksum32
+  FileFullPath   = Get-Item $toolsPath\*_x32.zip
   checksumType   = 'sha256'
   unzipLocation  = $toolsPath
 }
 
-If (Get-Item "$env:ChocolateyInstall\lib-bkp\cemu\tools\cemu\Cemu.exe" -ErrorAction SilentlyContinue) {
+
+$move_folder_bkp = (Get-ChildItem "$env:ChocolateyInstall\lib-bkp\cemu\tools\" -Filter 'Cemu_*' -ErrorAction SilentlyContinue).FullName
+$move_folder = (Get-ChildItem "$env:ChocolateyInstall\lib\cemu\tools\" -Filter 'Cemu_*' -ErrorAction SilentlyContinue).FullName
+
+If (Get-Item "$move_folder_bkp\Cemu.exe" -ErrorAction SilentlyContinue) {
 	Write-Output "Migrating cemu location to $cemu_folder"
-	Move-Item "$env:ChocolateyInstall\lib-bkp\cemu\tools\cemu" "$(Get-ToolsLocation)" -Force
-	Remove-Item "$env:ChocolateyInstall\lib\cemu\tools\cemu" -Recurse -Force -ErrorAction SilentlyContinue
+	Move-Item $move_folder_bkp "$(Get-ToolsLocation)" -Force
+	Remove-Item $move_folder -Recurse -Force -ErrorAction SilentlyContinue
 }
+
 
 Install-ChocolateyZipPackage @packageArgs
 
-$latest = (Get-ChildItem $toolsPath -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.Name -like '*cemu*'} | sort {$_.CreationTime} | select -First 1).FullName
+$latest = (Get-ChildItem $toolsPath -Recurse -Directory -ErrorAction SilentlyContinue | Where-Object {($_.Name -like '*cemu*') -or ($_.Name -like 'Cemu_*')} | sort {$_.CreationTime} | select -First 1).FullName
 Robocopy "$latest" "$cemu_folder" /R:0 /W:0 /E /XO
 Remove-Item "$latest" -Recurse -Force -ErrorAction SilentlyContinue
 
