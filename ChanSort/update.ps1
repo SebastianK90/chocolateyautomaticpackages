@@ -1,7 +1,7 @@
 import-module au
 
 
-$releases = 'https://github.com/PredatH0r/ChanSort/releases'
+$releases = 'https://github.com/PredatH0r/ChanSort/releases/latest'
 
 function global:au_SearchReplace {
    @{
@@ -22,9 +22,11 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $latest_tag = (($download_page.BaseResponse).ResponseUri -split '\/')[-1]
+    $expanded_assets = Invoke-WebRequest "https://github.com/PredatH0r/ChanSort/releases/expanded_assets/$($latest_tag)" -UseBasicParsing
 
     $re      = '*ChanSort*.zip'
-    $url     = $download_page.links | ? href -like $re | select -First 1 -expand href
+    $url     = $expanded_assets.links | ? href -like $re | select -First 1 -expand href
     [string]$version = (($url -split '\/' | Select-Object -Index 5).Substring(1)).replace('-',".").replace('_',".")
 
      @{

@@ -21,8 +21,12 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge -FileNameBase 'cloneapp
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $latest_tag = (($download_page.BaseResponse).ResponseUri -split '\/')[-1]
+    $expanded_assets = Invoke-WebRequest "https://github.com/builtbybel/CloneApp/releases/expanded_assets/$($latest_tag)" -UseBasicParsing
+    
+
     $re      = 'CloneApp*.zip'
-    $url     = ($download_page.links | Where-Object {$_.href -match $re}).href
+    $url     = ($expanded_assets.links | Where-Object {$_.href -match $re}).href
     $version = [regex]::match(($url -split '\/'),'[0-9]+(\.[0-9]+)*').value
 
      @{

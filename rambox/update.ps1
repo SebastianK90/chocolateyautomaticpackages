@@ -18,11 +18,13 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 function global:au_GetLatest {
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $latest_tag = (($download_page.BaseResponse).ResponseUri -split '\/')[-1]
+    $expanded_assets = Invoke-WebRequest "https://github.com/ramboxapp/community-edition/releases/expanded_assets/$($latest_tag)" -UseBasicParsing
 
     $re64      = '*-win-x64.zip'
     $re32      = '*-win-ia32.zip'
-    $dirty_url64     = $download_page.links | ? href -like $re64 | select -First 1 <# 2 #> -expand href
-    $dirty_url32     = $download_page.links | ? href -like $re32 | select -First 1 <# 2 #> -expand href
+    $dirty_url64     = $expanded_assets.links | ? href -like $re64 | select -First 1 <# 2 #> -expand href
+    $dirty_url32     = $expanded_assets.links | ? href -like $re32 | select -First 1 <# 2 #> -expand href
     $url64 = 'https://github.com' + $dirty_url64
     $url32 = 'https://github.com' + $dirty_url32
     $version = [regex]::match($url64,'[0-9]+(\.[0-9]+)*').value

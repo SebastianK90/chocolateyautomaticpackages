@@ -12,9 +12,11 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $latest_tag = (($download_page.BaseResponse).ResponseUri -split '\/')[-1]
+    $expanded_assets = Invoke-WebRequest "https://github.com/telegramdesktop/tdesktop/releases/expanded_assets/$($latest_tag)" -UseBasicParsing
 
     $re      = 'tsetup.*.exe'
-    $url     = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $url     = $expanded_assets.links | ? href -match $re | select -First 1 -expand href
     $url32   = 'https://github.com' + $url
     $version = ($url -split '\/' | select -Index 5).Substring(1)
 

@@ -1,6 +1,6 @@
 ﻿import-module au
 
-$releases = 'https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/'
+$releases = 'https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/latest'
 
 function global:au_SearchReplace {
    @{
@@ -26,9 +26,13 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $latest_tag = (($download_page.BaseResponse).ResponseUri -split '\/')[-1]
+  $expanded_assets = Invoke-WebRequest "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/expanded_assets/$($latest_tag)" -UseBasicParsing
+
+
 
   $re      = 'Google.Play.Music.Desktop.Player.*.exe'
-  $url     = $download_page.links | ? href -match $re | select -First 1 <# 2 #> -expand href
+  $url     = $expanded_assets.links | ? href -match $re | select -First 1 <# 2 #> -expand href
   $version = ($url -split '\/' | select -Index 5).Substring(1)
 
      @{
