@@ -5,7 +5,7 @@ $website =  Invoke-WebRequest -uri 'https://www.aida64.com/downloads' -UseBasicP
 $links = $website.links | Where-Object {$_.outerHTML-like '*AIDA64 Extreme*'} | Select-Object
 #$links[1].href
 
-$releases = 'https://www.aida64.com' + $links[1].href
+$releases = 'https://www.aida64.com/' + $links[1].href
 
 function global:au_SearchReplace {
     @{
