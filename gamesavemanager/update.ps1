@@ -16,16 +16,9 @@ function global:au_GetLatest {
     $url32 = (($a.href -replace '&amp;','&') + "&a=dl")[0]
     [string]$version =  [regex]::match($a.title,'[0-9]+(\.[0-9]+)*').value
 
-    $headers = @{
-    Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9';
-    'Accept-Encoding' = 'gzip, deflate, br';
-    Referer = "$r";
-    'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36';
-    'Content-Type' = 'application/octet-stream';
-}
+    $url32 = $url32 -replace '=thanks','=start'
+    Invoke-WebRequest -Uri $url32 -OutFile "tools\gs_mngr_$($Version)_x32.zip" -UserAgent 'chocolatey'
 
-  Invoke-WebRequest -Uri $url32 -Headers $headers -OutFile "tools\gs_mngr_$($Version)_x32.zip"
-  
     return @{Version = $version }
 }
 
