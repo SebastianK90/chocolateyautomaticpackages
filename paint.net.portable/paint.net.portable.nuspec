@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>paint.net.portable</id>
+    <version>5.0</version>
+    <title>Paint.NET (Portable)</title>
+    <authors>Rick Brewster, dotPDN</authors>
+    <owners>SebastianK</owners>
+    <licenseUrl>http://www.getpaint.net/license.html</licenseUrl>
+    <projectUrl>http://www.getpaint.net/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chocolatey-community/chocolatey-packages@b89548a8e0a21620abe8643335fd7ba0c5b03ca1/icons/paint.net.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Paint.NET is free image and photo editing software for PCs that run Windows.
+It features an intuitive and innovative user interface with support for layers,
+unlimited undo, special effects, and a wide variety of useful and powerful tools.
+An active and growing online community provides friendly help, tutorials, and plugins.
+
+## Features
+
+- Simple, intuitive, and innovative user interface
+- Performance
+- Support for layers
+- Unlimited history
+- Active Online Community
+- Automatically Updated
+- Special Effects
+- Powerful Tools
+
+## Notes
+
+- Since version 4.3 this package embeds x64 bit version of the software
+- **If the package is out of date please check [Version History](#versionhistory) for the latest submitted version. If you have a question, please ask it in [Chocolatey Community Package Discussions](https://github.com/chocolatey-community/chocolatey-packages/discussions) or raise an issue on the [Chocolatey Community Packages Repository](https://github.com/chocolatey-community/chocolatey-packages/issues) if you have problems with the package. Disqus comments will generally not be responded to.**
+
+![screenshot](https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/master/automatic/paint.net/screenshot.png)</description>
+    <summary>Paint.NET is image and photo manipulation software designed to be used on computers that run Windows.</summary>
+    <releaseNotes>https://www.getpaint.net/roadmap.html</releaseNotes>
+    <tags>admin editing freeware graphics image paint paint.net photo</tags>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/paint.net.portable</packageSourceUrl>
+    <docsUrl>https://forums.getpaint.net/index.php?/forum/18-tutorials-publishing-only/</docsUrl>
+    <mailingListUrl>https://forums.getpaint.net/</mailingListUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.3.3" />
+    </dependencies>
+  </metadata>
+</package>
