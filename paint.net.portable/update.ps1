@@ -1,4 +1,5 @@
 Import-Module AU
+Import-module PSGitHub
 
 
 $domain   = 'https://github.com'
