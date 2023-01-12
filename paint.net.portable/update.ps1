@@ -1,11 +1,8 @@
 Import-Module AU
-Import-module PSGitHub
 
 
-$domain   = 'https://github.com'
-$releases = "$domain/repos/paintdotnet/release/releases/latest"
-$owner = "paintdotnet"
-$repository = "release"
+
+$releases = "https://github.com/paintdotnet/release/releases/latest"
 
 function global:au_SearchReplace {
   @{
@@ -19,18 +16,22 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate {Get-RemoteFiles -Purge}
 
 function global:au_GetLatest {
-    $tags = Get-GitHubRelease -Owner $owner -RepositoryName $repository -Latest
+  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $latest_tag = (($download_page.BaseResponse).ResponseUri -split '\/')[-1]
+
+  $expanded_assets = Invoke-WebRequest "https://github.com/paintdotnet/release/releases/expanded_assets/$($latest_tag)" -UseBasicParsing
 
 
-    $re = 'portable.x64.zip'
+  $re = 'portable.x64.zip'
 
-    $url = $tags.assets.browser_download_url | ? {$_ -match $re}
-    $version = (Split-Path ( Split-Path $url ) -Leaf).Substring(1)
+  $url     = $expanded_assets.links | ? href -match $re | select -First 1 <# 2 #> -expand href
+  $version = ($url -split '\/' | select -Index 5).Substring(1)
+
 
     return @{
         Version = $version
-        Url     = "https://github.com" + $url
-        ReleaseURL  = "$domain/paintdotnet/release/releases/tag/v${version}"
+        Url32     = "https://github.com" + $url
+        ReleaseURL  = "https://github.com/paintdotnet/release/releases/tag/v${version}"
         PackageName = 'paint.net.portable'
     }
 }
