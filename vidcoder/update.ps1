@@ -26,10 +26,15 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $re      = 'VidCoder-.*.exe'
-    $url     = ($download_page.links | Where-Object {($_.href -match $re) -and ($_.href -notlike '*Portable*')}).href
-    $version = [regex]::match(($url -split '\/')[-1],'[0-9]+(\.[0-9]+)*').value
+  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $latest_tag = (($download_page.BaseResponse).ResponseUri -split '\/')[-1]
+
+  $expanded_assets = Invoke-WebRequest "https://github.com/RandomEngy/VidCoder/releases/expanded_assets/$($latest_tag)" -UseBasicParsing
+  
+  $re      = 'VidCoder-.*.exe'
+  $url     = $expanded_assets.links | Where-Object {($_.href -match $re) -and ($_.href -notlike '*Portable*')} | select -First 1 <# 2 #> -expand href
+
+  $version = ($url -split '\/' | select -Index 5).Substring(1)
 
      @{
         URL32        = 'https://github.com' + $url
@@ -40,3 +45,15 @@ function global:au_GetLatest {
 
 
 Update-Package -ChecksumFor none
+
+
+
+
+
+
+  $expanded_assets = Invoke-WebRequest "https://github.com/paintdotnet/release/releases/expanded_assets/$($latest_tag)" -UseBasicParsing
+
+
+  $re = 'portable.x64.zip'
+
+ 
