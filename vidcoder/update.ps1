@@ -45,15 +45,3 @@ function global:au_GetLatest {
 
 
 Update-Package -ChecksumFor none
-
-
-
-
-
-
-  $expanded_assets = Invoke-WebRequest "https://github.com/paintdotnet/release/releases/expanded_assets/$($latest_tag)" -UseBasicParsing
-
-
-  $re = 'portable.x64.zip'
-
- 
