@@ -10,11 +10,7 @@ function global:au_SearchReplace {
             "(?i)(^\s*softwareName\s*=\s*)('.*')" = "`$1'$($Latest.PackageName)*'"
             "(?i)(^\s*fileType\s*=\s*)('.*')"     = "`$1'$($Latest.FileType)'"
         }
-
-        "$($Latest.PackageName).nuspec" = @{
-            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
-        }
-
+        
         ".\legal\VERIFICATION.txt" = @{
           "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
           "(?i)(checksum32:).*"        = "`${1} $($Latest.Checksum32)"
@@ -22,7 +18,7 @@ function global:au_SearchReplace {
     }
 }
 
-function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
+function global:au_BeforeUpdate {Get-RemoteFiles -Purge}
 
 
 function global:au_GetLatest {
@@ -32,16 +28,17 @@ function global:au_GetLatest {
   $expanded_assets = Invoke-WebRequest "https://github.com/RandomEngy/VidCoder/releases/expanded_assets/$($latest_tag)" -UseBasicParsing
   
   $re      = 'VidCoder-.*.exe'
-  $url     = $expanded_assets.links | Where-Object {($_.href -match $re) -and ($_.href -notlike '*Portable*')} | select -First 1 <# 2 #> -expand href
+  $url     = $expanded_assets.links | Where-Object {($_.href -match $re) -and ($_.href -notlike '*Portable*')} | select -First 1 -expand href
 
   $version = ($url -split '\/' | select -Index 5).Substring(1)
 
      @{
-        URL32        = 'https://github.com' + $url
+        URL32        = "https://github.com$($url)"
         Version      = $version
         ReleaseNotes = "https://github.com/RandomEngy/VidCoder/releases/tag/v${version}"
+        PackageName  = 'vidcoder'
     }
 }
 
 
-Update-Package -ChecksumFor none
+update -ChecksumFor none

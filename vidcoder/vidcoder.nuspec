@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>vidcoder</id>
-    <version>7.14</version>
+    <version>8.24</version>
     <title>VidCoder</title>
     <authors>RandomEngy/David Rickard</authors>
     <owners>SebastianK</owners>
@@ -14,7 +14,7 @@
 	| Calling directly into the HandBrake library gives it a more rich UI than the official HandBrake Windows GUI.</description>
     <summary>VidCoder is a DVD/Blu-ray ripping and video transcoding application for Windows.</summary>
     <releaseNotes>https://github.com/RandomEngy/VidCoder/releases/tag/v7.14</releaseNotes>
-    <copyright>2010-2021 VidCoder Developers</>
+    <copyright>2010-2021 VidCoder Developers</copyright>
     <tags>Handbrake Windows video transcoding blu-ray dvd ripper admin</tags>
     <projectSourceUrl>https://github.com/RandomEngy/VidCoder</projectSourceUrl>
     <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/vidcoder</packageSourceUrl>
