@@ -6,7 +6,7 @@ $releases = "https://github.com/paintdotnet/release/releases/latest"
 function global:au_SearchReplace {
   @{
       ".\legal\VERIFICATION.txt" = @{
-          "(?i)(\s+x64:).*"            = "`${1} $($Latest.ReleaseURL)"
+          "(?i)(\s+x64:).*"            = "`${1} $($Latest.Url64)"
           "(?i)(checksum64:).*"        = "`${1} $($Latest.Checksum64)"
         }
         ".\tools\chocolateyInstall.ps1" = @{
