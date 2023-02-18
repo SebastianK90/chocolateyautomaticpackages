@@ -1,14 +1,16 @@
 Import-Module AU
 
 
-
 $releases = "https://github.com/paintdotnet/release/releases/latest"
 
 function global:au_SearchReplace {
   @{
       ".\legal\VERIFICATION.txt" = @{
-          "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
-          "(?i)(checksum32:).*"        = "`${1} $($Latest.Checksum32)"
+          "(?i)(\s+x64:).*"            = "`${1} $($Latest.ReleaseURL)"
+          "(?i)(checksum64:).*"        = "`${1} $($Latest.Checksum64)"
+        }
+        ".\tools\chocolateyInstall.ps1" = @{
+          "(?i)(^\s*FileFullPath\s*=\s*`"[$]toolsPath\\).*" = "`${1}$($Latest.FileName64)`""
         }
   }
 }
@@ -25,15 +27,17 @@ function global:au_GetLatest {
   $re = 'portable.x64.zip'
 
   $url     = $expanded_assets.links | ? href -match $re | select -First 1 <# 2 #> -expand href
+  $url64      = "https://github.com" + $url
   $version = ($url -split '\/' | select -Index 5).Substring(1)
 
 
     return @{
         Version = $version
-        Url32     = "https://github.com" + $url
+        Url64     = $url64
         ReleaseURL  = "https://github.com/paintdotnet/release/releases/tag/v${version}"
         PackageName = 'paint.net.portable'
+        FileFullPath  = ($url -split '\/')[-1]
     }
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -Force

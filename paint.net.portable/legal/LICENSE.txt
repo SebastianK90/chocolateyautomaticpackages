@@ -1,3 +1,5 @@
+https://www.getpaint.net/license.html
+
 Paint.NET (R)
 Copyright (C) dotPDN LLC, Rick Brewster, and contributors. All Rights Reserved.
 Paint.NET is a registered trademark of dotPDN LLC.
