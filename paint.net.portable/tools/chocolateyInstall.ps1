@@ -11,5 +11,5 @@ $packageArgs = @{
 Get-ChocolateyUnzip @packageArgs
 
 $Shortcut = Get-ChildItem $toolsPath -Recurse -Include paintdotnet.exe | Select-Object -First 1
-Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Paint.Net.lnk" $Shortcut -WorkingDirectory "$toolsPath"
+Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Paint.Net.lnk" $Shortcut -WorkingDirectory "C:\"
 
