@@ -37,4 +37,8 @@ An active and growing online community provides friendly help, tutorials, and pl
       <dependency id="chocolatey-core.extension" version="1.3.3" />
     </dependencies>
   </metadata>
+    <files>
+     <file src="tools\**" target="tools" />
+     <file src="legal\**" target="legal" />
+  </files>
 </package>
