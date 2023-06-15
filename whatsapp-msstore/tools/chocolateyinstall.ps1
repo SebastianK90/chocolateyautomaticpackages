@@ -1,0 +1,1 @@
+﻿Start-ChocolateyProcess -statements 'winget install whatsapp --source msstore --accept-package-agreements'
