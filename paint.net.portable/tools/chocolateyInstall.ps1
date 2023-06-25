@@ -4,7 +4,7 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   PackageName    = 'paint.net.portable'
-  FileFullPath   = "$toolsPath\paint.net.5.0.6.portable.x64_x64.zip"
+  FileFullPath   = "$toolsPath\paint.net.5.0.7.portable.x64_x64.zip"
   Destination    = "C:\tools\paint.net.portable\"
 }
 
