@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ccleaner.portable</id>
-    <version>6.13.0.10517</version>
+    <version>6.14.0.10584</version>
     <title>CCleaner (Portable)</title>
     <authors>Piriform</authors>
     <owners>SebastianK</owners>
