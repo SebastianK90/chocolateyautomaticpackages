@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>pcloud</id>
+    <version>4.1.3.0</version>
+    <title>pCloud</title>
+    <authors>pCloud International AG</authors>
+    <owners>netjunki,SebastianK</owners>
+    <licenseUrl>https://www.pcloud.com/terms_and_conditions.html</licenseUrl>
+    <projectUrl>https://www.pcloud.com/download-free-online-cloud-file-storage.html</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/pcloud.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Extend the available space on your PC. Use your files in the cloud as if they are saved locally, but without taking hard disk space</description>
+    <summary>Extend the available space on your PC</summary>
+    <releaseNotes>https://www.pcloud.com/release-notes/windows.html</releaseNotes>
+    <copyright>2023 pCloud International AG</copyright>
+    <tags>pcloud backup storage</tags>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/pcloud</packageSourceUrl>
+    <docsUrl>https://www.pcloud.com/help.html</docsUrl>
+  </metadata>
+    <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
