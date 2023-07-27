@@ -3,7 +3,7 @@ import-module au
 $releases = 'https://www.pcloud.com/de/release-notes/windows.html'
 function global:au_SearchReplace {
     @{
-        'tools\chocolateyInstall.ps1' = @{
+        '.\tools\chocolateyInstall.ps1' = @{
             "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
             "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
@@ -23,9 +23,9 @@ function global:au_GetLatest {
 
      @{
         URL32        = $url32
-        URL64        = $url64
+        URL64        =  $url64
         Version      = $version
     }
 }
 
-update
+update -NoCheckChocoVersion
