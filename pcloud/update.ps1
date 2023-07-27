@@ -1,5 +1,5 @@
-﻿[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls, [Net.SecurityProtocolType]::Tls11, [Net.SecurityProtocolType]::Tls12, [Net.SecurityProtocolType]::Ssl3
-[Net.ServicePointManager]::SecurityProtocol = "Tls, Tls11, Tls12, Ssl3"
+﻿[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+[Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
 
 import-module au
 
@@ -19,7 +19,7 @@ function global:au_GetLatest {
     $url32 = 'https://partner.pcloud.com/dl/win'
     $url64 = 'https://partner.pcloud.com/dl/win64'
     $output = "$env:TEMP\pcloud.exe"
-    Invoke-WebRequest -Uri $url32 -OutFile $output -UseBasicParsing
+    Start-BitsTransfer -Source $url64 -Destination $output
     $version = ((Get-ChildItem $output).VersionInfo).ProductVersion
     Remove-Item $output
    
