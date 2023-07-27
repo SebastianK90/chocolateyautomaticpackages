@@ -13,15 +13,16 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 
-    $url32 = 'https://partner.pcloud.com/dl/win'
-    $url64 = 'https://partner.pcloud.com/dl/win64'
-    $output = "$env:TEMP\pcloud.exe"
-    Invoke-RestMethod -Uri $url64 -OutFile $output -UserAgent 'chocolatey'
-    $version = ((Get-ChildItem $output).VersionInfo).ProductVersion
-    Remove-Item $output
+  $url32 = 'https://partner.pcloud.com/dl/win'
+  $url64 = 'https://partner.pcloud.com/dl/win64'
+  $output = "$env:TEMP\pcloud.exe"
+  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+  Invoke-WebRequest -Uri $url64 -OutFile $output -UserAgent 'chocolatey'
+  $version = ((Get-ChildItem $output).VersionInfo).ProductVersion
+  Remove-Item $output
    
     
-    return @{URL64 = $url64; URL32 = $url32; Version = $version }
+  return @{URL64 = $url64; URL32 = $url32; Version = $version }
 }
 
 update
