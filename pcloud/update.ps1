@@ -1,8 +1,6 @@
 ﻿import-module au
 
 $releases = 'https://www.pcloud.com/de/release-notes/windows.html'
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
@@ -15,9 +13,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-  $html = new-object -ComObject HTMLFile; $html.IHTMLDocument2_write($download_page.rawcontent)
-  $dirty_ver = (($html.getElementsByTagName("div") | ? {$_.innerText -like '*| Download'}).textcontent | Select-Object -First 1)
+  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -UserAgent 'chocolatey'
+  $html = new-object -ComObject HTMLFile
+  $html.IHTMLDocument2_write($download_page.rawcontent)
+  $dirty_ver = (($html.getElementsByTagName('div') | Where-Object {$_.innerText -like '*| Download'}).textcontent | Select-Object -First 1)
   $url32 = 'https://partner.pcloud.com/dl/win'
   $url64 = 'https://partner.pcloud.com/dl/win64'
   $version =  [regex]::match($dirty_ver,'[0-9]+(\.[0-9]+)*').value
