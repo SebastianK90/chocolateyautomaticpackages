@@ -24,10 +24,8 @@ function global:au_GetLatest {
      @{
         URL32        = $url32
         URL64        = $url64
-        checksum32   = Get-RemoteChecksum -Url $url32
-        checksum64   = Get-RemoteChecksum -Url $url64
         Version      = $version
      }
-   }
+}
 
-update -NoCheckUrl all
+update
