@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases
-  $dirty_ver = ($download_page.ParsedHtml.getElementsByTagName("div") | ? {$_.innerText -like '*| Download'}).textcontent | Select-Object -First 1
+  [string]$dirty_ver = ($download_page.ParsedHtml.getElementsByTagName("div") | ? {$_.innerText -like '*| Download'}).textcontent | Select-Object -First 1
   $url32 = 'https://partner.pcloud.com/dl/win'
   $url64 = 'https://partner.pcloud.com/dl/win64'
   $version =  [regex]::match($dirty_ver,'[0-9]+(\.[0-9]+)*').value
