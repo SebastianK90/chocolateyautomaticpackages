@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url32 = 'https://partner.pcloud.com/dl/win'
-$url64 = 'https://partner.pcloud.com/dl/win64'
+$url32 = 'https://p-lux3.pcloud.com/cBZsRwrIqZRQz1j77ZZZLH60ykZAkZZZkZ5oQQ5ZFZVRZA0ZvZf4ZRkZzXZERZbzZkpZB4ZUpZ6kZf5ZcRQAVZPX1SvJvCDThobyiycTNre0BcmFEk/pCloud_Windows_4.1.3_x86.exe'
+$url64 = 'https://p-lux2.pcloud.com/cBZMAcrIqZ5Qz1j77ZZZ4H60ykZAkZZZkZxxOXJZ47ZEHZULZU7ZXHZ08ZszZZyLZB4ZUJZpJZL5ZRkZORQAVZOOrzFT2BzkziL2ipbDrvbbALDMXX/pCloud_Windows_4.1.3_x64.exe'
 $checksum32  = '6a9941497b8fe1d8cc547173bc74ed95959854d0f6f5a32d8a1491628e767e93'
 $checksum64  = '29e97cff346428774837a04e3e281060ae7110a3fab471d249977bf6e14399f6'
 
