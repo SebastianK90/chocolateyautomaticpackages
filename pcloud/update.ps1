@@ -1,6 +1,7 @@
 ﻿import-module au
 
 $releases = 'https://www.pcloud.com/de/release-notes/windows.html'
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
 
 function global:au_SearchReplace {
     @{
@@ -14,7 +15,6 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
   $download_page = Invoke-WebRequest -Uri $releases -UserAgent 'chocolatey'
   $dirty_ver = (($download_page.ParsedHtml.getElementsByTagName("div") | ? {$_.innerText -like '*| Download'}).textcontent | Select-Object -First 1)
   $url32 = 'https://partner.pcloud.com/dl/win'
