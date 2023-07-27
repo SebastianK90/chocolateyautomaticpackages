@@ -16,7 +16,7 @@ function global:au_GetLatest {
     $url32 = 'https://partner.pcloud.com/dl/win'
     $url64 = 'https://partner.pcloud.com/dl/win64'
     $output = "$env:TEMP\pcloud.exe"
-    Start-BitsTransfer -Source $url64 -Destination $output
+    Invoke-RestMethod -Uri $url64 -OutFile $output -UserAgent 'chocolatey'
     $version = ((Get-ChildItem $output).VersionInfo).ProductVersion
     Remove-Item $output
    
