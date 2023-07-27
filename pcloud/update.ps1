@@ -14,6 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
   $download_page = Invoke-WebRequest -Uri $releases -UserAgent 'chocolatey'
   $dirty_ver = (($download_page.ParsedHtml.getElementsByTagName("div") | ? {$_.innerText -like '*| Download'}).textcontent | Select-Object -First 1)
   $url32 = 'https://partner.pcloud.com/dl/win'
