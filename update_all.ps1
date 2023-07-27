@@ -1,5 +1,5 @@
 # AU Packages Template: https://github.com/majkinetor/au-packages-template
-
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 param([string[]] $Name, [string] $ForcedPackages, [string] $Root = $PSScriptRoot)
 
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
