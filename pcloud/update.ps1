@@ -1,4 +1,6 @@
 Import-Module AU
+
+$releases = 'https://www.pcloud.com/de/release-notes/windows.html'
 function global:au_SearchReplace {
     @{
         '.\tools\chocolateyInstall.ps1' = @{
@@ -11,21 +13,19 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $html = new-object -ComObject HTMLFile
+    $html.IHTMLDocument2_write($download_page.rawcontent)
+    $ver = (($html.getElementsByTagName('div') | Where-Object {$_.innerText -like '*| Download'}) | Select-Object -ExpandProperty textcontent -First 1)
+    $version = ($ver -split '\(')[0].Trim()
+    $url32 = 'https://partner.pcloud.com/dl/win'
+    $url64 = 'https://partner.pcloud.com/dl/win64'
 
-  $useragents = @('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246',`
-    'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3112 Safari/537.36',`
-  'Mozilla/5.0 (Windows NT x.y; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0')
-  $random = Get-Random -Maximum 3
-    
-  $url32 = 'https://partner.pcloud.com/dl/win'
-  $url64 = 'https://partner.pcloud.com/dl/win64'
-  $output = "$env:TEMP\pcloud.exe"
-  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-  Invoke-WebRequest -Uri $url32 -OutFile $output -UserAgent [$useragents[$random]]
-  $version = ((Get-ChildItem $output).VersionInfo).fileversion
-  Remove-Item $output
-    
-  return @{ URL64 = $url64; URL32 = $url32; Version = $version }
+     @{
+        URL32        = $url32
+        URL64        = $url64
+        Version      = $version
+     }
 }
 
 update
