@@ -29,12 +29,3 @@ function global:au_GetLatest {
 }
 
 update
-
-
-[ServicePointManager.Expect100Continue] = true
-
-try {
-  if ([Net.ServicePointManager]::SecurityProtocol -notcontains 'Tls12') {
-    [Net.ServicePointManager]::SecurityProtocol += [Net.SecurityProtocolType]::Tls12
-    }
-  }
