@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $html = new-object -ComObject HTMLFile
+    $html = New-Object -ComObject HTMLFile
     $html.IHTMLDocument2_write($download_page.rawcontent)
     $ver = (($html.getElementsByTagName('div') | Where-Object {$_.innerText -like '*| Download'}) | Select-Object -ExpandProperty textcontent -First 1)
     $version = ($ver -split '\(')[0].Trim()
