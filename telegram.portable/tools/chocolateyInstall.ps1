@@ -4,14 +4,12 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   PackageName    = 'telegram.portable'
-  FileFullPath   = Get-Item $toolsPath\*_x32.zip
-  Destination    = $toolsPath
+  FileFullPath   = "$toolsPath\tportable.4.8.10_x32.zip"
+  FileFullPath64 = "$toolsPath\tportable-x64.4.8.10_x64.zip"
+  Destination    = "C:\tools\telegram.portable"
 }
 
-Get-ChildItem $toolsPath\* | Where-Object { $_.PSISContainer } | Remove-Item -Recurse -Force #remove older package dirs
 Get-ChocolateyUnzip @packageArgs
-Remove-Item $toolsPath\*.zip -ea 0
 
-$Shortcut = Get-ChildItem $toolsPath -Recurse -Include *.exe | Select-Object -First 1
-      
-Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Telegram.lnk" $Shortcut -WorkingDirectory "$toolsPath"
+$Shortcut = Get-ChildItem $packageArgs['Destination'] -Recurse -Include Telegram.exe| Select-Object -First 1
+Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\Telegram.lnk" $Shortcut -WorkingDirectory $packageArgs['Destination']
