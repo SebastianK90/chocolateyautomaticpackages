@@ -7,14 +7,14 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://github.com/paintdotnet/release/releases/download/v5.0.7/paint.net.5.0.7.portable.x64.zip
+   x64: https://github.com/paintdotnet/release/releases/download/v5.0.8/paint.net.5.0.8.portable.x64.zip
    to download the installer.
 
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: E6B7547ABE44C74C496DC822F6290687F3EEE20C0E469837534415BC8DADD71A
+   checksum64: 96202FAD57E8DB3958E7BFBA0D9BD98A6C2E16B1705CB9461D49F36AC2CD0549
 
 File 'license.txt' is obtained from:
    https://www.getpaint.net/license.html
