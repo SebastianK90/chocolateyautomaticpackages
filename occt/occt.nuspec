@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>occt</id>
-    <version>12.1.6.99</version>
+    <version>12.1.7.99</version>
     <title>OCCT Perestroïka</title>
     <authors>ocbase.com</authors>
     <owners>SebastianK</owners>
