@@ -5,8 +5,8 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 $packageArgs = @{
   packageName    = 'telegram.install'
   fileType       = 'exe'
-  FileFullPath   = "$toolsPath\tsetup.4.10.0_x32.exe"
-  FileFullPath64 = "$toolsPath\tsetup-x64.4.10.0_x64.exe"
+  FileFullPath   = "$toolsPath\tsetup.4.10.2_x32.exe"
+  FileFullPath64 = "$toolsPath\tsetup-x64.4.10.2_x64.exe"
   silentArgs     = '/Verysilent'
   validExitCodes = @(0)
 }
