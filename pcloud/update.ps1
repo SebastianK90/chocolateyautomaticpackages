@@ -13,13 +13,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $html = New-Object -ComObject HTMLFile
-    $html.IHTMLDocument2_write($download_page.rawcontent)
-    $ver = (($html.getElementsByTagName('div') | Where-Object {$_.innerText -like '*| Download'}) | Select-Object -ExpandProperty textcontent -First 1)
-    $version = ($ver -split '\(')[0].Trim()
-    $url32 = 'https://partner.pcloud.com/dl/win'
-    $url64 = 'https://partner.pcloud.com/dl/win64'
+
+  $output64 = "$env:TEMP\pcloud.exe"
+  Start-BitsTransfer -Source $releases -Destination $output64 -TransferType Download
+  $version = @(((Get-ChildItem $output64).VersionInfo).fileversion)
+  Remove-Item $output64
+  $url32 = 'https://partner.pcloud.com/dl/win'
+  $url64 = 'https://partner.pcloud.com/dl/win64'
 
      @{
         URL32        = $url32
