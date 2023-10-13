@@ -1,6 +1,6 @@
 Import-Module AU
 
-$releases = 'https://www.pcloud.com/de/release-notes/windows.html'
+$releases = 'https://partner.pcloud.com/dl/win64'
 function global:au_SearchReplace {
     @{
         '.\tools\chocolateyInstall.ps1' = @{
