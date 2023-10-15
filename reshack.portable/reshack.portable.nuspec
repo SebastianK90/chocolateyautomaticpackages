@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>reshack.portable</id>
-    <version>5.2.1.376</version>
+    <version>5.2.3.379</version>
     <title>Resource Hacker (Portable)</title>
     <authors>Angus Johnson</authors>
     <owners>SebastianK</owners>
