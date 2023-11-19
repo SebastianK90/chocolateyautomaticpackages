@@ -9,7 +9,7 @@
     <title>Telegram (Install)</title>
     <authors>Pavel Durov,Nikolai Durov</authors>
     <projectUrl>https://desktop.telegram.org/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/telegram.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/telegram.png</iconUrl>
     <copyright>© 2021 Pavel Durov and Nikolai Durov</copyright>
     <licenseUrl>https://github.com/telegramdesktop/tdesktop/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -8,7 +8,7 @@
     <owners>SebastianK</owners>
     <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
     <projectUrl>http://www.emdb.eu/index.html</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/emdb.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/emdb.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>With an automatic import from the database of IMDB, export to csv, text or HTML, thumbnail cover preview, a loan tracker, advances search and filter functions and multi-language user interface. EMDB doesn't need a .NET framework or any other external libraries and is therefore fully portable. And best of all... it's free!</description>
     <summary>EMDB is an application to keep track of your movie and TV Series collection. Both physical discs and media files are fully supported.</summary>

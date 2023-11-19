@@ -8,7 +8,7 @@
     <owners>SebastianK</owners>
     <licenseUrl>http://www.angusj.com/resourcehacker/</licenseUrl>
     <projectUrl>http://www.angusj.com/resourcehacker/</projectUrl>
-	<iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/reshack.portable.png</iconUrl>
+	<iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/reshack.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Resource Hacker™ has been designed to be the complete resource editing tool: compiling, viewing, decompiling and recompiling resources for both 32bit and 64bit Windows executables. Resource Hacker™ can open any type of Windows executable (*.exe; *.dll; *.scr; *.mui etc) so that individual resources can be added modified or deleted within these files. Resource Hacker™ can create and compile resource script files (*.rc), and edit resource files (*.res) too.</description>
     <summary>Resource Hacker is a freeware utility to view, modify, rename, add, delete and extract resources in 32bit and 64bit Windows executables and resource files.</summary>

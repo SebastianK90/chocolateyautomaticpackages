@@ -8,7 +8,7 @@
     <owners>SebastianK</owners>
     <licenseUrl>https://helgeklein.com/terms-conditions</licenseUrl>
     <projectUrl>https://helgeklein.com/setacl-studio</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/setacl-studio.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/setacl-studio.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>##Feature Set
 

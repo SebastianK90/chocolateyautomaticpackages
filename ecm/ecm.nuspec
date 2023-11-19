@@ -9,7 +9,7 @@
         <licenseUrl>http://www.sordum.org/eula/</licenseUrl>
         <projectUrl>http://www.sordum.org/7615/</projectUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/ecm</packageSourceUrl>
-        <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/ecm.png</iconUrl>
+        <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/ecm.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Easy Context Menu (ECM) lets you add a variety of useful commands and tweaks to the Desktop, My Computer, Drives, File and Folder right-click context menus. This enables you to access the most used Windows components quickly and easily. Simply check the box next to the items you wish to add. Once added, just right click and the select the component shortcut to launch it. Easy Context Menu is both portable and freeware.</description>
         <summary>Easy Context Menu (ECM) lets you add a variety of useful commands and tweaks to the Desktop, My Computer, Drives, File and Folder right-click context menus.</summary>

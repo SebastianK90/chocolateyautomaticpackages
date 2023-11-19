@@ -8,7 +8,7 @@
     <owners>SebastianK</owners>
     <licenseUrl>http://www.aida64.com/licensing</licenseUrl>
     <projectUrl>http://www.aida64.com/products/aida64-extreme</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/aida64-extreme.png</iconUrl>
+    <iconUrl>https://raw.githack.com/SebastianK90/chocolateyautomaticpackages/master/icons/aida64-extreme.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>AIDA64 Extreme is an industry-leading system information tool, loved by PC enthusiasts around the world, which not only provides extremely detailed information about both hardware and installed software, but also helps users diagnose issues and offers benchmarks to measure the performance of the computer.
 

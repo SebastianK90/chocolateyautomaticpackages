@@ -12,7 +12,7 @@
     <mailingListUrl>https://lists.sourceforge.net/lists/listinfo/dispcalgui-users</mailingListUrl>
     <projectSourceUrl>https://sourceforge.net/p/dispcalgui/code/HEAD/tree/</projectSourceUrl>
         <projectUrl>https://displaycal.net</projectUrl>
-        <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/displaycal.png</iconUrl>
+        <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/displaycal.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>DisplayCAL (formerly known as dispcalGUI) is a display calibration and profiling solution with a focus on accuracy and versatility (in fact, the author is of the honest opinion it may be the most accurate and versatile ICC compatible display profiling solution available anywhere). At its core it relies on ArgyllCMS, an open source color management system, to take measurements, create calibrations and profiles, and for a variety of other advanced color related tasks.
 

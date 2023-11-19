@@ -9,7 +9,7 @@
 		<docsUrl>https://github.com/volatilityfoundation/volatility/wiki</docsUrl>
 		<bugTrackerUrl>https://github.com/volatilityfoundation/volatility/issues</bugTrackerUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/volatility</packageSourceUrl>
-		 <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/volatility.png</iconUrl>
+		 <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/volatility.png</iconUrl>
         <licenseUrl>https://github.com/volatilityfoundation/volatility/blob/master/LICENSE.txt</licenseUrl>
         <projectUrl>http://www.volatilityfoundation.org</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>

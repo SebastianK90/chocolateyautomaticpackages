@@ -9,7 +9,7 @@
         <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
         <projectUrl>http://www.gamesave-manager.com/</projectUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/gamesavemanager</packageSourceUrl>
-        <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/gamesavemanager.png</iconUrl>
+        <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/gamesavemanager.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Perhaps you have been victim of file corruption which also victimised your gamesaves?
 Maybe you just wish to transfer your gamesave(s) to your new machine, or to take with you to a friend's?</description>

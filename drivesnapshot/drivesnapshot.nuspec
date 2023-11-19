@@ -11,7 +11,7 @@
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/drivesnapshot</packageSourceUrl>
 		<mailingListUrl>http://www.drivesnapshot.de/en/about.htm</mailingListUrl>
         <projectUrl>http://www.drivesnapshot.de/en/index.htm</projectUrl>
-        <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/drivesnapshot.png</iconUrl>
+        <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/drivesnapshot.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>This is a 30 days DEMO Version!
 		If you like this program, please buy at http://www.drivesnapshot.de/en/order.htm

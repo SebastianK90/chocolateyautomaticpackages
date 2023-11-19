@@ -8,7 +8,7 @@
     <owners>SebastianK</owners>
     <licenseUrl>https://www.piriform.com/legal/software-license/ccleaner</licenseUrl>
     <projectUrl>https://www.piriform.com/ccleaner</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/ccleaner.portable.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/ccleaner.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The number-one tool for cleaning your Windows PC.
 

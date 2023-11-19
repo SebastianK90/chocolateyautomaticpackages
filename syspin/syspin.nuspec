@@ -9,7 +9,7 @@
         <licenseUrl>https://www.technosys.net/terms</licenseUrl>
         <projectUrl>https://www.technosys.net/products/utils/pintotaskbar</projectUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/syspin</packageSourceUrl>
-		<iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/syspin.png</iconUrl>
+		<iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/syspin.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>* Usage :
   syspin ["file"] c:#### or syspin ["file"] c:"commandstring"

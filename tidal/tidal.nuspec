@@ -8,7 +8,7 @@
     <owners>SebastianK</owners>
     <licenseUrl>https://tidal.com/terms</licenseUrl>
     <projectUrl>https://tidal.com/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/tidal.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/tidal.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Stream your favorite songs
 With our library of over 60 million tracks and 250,000 videos, you’ll get the ultimate music experience.

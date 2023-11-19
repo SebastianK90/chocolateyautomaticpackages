@@ -8,7 +8,7 @@
     <owners>SebastianK</owners>
     <licenseUrl>http://www.ltr-data.se/files/license.txt</licenseUrl>
     <projectUrl>http://imdisk-toolkit.sourceforge.net/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/SebastianK90/chocolateyautomaticpackages/master/icons/imdisk-toolkit.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/imdisk-toolkit.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Here is the ImDisk Toolkit. This tool will let you mount image files of hard drive, cd-rom or floppy, and create one or several RamDisks with various parameters.</description>
     <summary>Requirements:
