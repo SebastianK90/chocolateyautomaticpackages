@@ -8,8 +8,8 @@
         <owners>SebastianK</owners>
         <licenseUrl>http://www.iobit.com/en/eula.php</licenseUrl>
         <projectUrl>http://www.iobit.com/en/iobit-unlocker.php</projectUrl>
-		<packageSourceUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/unlocker.png</packageSourceUrl>
-        <iconUrl>https://raw.githack.com/SebastianK90/chocolateyautomaticpackages/master/icons/unlocker.png</iconUrl>
+		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/io-unlocker</packageSourceUrl>
+        <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/unlocker.png</iconUrl>
 		<mailingListUrl>https://forums.iobit.com/</mailingListUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>With IObit Unlocker, you won't be annoyed any more by messages like "Cannot delete file", "Access is denied", "undeleted files",
