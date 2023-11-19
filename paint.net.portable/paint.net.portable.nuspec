@@ -8,7 +8,7 @@
     <owners>SebastianK</owners>
     <licenseUrl>http://www.getpaint.net/license.html</licenseUrl>
     <projectUrl>http://www.getpaint.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/chocolatey-community/chocolatey-packages@b89548a8e0a21620abe8643335fd7ba0c5b03ca1/icons/paint.net.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/daca5672e15b08d4fb2d222cab6f0337a398cd8f/icons/paint.net.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Paint.NET is free image and photo editing software for PCs that run Windows.
 It features an intuitive and innovative user interface with support for layers,
