@@ -20,16 +20,15 @@ Install-ChocolateyZipPackage @packageArgs
 
 if($bits -ne 64)
     {
-    $FileFullPath = get-childitem $toolsPath -recurse -include *.exe | select -First 1
+    $FileFullPath = get-childitem $toolsPath -recurse -include 'CCleaner.exe' | select -First 1
     }
 else
     {
-    $FileFullPath = get-childitem $toolsPath -recurse -include *64*.exe | select -First 1
+    $FileFullPath = get-childitem $toolsPath -recurse -include 'CCleaner64.exe' | select -First 1
     }
 
 Install-ChocolateyShortcut -shortcutFilePath "$env:ALLUSERSPROFILE\Microsoft\Windows\Start Menu\Programs\CCleaner.lnk" $FileFullPath -WorkingDirectory "$toolsPath"
 
-if(Test-Path $ccleaner_temp)
-    {
+if(Test-Path $ccleaner_temp) {
     Move-Item (Get-ChildItem $ccleaner_temp) -Destination $toolsPath -Force
-    }
+}
