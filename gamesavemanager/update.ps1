@@ -9,16 +9,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
+    $download_page = Invoke-WebRequest -Uri $releases
     $a = $download_page.Links | Where-Object {$_.OuterHTML -like '*Download*'}
     $r = $a.href  -replace '&amp;','&'
-    $url32 = (($a.href -replace '&amp;','&') + "&a=dl")[0]
-    [string]$version =  [regex]::match($a.title,'[0-9]+(\.[0-9]+)*').value
 
-    $url32 = $url32 -replace '=thanks','=start'
-    Invoke-WebRequest -Uri $url32 -OutFile "tools\gs_mngr_$($Version)_x32.zip" -UserAgent 'chocolatey'
-
+    $url32 = 'https://www.gamesave-manager.com' + $r
+     
+    $ver_dirty = ((Invoke-WebRequest -Uri 'https://www.gamesave-manager.com/whatsnew/client/').Links | Where-Object {$_.outerText -like '*Client Update v*'} | Select-Object -First 1).innerText
+    [string]$version =  [regex]::match($ver_dirty,'[0-9]+(\.[0-9]+)*').value
+    
     return @{Version = $version }
 }
 
