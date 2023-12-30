@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>EMDB</id>
-    <version>5.26</version>
+    <version>5.27</version>
     <title>EMDB - Eric's Movie Database</title>
     <authors>Wicked &amp; Wild Inc.</authors>
     <owners>SebastianK</owners>
