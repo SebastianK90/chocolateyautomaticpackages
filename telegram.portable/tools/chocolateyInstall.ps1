@@ -4,8 +4,8 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   PackageName    = 'telegram.portable'
-  FileFullPath   = "$toolsPath\tportable.4.14.8_x32.zip"
-  FileFullPath64 = "$toolsPath\tportable-x64.4.14.8_x64.zip"
+  FileFullPath   = "$toolsPath\tportable.4.14.9_x32.zip"
+  FileFullPath64 = "$toolsPath\tportable-x64.4.14.9_x64.zip"
   Destination    = "C:\tools\telegram.portable"
 }
 
