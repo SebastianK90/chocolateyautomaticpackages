@@ -7,6 +7,9 @@
     <authors>ocbase.com</authors>
     <owners>SebastianK</owners>
     <projectUrl>http://www.ocbase.com/</projectUrl>
+	<docsUrl>https://www.ocbase.com/support</docsUrl>
+	<mailingListUrl>https://www.ocbase.com/support</mailingListUrl>
+	<bugTrackerUrl>https://discord.gg/U5TcwnDsMX</bugTrackerUrl>
     <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/occt.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>OCCT is a stability checking tool that was created back in 2003, and was regularly updated since. It enables you to fully test your computer's stability, using 4 different tests : CPU:OCCT and CPU:Linpack aimed at testing the CPU, GPU:3D for the GPU stability, and Power Supply, a combination of CPU:Linpack and GPU:3D to fully load your Power Supply.</description>
