@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/RandomEngy/VidCoder/releases/download/v9.18/VidCoder-9.18.exe
+   x32: https://github.com/RandomEngy/VidCoder/releases/download/v9.19/VidCoder-9.19.exe
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 2C4DAD57F17FF96E68C1E10B8ECDF37603595886ED26398A9C847AF14014F8E6
+   checksum32: BDE92594B7BA09AD6F31153F076A7ECC6928C98D1318C9D9F4B75A11CC770110
 
 
 File 'LICENSE.txt' is obtained from:
