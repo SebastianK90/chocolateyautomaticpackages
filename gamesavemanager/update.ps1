@@ -2,8 +2,15 @@ import-module au
 
 $releases = 'https://www.gamesave-manager.com/'
 
+function global:au_BeforeUpdate {
+  Get-RemoteFiles -FileNameBase $($Latest.FileFullPath)
+}
+
 function global:au_SearchReplace {
     @{
+          ".\tools\chocolateyInstall.ps1" = @{
+          "(?i)(^\s*FileFullPath\s*=\s*`"[$]toolsPath\\).*" = "`${1}$($Latest.FileName32)`""
+        }
 
      }
 }
@@ -13,12 +20,26 @@ function global:au_GetLatest {
     $a = $download_page.Links | Where-Object {$_.OuterHTML -like '*Download*'}
     $r = $a.href  -replace '&amp;','&'
 
-    $url32 = 'https://www.gamesave-manager.com' + $r
-     
+    $pre_url32 = 'https://www.gamesave-manager.com' + $r
     $ver_dirty = ((Invoke-WebRequest -Uri 'https://www.gamesave-manager.com/whatsnew/client/').Links | Where-Object {$_.outerText -like '*Client Update v*'} | Select-Object -First 1).innerText
     [string]$version =  [regex]::match($ver_dirty,'[0-9]+(\.[0-9]+)*').value
     
-    return @{Version = $version }
+    $site = Invoke-RestMethod -Uri $pre_url32
+    $html = new-object -ComObject "HTMLFile"
+    $html.IHTMLDocument2_write($site)
+    $raw_url32 = ($html.getElementsByTagName('a') | ? {$_.innerhtml -like '*click here*'}).outerHTML
+
+    $regexPattern = 'href=''(https?://[^'']*?)'''
+    $url32 = [regex]::Matches($raw_url32, $regexPattern).Groups[1].Value
+    
+    
+    return @{
+      Version = $version
+      URL32 = $url32
+      PackageName = 'gamesavemanager'
+      FileFullPath = "GameSaveManager_$($version)"
+      FileType = 'zip'
+    }
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
