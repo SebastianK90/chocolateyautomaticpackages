@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>irscrutinizer</id>
-        <version>2.4.0</version>
+        <version>2.4.1</version>
         <title>IrScrutinizer</title>
         <authors>Bengt Mårtensson</authors>
         <owners>SebastianK</owners>
@@ -10,7 +10,7 @@
         <projectUrl>http://www.harctoolbox.org/IrScrutinizer.html</projectUrl>
 		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/irscrutinizer</packageSourceUrl>
         <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/irscrutinizer.png</iconUrl>
-		<releaseNotes>https://github.com/bengtmartensson/harctoolboxbundle/releases/tag/Version-2.4.0</releaseNotes>
+		<releaseNotes>https://github.com/bengtmartensson/harctoolboxbundle/releases/tag/Version-2.4.1</releaseNotes>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>For capturing and sending IR signals several different hardware sensors and senders are supported. IR Signals can be imported not only by capturing from one of the supported hardware sensors (among others: IrWidget, Global Caché, Command Fusion, and Arduino), but also from a number of different file formats (among others: LIRC, Wave, CML, Pronto Classic and professional, RMDU (partially), and different text based formats; not only from files, but also from the clipboard, from URLs, and from file hierarchies), as well as the Internet IR Databases by Global Caché and by IRDB. Imported signals can be decoded, analyzed, edited, and plotted. A collection of IR signal can thus be assembled and edited, and finally exported in one of the many supported formats. In addition, the program contains the powerful IrpMaster IR-renderer, which means that almost all IR protocols known to the Internet community can be generated.</description>
         <summary>IrScrutinizer is a powerful program for capturing, generating, analyzing, importing, and exporting of infrared (IR) signals.</summary>
