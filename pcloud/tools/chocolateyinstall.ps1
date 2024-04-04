@@ -2,8 +2,8 @@
 
 $url32 = 'https://partner.pcloud.com/dl/win'
 $url64 = 'https://partner.pcloud.com/dl/win64'
-$checksum32  = 'A0F4A0E3851771D7FCD64F4204DFFE24A21C2D2C3A496EAE08F98C2F511746F2'
-$checksum64  = '346468AC3FEE9F2577874A3AF7323D2A9785E9F5D2FE028C042026DBE3092B72'
+$checksum32  = '3baa6ca50494cbf29686c48ff88f410acfdf307c2a5b959af28ce3bc16017553'
+$checksum64  = 'ab17e13dd02549acb7e3f76695fb92cb4a9c21e65e059ac8c3daabbaf8930af0'
 
 
 $packageArgs = @{
