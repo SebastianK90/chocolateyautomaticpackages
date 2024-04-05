@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.1/tportable.4.16.1.zip
-   x64: https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.1/tportable-x64.4.16.1.zip
+   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.2/tportable.4.16.2.zip
+   x64: https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.2/tportable-x64.4.16.2.zip
    
    to download the installer.
 
@@ -16,8 +16,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: CDDA2D60B2D37A07C943E6722A6EBC224A767D45BA75D6269BFF163E36AC1345
-   checksum64: D01B92C27A24CB39BE6CF18851D1EC12B3159B2AC5059865123A1FB8881F0FEB
+   checksum32: 4BE3CA34C9F02DF58B238E40834CBE48294353D36F67FB3C862D9A4D95637C50
+   checksum64: EDEE4D29C99536437CE79DA20E146D40D7FD0F94C20B5F9EEB7198B9C8599286
 
 File 'LICENSE.txt' is obtained from:
     https://raw.githubusercontent.com/telegramdesktop/tdesktop/master/LICENSE
