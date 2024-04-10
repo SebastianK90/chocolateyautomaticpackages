@@ -16,7 +16,7 @@ function global:au_GetLatest {
 
   $output64 = "$env:TEMP\pcloud.exe"
   Invoke-WebRequest -Uri $releases -OutFile $output64
-  [string]$version = (((Get-ChildItem $output64).VersionInfo).fileversion)
+  [string]$version = ((Get-ChildItem $output64).VersionInfo).fileversion
   Remove-Item $output64
   $url32 = 'https://partner.pcloud.com/dl/win'
   $url64 = 'https://partner.pcloud.com/dl/win64'
