@@ -1,4 +1,4 @@
-# AU Packages Template: https://github.com/majkinetor/au-packages-template
+# AU Packages Template: https://github.com/chocolatey-community/chocolatey-au-packages-template
 param([string[]] $Name, [string] $ForcedPackages, [string] $Root = $PSScriptRoot)
 
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
@@ -7,10 +7,10 @@ $Options = [ordered]@{
     WhatIf        = $au_WhatIf                              #Whatif all packages
     Force         = $false                                  #Force all packages
     Timeout       = 100                                     #Connection timeout in seconds
-    UpdateTimeout = 1200                                    #Update timeout in seconds
+  UpdateTimeout    = 1800                                    #Update timeout in seconds
     Threads       = 10                                      #Number of background jobs to use
     Push          = $Env:au_Push -eq 'true'                 #Push to chocolatey
-    PushAll       = $true                                   #Allow to push multiple packages at once
+  PushAll          = $true
     PluginPath    = ''                                      #Path to user plugins
     IgnoreOn      = @(                                      #Error message parts to set the package ignore status
       'Could not create SSL/TLS secure channel'
@@ -18,6 +18,7 @@ $Options = [ordered]@{
       'The operation has timed out'
       'Internal Server Error'
       'Service Temporarily Unavailable'
+    'Simple OData Server'
     )
     RepeatOn      = @(                                      #Error message parts on which to repeat package updater
       'Could not create SSL/TLS secure channel'             # https://github.com/chocolatey/chocolatey-coreteampackages/issues/718
@@ -28,12 +29,10 @@ $Options = [ordered]@{
       'The operation has timed out'
       'Internal Server Error'
       'An exception occurred during a WebClient request'
-      'remote session failed with an unexpected state'
+    "Origin Time-out"
     )
-    #RepeatSleep   = 250                                    #How much to sleep between repeats in seconds, by default 0
-    #RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
-    
-    #NoCheckChocoVersion = $true                            #Turn on this switch for all packages
+  RepeatSleep   = 250                                    #How much to sleep between repeats in seconds, by default 0
+  RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
 
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
@@ -49,7 +48,7 @@ $Options = [ordered]@{
     }
 
     History = @{
-        Lines = 120                                         #Number of lines to show
+    Lines           = 90                                          #Number of lines to show
         Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
         Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
     }
@@ -78,7 +77,6 @@ $Options = [ordered]@{
     Mail = if ($Env:mail_user) {
             @{
                 To         = $Env:mail_user
-                From       = $Env:mail_from
                 Server     = $Env:mail_server
                 UserName   = $Env:mail_user
                 Password   = $Env:mail_pass
@@ -105,8 +103,7 @@ $Options = [ordered]@{
 }
 
 if ($ForcedPackages) { Write-Host "FORCED PACKAGES: $ForcedPackages" }
-$global:au_Root         = $Root          #Path to the AU packages
-$global:au_GalleryUrl   = ''             #URL to package gallery, leave empty for Chocolatey Gallery
+$global:au_Root = $Root                                    #Path to the AU packages
 $global:info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
