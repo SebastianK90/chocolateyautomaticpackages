@@ -1,5 +1,4 @@
-import-module au
-
+Import-Module Chocolatey-AU
 
 $releases = 'https://sourceforge.net/projects/wxmp3gain/files'
 

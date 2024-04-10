@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://www.teamspeak.com/en/downloads/#ts3client'
 

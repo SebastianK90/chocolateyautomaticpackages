@@ -1,5 +1,4 @@
-import-module au
-
+Import-Module Chocolatey-AU
 
 $releases = 'https://github.com/RandomEngy/VidCoder/releases/latest'
 

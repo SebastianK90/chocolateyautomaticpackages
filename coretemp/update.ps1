@@ -1,6 +1,4 @@
-﻿import-module au
-
-# cd .\coretemp
+﻿Import-Module Chocolatey-AU
 
 $releases = 'http://www.alcpu.com/CoreTemp/'
 

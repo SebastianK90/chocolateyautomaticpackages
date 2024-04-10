@@ -1,6 +1,4 @@
-import-module au
-
-# cd .\copyfilename
+Import-Module Chocolatey-AU
 
 $releases = 'http://www.bullzip.com/download.php'
 

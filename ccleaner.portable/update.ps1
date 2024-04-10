@@ -1,5 +1,4 @@
-
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://www.ccleaner.com/de-de/ccleaner/download/portable'
 
