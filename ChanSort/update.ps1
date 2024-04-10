@@ -1,5 +1,4 @@
-Import-Module Chocolatey-AU
-
+Import-Module AU
 
 $releases = 'https://github.com/PredatH0r/ChanSort/releases/latest'
 

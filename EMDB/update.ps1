@@ -1,4 +1,4 @@
-﻿Import-Module Chocolatey-AU
+﻿Import-Module AU
 
 $releases = 'https://www.emdb.eu/index.html'
 

@@ -1,4 +1,4 @@
-Import-Module Chocolatey-AU
+Import-Module AU
 
 
 $releases = 'https://github.com/builtbybel/CloneApp/releases/latest'

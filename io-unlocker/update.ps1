@@ -1,4 +1,4 @@
-Import-Module Chocolatey-AU
+Import-Module AU
 
 $url32 = 'https://cdn.iobit.com/dl/unlocker-setup.exe'
 

@@ -1,4 +1,4 @@
-Import-Module Chocolatey-AU
+Import-Module AU
 
 $website =  Invoke-WebRequest -uri 'https://www.aida64.com/downloads' -UseBasicParsing
 
