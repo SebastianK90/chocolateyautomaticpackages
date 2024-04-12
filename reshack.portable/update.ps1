@@ -1,4 +1,4 @@
-﻿Import-Module Chocolatey-AU
+﻿Import-Module AU
 
 $releases = 'http://www.angusj.com/resourcehacker'
 

@@ -1,4 +1,4 @@
-Import-Module Chocolatey-AU
+Import-Module AU
 
 $releases = 'https://sourceforge.net/projects/mp3gain/files/MP3Gain-Windows%20%28Stable%29/'
 

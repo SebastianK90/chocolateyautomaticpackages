@@ -1,4 +1,4 @@
-Import-Module Chocolatey-AU
+Import-Module AU
 
 $releases = 'https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/'
 
