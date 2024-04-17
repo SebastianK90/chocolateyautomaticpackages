@@ -15,7 +15,7 @@ function global:au_GetLatest {
   $output = "$env:TEMP\occt.exe"
   $url32   = $releases
   Invoke-WebRequest -Uri $url32 -OutFile $output
-  $version =  (Get-Item $output).VersionInfo.ProductVersion
+  $version =  (Get-Item $output).VersionInfo.FileVersion
   Remove-Item $output
   return @{ URL32 = $url32; Version = $version }
 }
