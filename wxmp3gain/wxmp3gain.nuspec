@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>wxmp3gain</id>
-        <version>4.0.0.20190427</version>
+        <version>4.2</version>
         <title>wxMP3Gain</title>
         <authors>cfgnunes</authors>
         <owners>SebastianK</owners>

@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://sourceforge.net/projects/wxmp3gain/files/4.0/wxmp3gain-4.0-win32-setup.exe/download
+   x32: https://sourceforge.net/projects/wxmp3gain/files/4.2/wxmp3gain-4.2-win32-setup.exe/download
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: A5F1879D9E2EACF104E4A8BFBD0361226ED2B991090514A7D8D9D46041C8E13E
+   checksum32: A16A3AF6344AA4C587F75681948D66FA52609D5B931F59A8F08BBE7C358BC481
 
 
 File 'LICENSE.txt' is obtained from:
