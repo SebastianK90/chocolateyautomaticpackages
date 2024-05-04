@@ -7,13 +7,13 @@
         <authors>cfgnunes</authors>
         <owners>SebastianK</owners>
         <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
-        <projectUrl>https://sourceforge.net/projects/wxmp3gain/</projectUrl>
-		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/wxmp3gain</packageSourceUrl>
+        <projectUrl>https://github.com/cfgnunes/wxmp3gain</projectUrl>
+		<packageSourceUrl>https://github.com/cfgnunes/wxmp3gain</packageSourceUrl>
         <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/wxmp3gain.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>wxMP3gain is a free front-end for the MP3gain.</description>
 		<summary>wxMP3gain is a free front-end for the MP3gain.</summary>
-		<releaseNotes>https://sourceforge.net/p/wxmp3gain/activity?source=project_activity</releaseNotes>
+		<releaseNotes>https://github.com/cfgnunes/wxmp3gain/activity</releaseNotes>
 		<bugTrackerUrl>https://github.com/cfgnunes/wxmp3gain/issues</bugTrackerUrl>
 		<projectSourceUrl>https://github.com/cfgnunes/wxmp3gain/tree/master/wxmp3gain</projectSourceUrl>
         <tags>audio mp3 normalize volume admin</tags>
