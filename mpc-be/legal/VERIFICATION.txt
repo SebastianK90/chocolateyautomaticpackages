@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.7.0/MPC-BE.1.7.0.x86-installer.zip/download
-   x64: https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.7.0/MPC-BE.1.7.0.x64-installer.zip/download
+   x32: https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.7.1/MPC-BE.1.7.1.x86-installer.zip/download
+   x64: https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.7.1/MPC-BE.1.7.1.x64-installer.zip/download
 
    to download the installer.
 
@@ -16,8 +16,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: E3A348E54A7865B2A2AEFC4A83394A802F5945CA5D1BF11F9973CE3E60A47D0B
-   checksum64: 1434C5553509612599320DE252BCF4EC733F1B1755E04A797D2048E256BA6792
+   checksum32: 51CDA889952C7026411F0A92E4B498E41DE4C024B955A483F3A3535945BC3763
+   checksum64: D5E54B0989607D123519D37CB6AF36D3E2F5D86C6228E457578DE9C153DBF94C
 
 
 File 'LICENSE.txt' is obtained from:
