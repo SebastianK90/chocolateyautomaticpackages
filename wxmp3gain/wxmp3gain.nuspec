@@ -15,7 +15,7 @@
 		<summary>wxMP3gain is a free front-end for the MP3gain.</summary>
 		<releaseNotes>https://github.com/cfgnunes/wxmp3gain/activity</releaseNotes>
 		<bugTrackerUrl>https://github.com/cfgnunes/wxmp3gain/issues</bugTrackerUrl>
-		<projectSourceUrl>https://github.com/cfgnunes/wxmp3gain/tree/master/wxmp3gain</projectSourceUrl>
+		<projectSourceUrl>https://github.com/cfgnunes/wxmp3gain</projectSourceUrl>
         <tags>audio mp3 normalize volume admin</tags>
         <dependencies>
 		  <dependency id="chocolatey-core.extension" version="1.3.3" />
