@@ -24,10 +24,7 @@ function global:au_GetLatest {
     $ver_dirty = ((Invoke-WebRequest -Uri 'https://www.gamesave-manager.com/whatsnew/client/').Links | Where-Object {$_.outerText -like '*Client Update v*'} | Select-Object -First 1).innerText
     [string]$version =  [regex]::match($ver_dirty,'[0-9]+(\.[0-9]+)*').value
     
-    $site = Invoke-RestMethod -Uri $pre_url32
-    $html = new-object -ComObject "HTMLFile"
-    $html.IHTMLDocument2_write($site)
-    $raw_url32 = ($html.getElementsByTagName('a') | ? {$_.innerhtml -like '*click here*'}).outerHTML
+    $raw_url32 = ((Invoke-WebRequest -uri $pre_url32).ParsedHtml.getElementsByTagName('a') | ? {$_.innerhtml -like '*click here*'}).outerHTML
 
     $regexPattern = 'href=''(https?://[^'']*?)'''
     $url32 = [regex]::Matches($raw_url32, $regexPattern).Groups[1].Value
