@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 
 $releases = 'https://github.com/bengtmartensson/harctoolboxbundle/releases/latest'
 

@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 
 $releases = 'https://partner.pcloud.com/dl/win64'
 function global:au_SearchReplace {
