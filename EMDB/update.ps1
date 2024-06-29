@@ -1,13 +1,6 @@
 ﻿Import-Module Chocolatey-AU
 
 $releases = 'https://www.emdb.eu/index.html'
-
-function global:au_SearchReplace {
-    @{
-
-     }
-}
-
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 function global:au_GetLatest {
@@ -18,7 +11,7 @@ function global:au_GetLatest {
     $version = [regex]::Match($content, $pattern).groups['Version'].value    
 
     $url32   = 'https://www.emdb.eu/bin/emdb.zip'
-    return @{ URL32 = $url32; Version = $version }
+    return @{ URL32 = $url32; Version = $version}
 }
 
 Update-Package -ChecksumFor none

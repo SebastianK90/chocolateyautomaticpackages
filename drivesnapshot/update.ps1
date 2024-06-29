@@ -15,11 +15,11 @@ function global:au_GetLatest {
   $url64   = 'http://www.drivesnapshot.de/download/snapshot64.exe'
   $url32   = 'http://www.drivesnapshot.de/download/snapshot.exe'
   $output64 = "$env:TEMP\snapshot64.exe"
-  Start-BitsTransfer -Source $url64 -Destination $output64 -TransferType Download
+  Invoke-WebRequest -Uri $url64 -OutFile $output64
   [string]$version = (Get-ChildItem $output64).VersionInfo.fileversion
   Remove-Item $output64
         
   return @{ URL64 = $url64; URL32 = $url32; Version = $version }
 }
 
-update
+Update-Package
