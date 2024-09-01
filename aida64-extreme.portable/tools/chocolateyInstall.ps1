@@ -2,7 +2,7 @@
 
 $packageName = 'aida64-extreme.portable'
 $url32       = 'https://download2.aida64.com/aida64extreme735.zip'
-$checksum32  = '133f363a5b219ec9acbc0b0ad2059599f7b3a4e66096cdc7433a91e92f8ecb4a'
+$checksum32  = 'C187C7925315204CEDAD5F2BEC7D45B34AD546FACA5446DB6B987C38C8E05BD9'
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 $aida64_temp = "$env:USERPROFILE\aida64_temp"
 
