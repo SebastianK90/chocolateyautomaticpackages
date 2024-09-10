@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.1/tsetup.5.5.1.exe
-   x64: https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.1/tsetup-x64.5.5.1.exe
+   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.2/tsetup.5.5.2.exe
+   x64: https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.2/tsetup-x64.5.5.2.exe
 
    to download the installer.
 
@@ -16,8 +16,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: B60B2C27CEF49CBA1C2613780B1C6838A06420BC269349E7BDC12B0A1E81CC48
-   checksum64: 633CFE23107870F46823256BED03EA29BB7E2E8A868155544598556B3D416EC9
+   checksum32: 7834DA1FC2622353E523BCAD3883D937CD7F97B779B21A5FCE442AAEDFA0A8BF
+   checksum64: 3230972EA7B0591617D5A5F81794888DFB85F36585711FEE551A71D536E65035
 
 
 File 'LICENSE.txt' is obtained from:
