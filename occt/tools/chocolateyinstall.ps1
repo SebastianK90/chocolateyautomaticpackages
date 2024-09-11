@@ -2,7 +2,7 @@
  
 $packageName = 'occt'
 $url32       = 'https://www.ocbase.com/download/edition:Personal'
-$checksum32  = '4a60316d0126d0ce0fef5cf688a20796173cb4bb40a2164f3dad5b695a591aaa'
+$checksum32  = '41b100406754d9565289730657f05eb6c18a2540ee334771fe8c58f416510be2'
 $toolsPath   = (Split-Path $MyInvocation.MyCommand.Definition)
 
  
