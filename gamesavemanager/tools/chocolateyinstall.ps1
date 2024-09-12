@@ -4,7 +4,7 @@ $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName = 'gamesavemanager'
-  FileFullPath   = "$toolsPath\GameSaveManager_3.1.535.0_x32.zip"
+  FileFullPath   = "$toolsPath\GameSaveManager_3.1.571.0_x32.zip"
   destination = $toolsPath
 }
 
