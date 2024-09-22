@@ -21,7 +21,7 @@ function global:au_GetLatest {
     $content = $download_page.Content
     $url64   = 'https://www.softwareok.com/Download/DesktopOK_x64.zip'
     $url   = 'https://www.softwareok.com/Download/DesktopOK.zip'
-    $pattern = '(?<=<html>)[\S\s]* <title>DesktopOK (?<Version>[\d\.]+)'
+    $pattern = '(?<=<html\ itemscope="itemscope"\ itemtype="http://schema\.org/TechArticle">)[\S\s]*<title>DesktopOK (?<Version>[\d\.]+)'
     [string]$version = [regex]::Match($content, $pattern).groups['Version'].value
 
     @{

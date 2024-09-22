@@ -4,9 +4,6 @@ $releases = 'https://github.com/cemu-project/Cemu/releases/latest'
 
 function global:au_SearchReplace {
    @{
-        ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*packageName\s*=\s*)('.*')"  = "`$1'$($Latest.PackageName)'"
-        }
 
 
         ".\legal\VERIFICATION.txt" = @{

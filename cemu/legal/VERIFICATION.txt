@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/cemu-project/Cemu/releases/download/v2.0/cemu-2.0-windows-x64.zip
+   x32: https://github.com/cemu-project/Cemu/releases/download/v2.2/cemu-2.2-windows-x64.zip
 
    to download the installer.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 660A5461333C9EECAD3065C4C3E891E6C362F6DF05C5E18FC4C36E3D806B6CA4
+   checksum32: 1714873D2CEE992075F006AAA8372CD5532632385AEF4920973DE6E22F5D8EE1
 
 
 File 'LICENSE.txt' is obtained from:
