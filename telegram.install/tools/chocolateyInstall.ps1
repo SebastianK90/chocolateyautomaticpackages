@@ -5,12 +5,12 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 $packageArgs = @{
   packageName    = 'telegram.install'
   fileType       = 'exe'
-  FileFullPath   = "$toolsPath\tsetup.5.5.5_x32.exe"
-  FileFullPath64 = "$toolsPath\tsetup-x64.5.5.5_x64.exe"
+  FileFullPath   = "$toolsPath\tsetup.5.7.2_x32.exe"
+  FileFullPath64 = "$toolsPath\tsetup-x64.5.7.2_x64.exe"
   silentArgs     = '/Verysilent'
   validExitCodes = @(0)
 }
-Install-ChocolateyInstallPackage @packageArgs
+Install-ChocolateyPackage @packageArgs
 ls $toolsPath\*.exe | % { rm $_ -ea 0; if (Test-Path $_) { sc "$_.ignore" "" }}
 
 $packageName = $packageArgs.packageName
