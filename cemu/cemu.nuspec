@@ -1,36 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-    <metadata>
-        <id>cemu</id>
-        <version>2.2</version>
-        <title>CEMU - Wii U emulator</title>
-        <authors>Exzap, Petergov</authors>
-        <owners>SebastianK</owners>
-		<docsUrl>https://wiki.cemu.info/wiki/Main_Page</docsUrl>
-		<packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/cemu</packageSourceUrl>
-        <projectUrl>http://cemu.info</projectUrl>
-		<licenseUrl>https://raw.githubusercontent.com/cemu-project/Cemu/main/LICENSE.txt</licenseUrl>
-		<bugTrackerUrl>https://github.com/cemu-project/Cemu/issues</bugTrackerUrl>
-		<mailingListUrl>http://cemu.info/community.html</mailingListUrl>
-		<projectSourceUrl>https://github.com/cemu-project/Cemu/</projectSourceUrl>
-        <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/cemu.png</iconUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Highly experimental software to emulate Wii U applications on PC.
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>cemu</id>
+    <version>2.5.0</version>
+    <title>CEMU - Wii U emulator</title>
+    <authors>Exzap, Petergov</authors>
+    <owners>SebastianK</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://raw.githubusercontent.com/cemu-project/Cemu/main/LICENSE.txt</licenseUrl>
+    <projectUrl>http://cemu.info/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/cemu.png</iconUrl>
+    <description>Highly experimental software to emulate Wii U applications on PC.
 		#System requirements:
 		- Windows 7 (x64) or above
 		- OpenGL 4.0 (4.5 is used if available)
 		- RAM: 4 GB minimum, 6 GB or more recommended</description>
-        <summary>Highly experimental software to emulate Wii U applications on PC.</summary>
-        <releaseNotes>http://cemu.info/changelog.html</releaseNotes>
-		<dependencies>
-		    <dependency id="vcredist2017" version="14.16.27033"  />
-        </dependencies>
-        <copyright />
-        <tags>wii u emulator</tags>
-    </metadata>
-	<files>
-    <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
-  </files>
-
+    <summary>Highly experimental software to emulate Wii U applications on PC.</summary>
+    <releaseNotes>http://cemu.info/changelog.html</releaseNotes>
+    <copyright></copyright>
+    <tags>wii u emulator</tags>
+    <projectSourceUrl>https://github.com/cemu-project/Cemu/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/SebastianK90/chocolateyautomaticpackages/tree/master/cemu</packageSourceUrl>
+    <docsUrl>https://wiki.cemu.info/wiki/Main_Page</docsUrl>
+    <mailingListUrl>http://cemu.info/community.html</mailingListUrl>
+    <bugTrackerUrl>https://github.com/cemu-project/Cemu/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="vcredist2017" version="14.16.27033" />
+    </dependencies>
+  </metadata>
 </package>

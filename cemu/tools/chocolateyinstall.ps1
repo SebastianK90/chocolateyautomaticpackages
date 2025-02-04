@@ -8,6 +8,7 @@ $packageArgs = @{
   packageName    = $packageName
   FileFullPath   = Get-Item $toolsPath\*_x32.zip
   checksumType   = 'sha256'
+  checksum	     = '73221D437176903AF317F5D67B16374D3E4485ED6AE5B3A976D26BE69E3F15AB'
   unzipLocation  = $toolsPath
 }
 
