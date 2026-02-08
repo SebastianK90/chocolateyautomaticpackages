@@ -65,7 +65,9 @@ install:
       Set-Location -Path $env:APPVEYOR_BUILD_FOLDER
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
       Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-      Install-Module -Name 'ChocolateyVersion', 'Evergreen', 'Nevergreen' -Repository 'PSGallery'
+      # FIX: Chocolatey-AU hier hinzugefügt und -Force ergänzt
+      Install-Module -Name 'Chocolatey-AU', 'ChocolateyVersion', 'Evergreen', 'Nevergreen' -Repository 'PSGallery' -Force
+      
       Invoke-WebRequest -Uri https://github.com/pauby/capu/releases/download/0.1.2/capu-0.1.2.zip -OutFile capu.zip -UseBasicParsing
       Expand-Archive capu.zip
       Import-Module -Name .\capu\capu.psd1
