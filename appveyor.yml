@@ -21,7 +21,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: SebastianK90/chocolateyautomaticpackages
   github_api_key:
-    secure: 1E7qvrHmKVUcf6owxJnVvW0hPROV1Mex0CG4kKGQsdnLBtaEm2TJ28NJwdORJC60 #https://ci.appveyor.com/tools/encrypt
+    secure: VFNCI9348ttU1EQDKvxSX2TUsZ61UWKEz6bBaA/fihrrbgNiRMbl5L8uaMS9M3Og #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
