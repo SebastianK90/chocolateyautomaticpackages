@@ -16,7 +16,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 function global:au_GetLatest {
     # Holt Release-Infos via API
-    $release = Get-GitHubRelease 'telegramdesktop' 'tdesktop'
+    $release = Get-GitHubRelease -OwnerName 'telegramdesktop' -RepositoryName 'tdesktop' -Latest
     $assets = $release.assets
 
     # 64-Bit: Sucht nach 'tsetup-x64*.exe'
